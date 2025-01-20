@@ -36,7 +36,7 @@ export default function FAQSection() {
       sx={{
         marginTop: 4,
         marginBottom: 4,
-        width: "100%", // Ocupa todo el ancho disponible
+        width: "200%", // Ocupa todo el ancho disponible
         paddingLeft: 0, // Elimina los márgenes internos a la izquierda
         paddingRight: 0, // Elimina los márgenes internos a la derecha
       }}

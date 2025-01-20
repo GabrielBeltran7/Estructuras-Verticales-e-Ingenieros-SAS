@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import styles from "./page.module.css";
 import Head from "next/head";
 import Navbar from "./Components/Navbar/Navbar";
