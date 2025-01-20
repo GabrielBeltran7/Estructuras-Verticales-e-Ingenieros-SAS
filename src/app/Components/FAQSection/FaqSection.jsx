@@ -36,9 +36,9 @@ export default function FAQSection() {
       sx={{
         marginTop: 4,
         marginBottom: 4,
-        width: "200%", // Ocupa todo el ancho disponible
-        paddingLeft: 0, // Elimina los márgenes internos a la izquierda
-        paddingRight: 0, // Elimina los márgenes internos a la derecha
+        width: "100%", // Ocupa el 100% del ancho disponible
+        paddingLeft: 2, // Añade algo de espacio en el lado izquierdo
+        paddingRight: 2, // Añade algo de espacio en el lado derecho
       }}
     >
       <Typography
@@ -48,6 +48,7 @@ export default function FAQSection() {
           fontWeight: "bold",
           textAlign: "center",
           marginBottom: 2,
+          fontSize: { xs: '1.5rem', sm: '2rem' }, // Ajusta el tamaño del texto en función del tamaño de pantalla
         }}
       >
         Preguntas Frecuentes
@@ -55,13 +56,18 @@ export default function FAQSection() {
       {faqs.map((faq, index) => (
         <Accordion key={index} sx={{ marginBottom: 1 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="h6">{faq.question}</Typography>
+            <Typography variant="h6" sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
+              {faq.question}
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant="body1">{faq.answer}</Typography>
+            <Typography variant="body1" sx={{ fontSize: { xs: '0.9rem', sm: '1rem' } }}>
+              {faq.answer}
+            </Typography>
           </AccordionDetails>
         </Accordion>
       ))}
     </Container>
   );
 }
+
