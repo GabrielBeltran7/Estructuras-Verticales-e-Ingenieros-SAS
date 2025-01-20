@@ -1,95 +1,80 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Head from "next/head";
+import Navbar from "./Components/Navbar/Navbar";
+import ServicesCard from "./Components/Card/Servicescard"
+import FaqSection from "./Components/FAQSection/FaqSection"
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <>
+      <Head>
+        <title>Estructuras Verticales e Ingenieros SAS - Consultoría en Obras Civiles y Construcción</title>
+        <meta
+          name="description"
+          content="Estructuras Verticales e Ingenieros SAS ofrece consultoría especializada en construcción de estructuras verticales, obras civiles, y gestión de proyectos para el sector de la construcción."
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <meta
+          name="keywords"
+          content="estructuras verticales, ingeniería civil, construcción de edificios, gestión de proyectos, consultoría en obras civiles, obras de infraestructura, rascacielos"
+        />
+        <meta property="og:title" content="Estructuras Verticales e Ingenieros SAS - Consultoría en Obras Civiles y Construcción" />
+        <meta
+          property="og:description"
+          content="Consultoría en construcción de estructuras verticales y obras civiles, ofreciendo soluciones integrales en ingeniería y gestión de proyectos para el sector de la construcción."
+        />
+        <meta property="og:image" content="/images/consultoria-og-image.jpg" />
+        <meta property="og:url" content="https://www.estructurasverticaleseingenieros.com" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+      <main className={styles.container}>
+
+        <Navbar />
+
+        {/* Sección Principal */}
+        <header id="inicio" className={styles.hero}>
+          <h1 className={styles.titulo}>Servicio de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia:</h1>
+         
+          <p>En Estructuras Verticales e Ingenieros SAS, nos especializamos en ofrecer
+            soluciones integrales para la interventoría y supervisión de obras,
+            así como en el diseño y fabricación de montajes estructurales. Además,
+            somos expertos en la elaboración de pliegos de condiciones,
+            enfocados en el desarrollo de proyectos que cumplen con los más altos
+            estándares técnicos y normativos.Nuestra experiencia abarca también el diseño estructural especializado y
+            el recibo de zonas comunes sometidas a propiedad horizontal (PH), garantizando
+            que cada proyecto se ajuste a las regulaciones vigentes en Colombia.
+            Trabajamos bajo un riguroso cumplimiento de las normativas locales,
+            lo que nos permite asegurar la calidad, seguridad y durabilidad de cada obra.
+          </p>
+
+          <p>Nos enorgullece ofrecer informes técnicos detallados que facilitan la toma de decisiones
+            informadas, brindando a nuestros clientes la confianza de que sus proyectos cumplen
+            no solo con los más altos estándares de calidad, sino también con las
+            regulaciones oficiales que rigen la industria de la construcción en Colombia.
+
+          </p>
+          
+         
+          <a href="#contacto" className={styles.cta}>Contáctanos</a>
+        </header>
+        <section id="#servicios" className={styles.services}>
+          
+        <h2>Nuestros Servicios</h2>
+         
+        </section>
+      <ServicesCard/>
+      <FaqSection/>
+
+        {/* Sección de Contacto */}
+        <section id="contacto" className={styles.contacto}>
+          <h2>Contáctanos</h2>
+          <p>¿Tienes un proyecto en mente? Estaremos encantados de ayudarte a llevarlo a cabo. Completa el formulario de contacto y nos pondremos en contacto contigo.</p>
+
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }

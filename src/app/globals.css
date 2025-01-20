@@ -1,5 +1,5 @@
 :root {
-  --background: #ffffff;
+  --background: #ededed;
   --foreground: #171717;
 }
 
@@ -9,6 +9,7 @@
     --foreground: #ededed;
   }
 }
+
 
 html,
 body {
