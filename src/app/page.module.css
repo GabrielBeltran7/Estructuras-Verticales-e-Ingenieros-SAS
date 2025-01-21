@@ -65,10 +65,7 @@
     margin-bottom: 20px;
   }
   .hero {
-    background-color: #007BFF;
-    color: white;
-    padding: 80px 20px;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 20px;
   }
 }
