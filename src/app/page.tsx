@@ -5,8 +5,6 @@ import Head from "next/head";
 import Navbar from "./Components/Navbar/Navbar";
 import ServicesCard from "./Components/Card/Servicescard"
 import FaqSection from "./Components/FAQSection/FaqSection"
-import Image from "next/image";
-import estructurasverticales from "../../public/imagenes/estructuras-verticales-e-ingenieros-sas.png"
 
 
 export default function Home() {
