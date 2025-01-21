@@ -49,7 +49,6 @@ export default function Home() {
               width={500}
               height={400}
               priority
-              loading="eager"
               className="heroImage"
               quality={75}
             />
