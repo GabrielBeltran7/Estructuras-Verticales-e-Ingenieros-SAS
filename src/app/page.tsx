@@ -43,14 +43,16 @@ export default function Home() {
           </h1>
 
           <div className={styles.heroImageContainer}>
-            <Image
-              src={img}
-              alt="Servicio de Interventoría, Supervisión de Obras y Diseño Estructural en Colombia"
-              width={500}
-              height={300}
-              priority
-              className={styles.heroImage}
-            />
+          <Image
+    src={img}
+    alt="Servicio de Interventoría, Supervisión de Obras y Diseño Estructural en Colombia"
+    width={500}  // Asegúrate de que el tamaño es apropiado
+    height={300} // Asegúrate de que el tamaño es apropiado
+    priority  // Cargar esta imagen con alta prioridad
+    loading="eager"  // Asegura que la imagen se cargue de forma prioritaria para mejorar el LCP
+    className={styles.heroImage}
+    quality={75}  // Ajusta la calidad de la imagen si es necesario
+  />
           </div>
 
           <p>
