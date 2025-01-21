@@ -24,6 +24,7 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   right: 50rem;
+ 
 }
 
 /* ========================== */
@@ -93,7 +94,7 @@
 }
 @media screen and (max-width: 768px) {
   .navbar {
-    font-size: 1.2rem; /* Reducido en móviles (16px) */
+    font-size: 1.2rem;
     align-items: center;
   }
 }
