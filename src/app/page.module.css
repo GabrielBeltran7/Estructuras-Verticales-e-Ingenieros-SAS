@@ -6,7 +6,6 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  
 }
 
 /* Sección Hero */
@@ -21,6 +20,20 @@
 .hero h1 {
   font-size: 3rem;
   margin-top: 20px;
+}
+
+/* Estilos para la imagen */
+.heroImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .hero p {
@@ -51,22 +64,31 @@
   font-size: 2.5rem;
 }
 
+/* Estilos Responsivos */
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
+
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: white; 
   }
+
   .services h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
+
   .hero {
     text-align: center;
     margin-top: 35px;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: auto;
   }
 }
