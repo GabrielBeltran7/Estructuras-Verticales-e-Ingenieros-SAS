@@ -64,7 +64,7 @@ export default function ServicesCard() {
       }}
       navigation
       pagination={{ clickable: true }}
-      autoplay={{ delay: 2000, disableOnInteraction: false }}
+      autoplay={{ delay: 6000, disableOnInteraction: false }}
       loop={true}
       style={{ padding: "1px", margin: "0px" }}
     >
@@ -78,7 +78,7 @@ export default function ServicesCard() {
           <Card
             sx={{
               width: 345,
-              height: 490,
+              height: 520,
               display: "flex",
               flexDirection: "column",
               boxShadow: 3,
