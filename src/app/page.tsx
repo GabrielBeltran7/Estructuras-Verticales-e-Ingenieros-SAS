@@ -1,9 +1,12 @@
 
+
 import styles from "./page.module.css";
 import Head from "next/head";
 import Navbar from "./Components/Navbar/Navbar";
 import ServicesCard from "./Components/Card/Servicescard"
 import FaqSection from "./Components/FAQSection/FaqSection"
+import Image from "next/image";
+import estructurasverticales from "../../public/imagenes/estructuras-verticales-e-ingenieros-sas.png"
 
 
 export default function Home() {
@@ -68,12 +71,7 @@ export default function Home() {
       <ServicesCard/>
       <FaqSection/>
 
-        {/* Sección de Contacto */}
-        <section id="contacto" className={styles.contacto}>
-          <h2>Contáctanos</h2>
-          <p>¿Tienes un proyecto en mente? Estaremos encantados de ayudarte a llevarlo a cabo. Completa el formulario de contacto y nos pondremos en contacto contigo.</p>
-
-        </section>
+     
       </main>
     </>
   );
