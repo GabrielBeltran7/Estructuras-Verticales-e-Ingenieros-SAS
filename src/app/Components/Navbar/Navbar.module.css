@@ -1,7 +1,7 @@
 
 /*  ESTILOS GENERALES         */
 .navbar {
-  background-color: #896847;
+  background-color: #FFCC00;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
 
 .empresa {
   font-size: 1.4rem;
-  color: white;
+  color: black;
   font-weight: bold;
   letter-spacing: 0.5px;
   right: 50rem;
@@ -41,7 +41,7 @@
 }
 
 .navLink {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -49,7 +49,7 @@
 
 .navLink:hover {
   text-decoration: underline;
-  color: #f1c40f;
+  color: white;
 }
 
 .navLink:focus {

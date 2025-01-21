@@ -37,8 +37,7 @@ export default function FAQSection() {
         marginTop: 4,
         marginBottom: 4,
         width: "100%", // Ocupa el 100% del ancho disponible
-        paddingLeft: 2, // Añade algo de espacio en el lado izquierdo
-        paddingRight: 2, // Añade algo de espacio en el lado derecho
+        paddingBottom: 10, 
       }}
     >
       <Typography

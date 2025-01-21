@@ -70,9 +70,11 @@ export default function Home() {
           <h2>Nuestros Servicios</h2>
         </section>
         <ServicesCard />
+      
+     
         <FaqSection />
-        
-        <ContactButtons />
+       
+ <ContactButtons />
       </main>
     </>
   );
