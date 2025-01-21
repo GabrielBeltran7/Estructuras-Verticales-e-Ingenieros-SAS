@@ -6,6 +6,7 @@ import ServicesCard from "./Components/Card/Servicescard";
 import FaqSection from "./Components/FAQSection/FaqSection";
 import Image from "next/image";
 import imgservicios from "../../public/imagenes/servicio-de-interventoria-supervision-de-obras-y-diseño-estructural.png";
+import ContactButtons from "./Components/ContactButtons/ContactButtons";
 
 export default function Home() {
   return (
@@ -70,6 +71,8 @@ export default function Home() {
         </section>
         <ServicesCard />
         <FaqSection />
+        
+        <ContactButtons />
       </main>
     </>
   );
