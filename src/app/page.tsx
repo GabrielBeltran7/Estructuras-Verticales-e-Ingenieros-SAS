@@ -7,7 +7,7 @@ import FaqSection from "./Components/FAQSection/FaqSection";
 import Image from "next/image";
 import ContactButtons from "./Components/ContactButtons/ContactButtons";
 
-const img = "https://res.cloudinary.com/dby8lelja/image/upload/f_webp/v1737492600/Estructuras%20Verticales%20e%20Ingenieros%20SAS/servicio_de_interventoria_supervision_de_obras_y_dise%C3%B1o_estructural_j6rnjl.png";
+const img = "https://res.cloudinary.com/dby8lelja/image/upload/v1737496234/Estructuras%20Verticales%20e%20Ingenieros%20SAS/servicio_de_interventoria_supervision_de_obras_y_dise%C3%B1o_estructural_hnmfth.webp";
 
 export default function Home() {
   return (
