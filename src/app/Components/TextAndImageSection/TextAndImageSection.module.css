@@ -1,6 +1,5 @@
 .container {
   margin-top: 50px;
-  margin: 20px 20px; /* Añadir margen a los lados */
 }
 
 .title {
@@ -14,6 +13,7 @@
   line-height: 1.5;
   font-size: 1.2rem;
   text-align: justify; /* Justificamos el texto para mejorar la legibilidad */
+  margin: 0 20px; /* Añadir margen a los lados */
 }
 
 .imageContainer {
@@ -31,20 +31,20 @@
 
   .description {
     font-size: 1.2rem; /* Reducir tamaño de la descripción en móvil */
-    margin: 20px 20px; /* Asegurar margen a los lados en móvil */
+    margin: 0 20px; /* Asegurar margen a los lados en móvil */
   }
 
   .imageContainer {
     margin-top: 10px; /* Menos margen en móvil */
     align-items: center;
-   
   }
 
   .container {
     margin-top: 50px;
     height: auto;
-    max-width: 100%; /* Evitar que se salga del ancho */
-    margin: 20px 20px; /* Añadir margen a los lados */
-
+    margin-left: auto; /* Centrar automáticamente */
+    margin-right: auto; /* Centrar automáticamente */
+    max-width: 97%; /* Evitar que se salga del ancho */
   }
 }
+
