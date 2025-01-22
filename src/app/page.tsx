@@ -15,26 +15,29 @@ export default function Home() {
     
   return (
     <>
-      <Head>
-        <title>Estructuras Verticales e Ingenieros SAS - Consultoría en Obras Civiles y Construcción</title>
-        <meta
-          name="description"
-          content="Estructuras Verticales e Ingenieros SAS ofrece consultoría especializada en construcción de estructuras verticales, obras civiles, y gestión de proyectos para el sector de la construcción."
-        />
-        <meta
-          name="keywords"
-          content="estructuras verticales, ingeniería civil, construcción de edificios, gestión de proyectos, consultoría en obras civiles, obras de infraestructura, rascacielos"
-        />
-        <meta property="og:title" content="Estructuras Verticales e Ingenieros SAS - Consultoría en Obras Civiles y Construcción" />
-        <meta
-          property="og:description"
-          content="Consultoría en construcción de estructuras verticales y obras civiles, ofreciendo soluciones integrales en ingeniería y gestión de proyectos para el sector de la construcción."
-        />
-        <meta property="og:image" content="/images/consultoria-og-image.jpg" />
-        <meta property="og:url" content="https://www.estructurasverticaleseingenieros.com" />
-        <meta name="robots" content="index, follow" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+     <Head>
+  <title>Estructuras Verticales e Ingenieros SAS - Interventoría, Supervisión y Diseño Estructural en Colombia</title>
+  <meta
+    name="description"
+    content="Interventoría de obras, supervisión y diseño estructural en Colombia. Garantizamos calidad y cumplimiento normativo. ¡Cotiza tu proyecto con expertos!"
+  />
+  <meta
+    name="keywords"
+    content="interventoría de obras, supervisión de obras, diseño estructural, montajes estructurales, elaboración de pliegos de condiciones, informes técnicos, propiedad horizontal, normativas de construcción en Colombia"
+  />
+  <meta property="og:title" content="Estructuras Verticales e Ingenieros SAS - Interventoría, Supervisión y Diseño Estructural en Colombia" />
+  <meta
+    property="og:description"
+    content="Expertos en interventoría, supervisión y diseño estructural en Colombia. Cumplimos con la normativa NSR-10 y garantizamos calidad en cada proyecto."
+  />
+  <meta property="og:image" content="https://res.cloudinary.com/dby8lelja/image/upload/v1737553290/Estructuras%20Verticales%20e%20Ingenieros%20SAS/interventor%C3%ADa_de_obras_supervisi%C3%B3n_de_obras_dise%C3%B1o_estructural_montajes_estructurales_oru8yv.png" />
+  <meta property="og:url" content="https://www.estructurasverticaleseingenieros.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.estructurasverticaleseingenieros.com/" />
+  <link rel="icon" href="/favicon.ico" />
+</Head>
+
 
       <main className={styles.container}>
         <Navbar />
