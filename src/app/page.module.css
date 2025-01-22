@@ -39,6 +39,8 @@
 .hero p {
   margin-bottom: 30px;
   font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: justify;
 }
 
 .hero .cta {
@@ -75,6 +77,8 @@
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: white; 
+    line-height: 1.6rem;
+
   }
 
   .services h2 {

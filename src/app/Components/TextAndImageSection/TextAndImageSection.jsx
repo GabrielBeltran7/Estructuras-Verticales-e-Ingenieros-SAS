@@ -33,6 +33,8 @@ const TextAndImageSection = () => {
           priority
           className={styles.imagen}
         />
+        <a href="tel:+573229578866" className={styles.contacto}>Llámanos ya</a>
+
       </div>
     </div>
   );

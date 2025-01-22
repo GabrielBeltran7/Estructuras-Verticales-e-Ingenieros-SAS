@@ -34,10 +34,21 @@
   color: #444;
   text-align: justify;
 }
+.contacto {
+  background-color: #FFCC00;
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+}
 
 /* Contenedor de la imagen */
 .ImagenContainer {
+ 
   flex: 1;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
