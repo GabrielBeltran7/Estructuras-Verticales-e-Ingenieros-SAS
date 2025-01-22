@@ -1,6 +1,7 @@
 /* styles/TextAndImageSection.module.css */
 .container {
-    margin: 60px 0;
+ margin-top: 50px;
+
    
   }
   
@@ -43,6 +44,11 @@
     .imageContainer {
       margin-top: 10px; /* Menos margen en móvil */
       align-items: center;
+    }
+    .container{
+      margin-top: 50px;
+      height: auto;
+      width: 25rem;
     }
   }
   

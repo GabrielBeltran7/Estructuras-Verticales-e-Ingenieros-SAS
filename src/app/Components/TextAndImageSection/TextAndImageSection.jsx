@@ -5,7 +5,7 @@ import styles from './TextAndImageSection.module.css';
 
 const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
   return (
-    <Grid container spacing={8} alignItems="center" className={styles.container}>
+    <Grid container spacing={0} alignItems="center" className={styles.container}>
       <Grid item xs={12} md={6}>
         <Typography variant="h5" gutterBottom className={styles.title}>
           {title}
