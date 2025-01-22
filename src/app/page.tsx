@@ -21,7 +21,7 @@ export default function Home() {
         {/* Sección Principal */}
         <header id="inicio" className={styles.hero}>
           <h1 className={styles.titulo}>
-            Servicio de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia.
+            Servicio de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia..
           </h1>
 
           <div className={styles.heroImageContainer}>
