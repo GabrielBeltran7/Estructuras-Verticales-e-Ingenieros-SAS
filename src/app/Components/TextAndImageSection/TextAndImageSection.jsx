@@ -69,9 +69,9 @@ const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
         <Image
           src={imageUrl}
           alt={altText}
-          width={400} // Tamaño de la imagen más grande para escritorio
-          height={300} // Ajusta el tamaño de la imagen
-          quality={75} // Calidad de la imagen
+          width={400} 
+          height={300} 
+          quality={75} 
           priority
           sizes="(max-width: 600px) 100vw, 50vw"
         />
