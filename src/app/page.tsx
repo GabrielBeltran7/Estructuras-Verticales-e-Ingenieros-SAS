@@ -64,7 +64,7 @@ export default function Home() {
           <h2 className={styles.ctaHeading}>¡Transforma tu proyecto con nosotros hoy mismo!</h2>
           <p className={styles.ctaSubheading}>Contáctanos ahora y empieza a llevar tu negocio al siguiente nivel. Aportamos soluciones personalizadas y efectivas. 
             <br /> <br />¡No pierdas esta oportunidad única!</p>
-          <button className={styles.ctaButton}>¡Quiero empezar ahora!</button>
+          <a href="tel:+573229578866" className={styles.ctaButton}>¡Quiero empezar ahora!</a>
         </div>
 
 

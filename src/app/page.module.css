@@ -89,12 +89,13 @@
 .ctaButton {
   background-color: #FFCC00;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .ctaButton:hover {
