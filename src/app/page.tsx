@@ -20,7 +20,9 @@ export default function Home() {
 
         {/* Sección Principal */}
         <header id="inicio" className={styles.hero}>
-          
+          <h1 className={styles.titulo}>
+            hola
+          </h1>
 
           <div className={styles.heroImageContainer}>
             <Image
