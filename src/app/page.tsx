@@ -60,9 +60,17 @@ export default function Home() {
           <FaqSection />
         </section>
 
+        <div className={styles.ctaContainer}>
+          <h2 className={styles.ctaHeading}>¡Transforma tu proyecto con nosotros hoy mismo!</h2>
+          <p className={styles.ctaSubheading}>Contáctanos ahora y empieza a llevar tu negocio al siguiente nivel. Aportamos soluciones personalizadas y efectivas. 
+            <br /> <br />¡No pierdas esta oportunidad única!</p>
+          <button className={styles.ctaButton}>¡Quiero empezar ahora!</button>
+        </div>
+
+
         <section id="contacto" className={styles.contacto}>
           <ContactButtons />
-         < Footer/>
+          < Footer />
         </section>
       </main>
     </>
