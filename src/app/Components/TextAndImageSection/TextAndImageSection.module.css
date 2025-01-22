@@ -41,11 +41,12 @@
   .description {
     font-size: 1.2rem;
     margin: 10px 15px;
+    max-width: 380px;
   }
 
   .imageContainer {
     margin-top: 10px;
-    max-width: 360px;
+    max-width: 380px;
     margin-left: 20px;
   }
 
