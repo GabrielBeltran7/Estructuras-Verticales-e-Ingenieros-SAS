@@ -1,70 +1,83 @@
-/* Contenedor principal centrado */
+/* Contenedor principal */
 .container {
- margin-top: 40px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
-  width: 100%;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+/* Contenedor del texto */
+.textContainer {
+  flex: 1;
  
-
 }
 
-/* Estilos del título */
-.title {
-  font-size: 2.7rem;
+.titulo {
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  /* Separación con la descripción */
-}
-
-/* Estilos de la descripción */
-.description {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: justify;
-  margin: 10px 20px;
+  color: #212121;
+  margin-bottom: 1.2rem;
   
-  /* Evitar que el texto se expanda demasiado */
 }
 
-/* Contenedor de la imagen centrado */
-.imageContainer {
+.parrafo {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #444;
+  text-align: justify;
+}
+
+/* Contenedor de la imagen */
+.ImagenContainer {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 600px;
-  /* Tamaño máximo para evitar que se haga muy grande */
-  margin-top: 20px;
 }
 
-/* Responsividad para móviles */
+.imagen {
+  border-radius: 0.8rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagen:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos responsivos para móviles */
 @media (max-width: 768px) {
-  .title {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .textContainer {
+    max-width: 100%;
+  }
+
+  .titulo {
     font-size: 2rem;
   }
+  .ImagenContainer img {
+    width:360px;
+    height:260px;
+  }
 
-  .description {
+  .parrafo {
     font-size: 1.2rem;
-    /* Reducir un poco el tamaño */
-    margin-left: 10px;
-    margin-right: 10px;
-    /* Ajustar márgenes */
-    max-width: 100%;
-    /* Ocupar todo el ancho disponible */
+    line-height: 1.6rem;
   }
 
-  .imageContainer {
-    margin-top: 10px;
-    width: 97%;
-    max-width: 97%;
-    /* Ocupar todo el ancho disponible */
-  }
-
-  .container {
-    width: 95%;
-    padding: 20px 0;
-    /* Espaciado adicional para móviles */
-  }
+  
 }
+

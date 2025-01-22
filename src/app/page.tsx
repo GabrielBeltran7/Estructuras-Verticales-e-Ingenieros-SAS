@@ -12,18 +12,7 @@ const img = "https://res.cloudinary.com/dby8lelja/image/upload/v1737496234/Estru
 
 export default function Home() {
     // Datos que pasaremos al componente
-    const imageUrl = "https://res.cloudinary.com/dby8lelja/image/upload/v1737501497/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Qu%C3%A9_es_una_interventor%C3%ADa_auauz4.webp";
-    const altText = "Servicio de Interventoría, Supervisión de Obras y Diseño Estructural en Colombia";
-    const title = "Por qué Elegirnos?";
-    const description = `
-      Elegirnos como tu socio para el diseño y supervisión de obras es optar por la experiencia, la calidad y la seguridad. 
-      Contamos con un equipo de profesionales altamente calificados y con amplia experiencia en la industria. 
-      Nuestro enfoque se basa en ofrecer soluciones integrales, asegurando que cada proyecto sea exitoso desde el inicio hasta la finalización. 
-      Trabajamos de cerca con nuestros clientes para entender sus necesidades específicas y garantizar que sus expectativas sean superadas. 
-      La confianza que depositan en nosotros es la base de nuestro trabajo. 
-      Además, nos aseguramos de estar al día con las mejores prácticas y tecnologías para ofrecer resultados óptimos en todos nuestros proyectos. 
-      Nuestro compromiso es con la excelencia en cada detalle.
-    `;
+    
   return (
     <>
       <Head>
@@ -89,12 +78,7 @@ export default function Home() {
         <ServicesCard />
         <div>
       {/* Usamos el componente TextAndImageSection */}
-      <TextAndImageSection
-        imageUrl={imageUrl}
-        altText={altText}
-        title={title}
-        description={description}
-      />
+      <TextAndImageSection/>
     </div>
         <section id="faq" className={styles.faq}>
           <FaqSection />

@@ -1,71 +1,42 @@
-"use client"
-import { Grid, Typography } from '@mui/material';
-import Image from 'next/image';
-import styles from './TextAndImageSection.module.css';
-import '../../globals.css'; // Ajusta la ruta si es necesario
+"use client";
 
-const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
+import Image from "next/image";
+import styles from "./TextAndImageSection.module.css";
+
+const imageUrl =
+  "https://res.cloudinary.com/dby8lelja/image/upload/v1737501497/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Qu%C3%A9_es_una_interventor%C3%ADa_auauz4.webp";
+const altText =
+  "Servicio de Interventoría, Supervisión de Obras y Diseño Estructural en Colombia";
+
+const TextAndImageSection = () => {
   return (
-    <Grid container spacing={3} alignItems="center" className={styles.container}>
-      <Grid item xs={12} md={6}>
-        <Typography variant="h6" gutterBottom className={styles.title}>
-          {title}
-        </Typography>
-        <Typography variant="body1" paragraph className={styles.description}>
-          {description}
-        </Typography>
-      </Grid>
-
-      <Grid item xs={12} md={6}>
-        <div className={styles.imageContainer}>
-          <Image
-            src={imageUrl}
-            alt={altText}
-            width={400} // Ajusta el tamaño de la imagen
-            height={300} // Ajusta el tamaño de la imagen
-            quality={75} // Calidad de la imagen
-            priority
-            sizes="(max-width: 600px) 100vw, 50vw" // Responsividad para móvil
-          />
-        </div>
-      </Grid>
-    </Grid>
+    <div className={styles.container}>
+      <div className={styles.textContainer}>
+        <h2 className={styles.titulo}>¿Por qué Elegirnos?</h2>
+        <p className={styles.parrafo}>
+          Elegirnos como tu socio para el diseño y supervisión de obras es optar por la experiencia, la calidad y la seguridad.
+          Contamos con un equipo de profesionales altamente calificados y con amplia experiencia en la industria.
+          Nuestro enfoque se basa en ofrecer soluciones integrales, asegurando que cada proyecto sea exitoso desde el inicio hasta la finalización.
+          Trabajamos de cerca con nuestros clientes para entender sus necesidades específicas y garantizar que sus expectativas sean superadas.
+          La confianza que depositan en nosotros es la base de nuestro trabajo.
+          Además, nos aseguramos de estar al día con las mejores prácticas y tecnologías para ofrecer resultados óptimos en todos nuestros proyectos.
+          Nuestro compromiso es con la excelencia en cada detalle.
+        </p>
+      </div>
+      <div className={styles.ImagenContainer}>
+        <Image
+          src={imageUrl}
+          alt={altText}
+          width={400} // Ajusta el tamaño de la imagen
+          height={300} // Ajusta el tamaño de la imagen
+          quality={85} // Mejor calidad de imagen
+          priority
+          className={styles.imagen}
+        />
+      </div>
+    </div>
   );
 };
 
 export default TextAndImageSection;
-
-// import { Grid, Typography } from '@mui/material';
-// import Image from 'next/image';
-// import styles from './TextAndImageSection.module.css';
-
-// const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
-//   return (
-//     <Grid container spacing={3} alignItems="center" className={styles.container}>
-//       <Grid item xs={12} md={6}>
-//         <Typography variant="h5" gutterBottom className={styles.title}>
-//           {title}
-//         </Typography>
-//         <Typography variant="body1" paragraph className={styles.description}>
-//           {description}
-//         </Typography>
-//       </Grid>
-
-//       <Grid item xs={12} md={6}>
-//         <div className={styles.imageContainer}>
-//           <Image
-//             src={imageUrl}
-//             alt={altText}
-//             width={400} // Ajusta el tamaño de la imagen
-//             height={300} // Ajusta el tamaño de la imagen
-//             quality={75} // Calidad de la imagen
-//             priority // Mantén esta propiedad para carga inmediata
-//           />
-//         </div>
-//       </Grid>
-//     </Grid>
-//   );
-// };
-
-// export default TextAndImageSection;
 
