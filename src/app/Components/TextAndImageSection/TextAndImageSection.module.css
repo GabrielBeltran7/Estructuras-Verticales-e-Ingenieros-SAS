@@ -1,0 +1,45 @@
+/* styles/TextAndImageSection.module.css */
+.container {
+    margin: 50px 0;
+    padding: 0 20px; /* Añadido para darle un poco de espaciado en móviles */
+  }
+  
+  .title {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    text-align: center; /* Alineamos el título en el centro */
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify; /* Justificamos el texto para mejorar la legibilidad */
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Separación entre texto e imagen */
+    border-radius: 10rem;
+  }
+  
+  /* Responsividad para móviles */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem; /* Reducir tamaño del título en móvil */
+    }
+    
+    .description {
+      font-size: 1rem; /* Reducir tamaño de la descripción en móvil */
+
+    }
+    
+    .imageContainer {
+      margin-top: 10px; /* Menos margen en móvil */
+      align-items: center;
+    }
+  }
+  
