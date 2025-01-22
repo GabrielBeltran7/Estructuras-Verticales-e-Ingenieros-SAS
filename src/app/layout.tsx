@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Estructuras Verticales e Ingenieros SAS - Interventoría y Diseño Estructural",
+  title: "Estructuras Verticales e Ingenieros SAS - Interventoria y Diseño Estructural",
   description: "Interventoría de obras, supervisión y diseño estructural en Colombia. Cumplimos con normativas de construcción y garantizamos calidad en cada proyecto.",
   keywords: "interventoría de obras, supervisión de obras, diseño estructural, montajes estructurales, normativas NSR-10, propiedad horizontal, informes técnicos",
   openGraph: {
