@@ -73,7 +73,7 @@ const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
           height={300} // Ajusta el tamaño de la imagen
           quality={75} // Calidad de la imagen
           priority
-          sizes="(max-width: 600px) 100vw, 50vw" // Responsividad para móvil
+          sizes="(max-width: 600px) 100vw, 50vw"
         />
       </Box>
     </Box>
