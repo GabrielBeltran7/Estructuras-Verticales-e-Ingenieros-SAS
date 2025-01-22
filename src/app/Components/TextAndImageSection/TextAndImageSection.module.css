@@ -1,19 +1,20 @@
 /* Contenedor principal centrado */
 .container {
+ margin-top: 40px;
   display: flex;
-  margin-top: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 90%;
-  
-  box-sizing: border-box;
+  width: 100%;
+
 }
 
 /* Estilos del título */
 .title {
   font-size: 2.7rem;
   font-weight: bold;
+  margin-bottom: 20px;
+  /* Separación con la descripción */
 }
 
 /* Estilos de la descripción */
@@ -22,6 +23,8 @@
   line-height: 1.5;
   text-align: justify;
   margin: 10px 20px;
+  
+  /* Evitar que el texto se expanda demasiado */
 }
 
 /* Contenedor de la imagen centrado */
@@ -29,7 +32,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
+  /* Tamaño máximo para evitar que se haga muy grande */
+  margin-top: 20px;
 }
 
 /* Responsividad para móviles */
@@ -40,18 +46,23 @@
 
   .description {
     font-size: 1.2rem;
-    margin: 10px 25px;
-    width: 100%;
+    /* Reducir un poco el tamaño */
+    margin: 10px 15px;
+    /* Ajustar márgenes */
+    max-width: 90%;
+    /* Ocupar todo el ancho disponible */
   }
 
   .imageContainer {
     margin-top: 10px;
-    margin: 10px 28px;
     width: 100%;
+    max-width: 100%;
+    /* Ocupar todo el ancho disponible */
   }
 
   .container {
-    width: 90%;
-    
+    width: 95%;
+    padding: 20px 0;
+    /* Espaciado adicional para móviles */
   }
 }
