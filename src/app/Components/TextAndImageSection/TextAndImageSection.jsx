@@ -5,12 +5,12 @@ import styles from './TextAndImageSection.module.css';
 
 const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
   return (
-    <Grid container spacing={0} alignItems="center" className={styles.container}>
+    <Grid container spacing={3} alignItems="center" className={styles.container}>
       <Grid item xs={12} md={6}>
-        <Typography  gutterBottom className={styles.title}>
+        <Typography variant="h6" gutterBottom className={styles.title}>
           {title}
         </Typography>
-        <Typography  className={styles.description}>
+        <Typography variant="body1" paragraph className={styles.description}>
           {description}
         </Typography>
       </Grid>
