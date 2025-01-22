@@ -5,7 +5,7 @@ import styles from './TextAndImageSection.module.css';
 
 const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
   return (
-    <Grid container spacing={3} alignItems="center" className={styles.container}>
+    <Grid container spacing={0} alignItems="center" className={styles.container}>
       <Grid item xs={12} md={6}>
         <Typography variant="h5" gutterBottom className={styles.title}>
           {title}
@@ -24,7 +24,7 @@ const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
             height={300} // Ajusta el tamaño de la imagen
             quality={75} // Calidad de la imagen
             priority
-            sizes="(max-width: 600px) 100vw, 50vw" // Responsividad para móvil
+            sizes="(max-width: 768px) 100vw, 50vw" // Responsividad para móvil
           />
         </div>
       </Grid>
