@@ -12,12 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "Estructuras Verticales e Ingenieros SAS - Interventoria y Diseño Estructural",
-  description: "Interventoría de obras, supervisión y diseño estructural en Colombia. Cumplimos con normativas de construcción y garantizamos calidad en cada proyecto.",
-  keywords: "interventoría de obras, supervisión de obras, diseño estructural, montajes estructurales, normativas NSR-10, propiedad horizontal, informes técnicos",
+  title: "Expertos en Interventoría y Supervisión de Obras | Estructuras Verticales e Ingenieros SAS",
+  description: "Brindamos interventoría de obras, supervisión y diseño estructural con enfoque en calidad y cumplimiento de las normativas de construcción en Colombia.",
+  keywords: "interventoría de obras, supervisión de obras, diseño estructural, montajes estructurales, normativas NSR-10, propiedad horizontal, informes técnicos, impermeabilizaciones, diseño estructural en Bogotá, supervisión de obras civiles en Colombia",
   openGraph: {
-    title: "Estructuras Verticales e Ingenieros SAS - Interventoría y Diseño Estructural",
-    description: "Expertos en interventoría, supervisión de obras y diseño estructural en Colombia. Cumplimos con normativas NSR-10 y garantizamos calidad.",
+    title: "Expertos en Interventoría y Supervisión de Obras | Estructuras Verticales e Ingenieros SAS",
+    description: "Brindamos interventoría, supervisión de obras y diseño estructural con un enfoque en calidad y cumplimiento de las normativas NSR-10 en Colombia.",
     url: "https://www.estructurasverticaleseingenieros.com/",
     siteName: "Estructuras Verticales e Ingenieros SAS",
     images: [
@@ -25,13 +25,15 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/dby8lelja/image/upload/v1737553290/Estructuras%20Verticales%20e%20Ingenieros%20SAS/interventor%C3%ADa_de_obras_supervisi%C3%B3n_de_obras_dise%C3%B1o_estructural_montajes_estructurales_oru8yv.png",
         width: 1200,
         height: 630,
-        alt: "Interventoría y Supervisión de Obras en Colombia",
+        alt: "Interventoría y Supervisión de Obras en Colombia con Estructuras Verticales e Ingenieros SAS",
       },
     ],
     type: "website",
   },
   robots: "index, follow",
 };
+
+
 
 export default function RootLayout({
   children,
