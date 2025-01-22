@@ -13,7 +13,8 @@
   line-height: 1.5;
   font-size: 1.2rem;
   text-align: justify; /* Justificamos el texto para mejorar la legibilidad */
-  margin: 0 20px; /* Añadir margen a los lados */
+
+  
 }
 
 .imageContainer {
@@ -31,20 +32,21 @@
 
   .description {
     font-size: 1.2rem; /* Reducir tamaño de la descripción en móvil */
-    margin: 0 20px; /* Asegurar margen a los lados en móvil */
+    margin: 10px 20px 20px 20px;
   }
 
   .imageContainer {
     margin-top: 10px; /* Menos margen en móvil */
     align-items: center;
+    margin: 10px 20px 20px 20px;
   }
 
   .container {
     margin-top: 50px;
     height: auto;
-    margin-left: auto; /* Centrar automáticamente */
-    margin-right: auto; /* Centrar automáticamente */
+
     max-width: 97%; /* Evitar que se salga del ancho */
+    margin: 10px 20px 20px 20px;
   }
 }
 
