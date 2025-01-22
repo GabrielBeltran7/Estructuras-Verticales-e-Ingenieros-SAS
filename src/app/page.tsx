@@ -1,6 +1,6 @@
 "use client";
 import styles from "./page.module.css";
-import Head from "next/head";
+
 import Navbar from "./Components/Navbar/Navbar";
 import ServicesCard from "./Components/Card/Servicescard";
 import FaqSection from "./Components/FAQSection/FaqSection";
@@ -11,19 +11,15 @@ import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSe
 const img = "https://res.cloudinary.com/dby8lelja/image/upload/v1737496234/Estructuras%20Verticales%20e%20Ingenieros%20SAS/servicio_de_interventoria_supervision_de_obras_y_dise%C3%B1o_estructural_hnmfth.webp";
 
 export default function Home() {
-    
-    
+
   return (
     <>
       <main className={styles.container}>
         <Navbar />
-
-        {/* Sección Principal */}
         <header id="inicio" className={styles.hero}>
           <h1 className={styles.titulo}>
             Servicio de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia.
           </h1>
-
           <div className={styles.heroImageContainer}>
             <Image
               src={img}
@@ -33,7 +29,7 @@ export default function Home() {
               priority
               className="heroImage"
               quality={75}
-              
+
             />
           </div>
 
@@ -56,9 +52,9 @@ export default function Home() {
         </section>
         <ServicesCard />
         <div>
-      {/* Usamos el componente TextAndImageSection */}
-      <TextAndImageSection/>
-    </div>
+          {/* Usamos el componente TextAndImageSection */}
+          <TextAndImageSection />
+        </div>
         <section id="faq" className={styles.faq}>
           <FaqSection />
         </section>
