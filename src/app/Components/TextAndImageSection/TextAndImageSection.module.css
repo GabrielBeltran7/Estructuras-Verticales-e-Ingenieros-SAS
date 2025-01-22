@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
+ 
 
 }
 
@@ -47,16 +48,17 @@
   .description {
     font-size: 1.2rem;
     /* Reducir un poco el tamaño */
-    margin: 10px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     /* Ajustar márgenes */
-    max-width: 90%;
+    max-width: 100%;
     /* Ocupar todo el ancho disponible */
   }
 
   .imageContainer {
     margin-top: 10px;
-    width: 100%;
-    max-width: 100%;
+    width: 97%;
+    max-width: 97%;
     /* Ocupar todo el ancho disponible */
   }
 
