@@ -17,7 +17,7 @@ export default function Home() {
         <Navbar />
         <header id="inicio" className={styles.hero}>
           <h1 className={styles.titulo}>
-            hola a todos
+            hola a gabriel
           </h1>
           <div className={styles.heroImageContainer}>
             <Image
