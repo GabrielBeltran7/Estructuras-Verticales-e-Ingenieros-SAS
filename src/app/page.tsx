@@ -11,15 +11,13 @@ import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSe
 const img = "https://res.cloudinary.com/dby8lelja/image/upload/v1737496234/Estructuras%20Verticales%20e%20Ingenieros%20SAS/servicio_de_interventoria_supervision_de_obras_y_dise%C3%B1o_estructural_hnmfth.webp";
 
 export default function Home() {
-
-
   return (
     <>
       <main className={styles.container}>
         <Navbar />
         <header id="inicio" className={styles.hero}>
           <h1 className={styles.titulo}>
-            hola
+            hola a todos
           </h1>
           <div className={styles.heroImageContainer}>
             <Image
