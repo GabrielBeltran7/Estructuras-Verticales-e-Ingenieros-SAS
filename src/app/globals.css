@@ -15,7 +15,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}/* src/app/globals.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  margin: 0;
 }
+
 
 * {
   box-sizing: border-box;

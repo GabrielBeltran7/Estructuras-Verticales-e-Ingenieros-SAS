@@ -2,6 +2,7 @@
 import { Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import styles from './TextAndImageSection.module.css';
+import '../../globals.css'; // Ajusta la ruta si es necesario
 
 const TextAndImageSection = ({ imageUrl, altText, title, description }) => {
   return (
