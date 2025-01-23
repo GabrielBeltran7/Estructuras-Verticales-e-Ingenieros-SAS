@@ -26,15 +26,18 @@ export default function Home() {
           <ImageCarousel/>
           <p className={styles.heroparrafo}>
             En Estructuras Verticales e Ingenieros SAS, nos especializamos en ofrecer soluciones integrales para la interventoría y supervisión de obras,
-            así como en el diseño y fabricación de montajes estructurales. Además, somos expertos en la elaboración de pliegos de condiciones,
-            enfocados en el desarrollo de proyectos que cumplen con los más altos estándares técnicos y normativos.
+            así como en el diseño y fabricación de montajes estructurales. 
           </p>
-          <p className={styles.subparrafo}>
+          <p className={styles.heroparrafouno}>
+            Además, somos expertos en la elaboración de pliegos de condiciones,
+            enfocados en el desarrollo de proyectos que cumplen con los más altos estándares técnicos y normativos.
+            </p>
+          <p className={styles.parrafodos}>
            Nuestra experiencia abarca también el diseño estructural especializado y
             el recibo de zonas comunes sometidas a propiedad horizontal (PH), garantizando que cada proyecto se ajuste a las regulaciones vigentes en Colombia.
             Trabajamos bajo un riguroso cumplimiento de las normativas locales, lo que nos permite asegurar la calidad, seguridad y durabilidad de cada obra.
           </p>
-          <p className={styles.subparrafo}>
+          <p className={styles.parrafodos}>
             Nos enorgullece ofrecer informes técnicos detallados que facilitan la toma de decisiones informadas, brindando a nuestros clientes la confianza de que sus proyectos cumplen
             no solo con los más altos estándares de calidad, sino también con las regulaciones oficiales que rigen la industria de la construcción en Colombia.
           </p>
