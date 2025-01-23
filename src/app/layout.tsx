@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Expertos en Interventoria, Supervisión de Obras y Diseño Estructural en Colombia.",
   description: "Brindamos interventoría de obras, supervisión y diseño estructural con enfoque en calidad y cumplimiento de las normativas de construcción en Colombia.",
-  keywords: "interventoría de obras, supervisión de obras, diseño estructural, montajes estructurales, normativas NSR-10, propiedad horizontal, informes técnicos, impermeabilizaciones, diseño estructural en Bogotá, supervisión de obras civiles en Colombia",
+  keywords: "interventoría de obras, supervisión de obras, diseño estructural, montajes estructurales, normativas NSR-10, propiedad horizontal, informes técnicos,  , diseño estructural en Bogotá, supervisión de obras civiles en Colombia",
   openGraph: {
     title: "Expertos en Interventoria, Supervisión de Obras y Diseño Estructural en Colombia.",
     description: "Brindamos interventoría, supervisión de obras y diseño estructural con un enfoque en calidad y cumplimiento de las normativas NSR-10 en Colombia.",

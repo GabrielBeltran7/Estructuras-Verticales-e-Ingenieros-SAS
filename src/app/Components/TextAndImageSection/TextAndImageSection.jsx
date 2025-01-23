@@ -33,7 +33,7 @@ const TextAndImageSection = () => {
           priority
           className={styles.imagen}
         />
-        <a href="tel:3229578866" className={styles.contacto}>Solicita  asesoría gratuita</a>
+        <a href="tel:3132581599" className={styles.contacto}>Solicita  asesoría gratuita</a>
 
       </div>
     </div>

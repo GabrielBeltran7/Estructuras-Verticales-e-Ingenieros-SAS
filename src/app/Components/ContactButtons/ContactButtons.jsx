@@ -3,7 +3,7 @@ import styles from "./ContactButtons.module.css";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactButtons() {
-  const phoneNumber = "3229578866";
+  const phoneNumber = "3132581599";
   
   return (
     <div className={styles.contactContainer}>

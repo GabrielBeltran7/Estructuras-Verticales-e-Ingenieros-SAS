@@ -28,7 +28,7 @@ const EncabezadoServicios = () => {
           no solo con los más altos estándares de calidad, sino también con las regulaciones oficiales que rigen la industria de la construcción en Colombia.
         </p>
       </div>
-      <a href="tel:3229578866" className={styles.cta}>Llámanos ahora</a>
+      <a href="tel:3132581599" className={styles.cta}>Llámanos ahora</a>
     </header>
   );
 };
