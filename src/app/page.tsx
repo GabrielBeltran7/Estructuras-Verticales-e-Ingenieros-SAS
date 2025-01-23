@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 import Navbar from "./Components/Navbar/Navbar";
 import ServicesCard from "./Components/Card/Servicescard";
 import FaqSection from "./Components/FAQSection/FaqSection";
-import Image from "next/image";
 import ContactButtons from "./Components/ContactButtons/ContactButtons";
 import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSection';
 import Footer from "./Components/Footer/Footer"
