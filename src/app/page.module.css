@@ -6,10 +6,16 @@
   width: 100%;
   
 }.barraazul {
-  background-color: #007BFF;
-  
-  height: 4.5rem;
+  background-color: #007BFF;  /* Color de fondo azul */
+  height: 4.5rem;  /* Altura de la barra */
+  width: 100%;  /* Ocupar todo el ancho */
+  position: fixed;  /* Fija la barra en pantalla */
+  top:  var(--navbar-height);  /* Coloca la barra justo debajo de la navbar */
+  left: 0;  /* Alineación izquierda */
+  z-index: 999;  /* Asegura que la barra esté sobre el contenido */
 }
+
+
 
 /* Sección Hero */
 .hero {
@@ -22,7 +28,7 @@
 
 .hero h1 {
   font-size: 3rem;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 /* Estilos para la imagen */
@@ -112,6 +118,7 @@
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 1.5rem;
+    margin-top: 70px;
     margin-bottom: 20px;
   }.barraazul{
     height: 6.5rem;

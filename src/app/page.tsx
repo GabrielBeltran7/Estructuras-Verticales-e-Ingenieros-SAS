@@ -14,9 +14,11 @@ export default function Home() {
 
   return (
     <>
+    <Navbar />
+    
       <main className={styles.container}>
-        <Navbar />
-        <div className={styles.barraazul}></div>
+      <div className={styles.barraazul}></div>
+        
         <header id="inicio" className={styles.hero}>
           <h1 className={styles.titulo}>
           Servicio de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia..
