@@ -9,7 +9,6 @@ import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSe
 import Footer from "./Components/Footer/Footer"
 import ImageCarousel from "./Components/ImageCarousel/ImageCarousel"
 
-const img = "https://res.cloudinary.com/dby8lelja/image/upload/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp";
 
 export default function Home() {
 
