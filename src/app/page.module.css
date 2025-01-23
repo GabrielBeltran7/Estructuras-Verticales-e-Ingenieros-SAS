@@ -16,72 +16,6 @@
 }
 
 
-
-/* Sección Hero */
-.hero {
-  background-color: #D3D3D3;
-  color: black;
-  padding: 40px 20px;
-  text-align: center;
- 
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-top: 60px;
-}
-
-/* Estilos para la imagen */
-.heroImageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-  border-radius: 35px;
-}
-
-.heroImage {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.heroparrafo {
-  margin-top: 60px;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  text-align: justify;
-}
-.parrafodos {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  text-align: justify;
-  margin-bottom: 10px;
-  margin: 0px 0px 20px 0px ;
-
-}.heroparrafouno{
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  text-align: justify;
- 
-  margin: 0px 0px 20px 0px ;
-
-}
-
-.hero .cta {
- 
-  background-color: #FFCC00;
-  color: black;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.hero .cta:hover {
-  background-color: #ffff00
-}
-
 /* Sección de Servicios */
 .services {
   padding: 20px;
@@ -96,7 +30,7 @@
   padding: 40px;
   border-radius: 10px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 2px;
 }
 
 .ctaHeading {
@@ -122,7 +56,6 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: bold;
-
 }
 
 .ctaButton:hover {
@@ -132,41 +65,21 @@
 
 /* Estilos Responsivos */
 @media screen and (max-width: 768px) {
-  .hero h1 {
-    font-size: 1.5rem;
-    margin-top: 70px;
-    margin-bottom: 20px;
-  }.barraazul{
+ .barraazul{
     height: 5.6rem;
   }
 
-  .heroparrafo {
-    margin-top: 60px;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    text-align: justify;
-    
-  }.heroparrafouno{
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    text-align: justify;
-    margin-bottom: 20px;
-  }
 
   .services h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-
-  .hero {
+  }.ctaContainer {
+    background-color: white;
+    color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
     text-align: center;
-    
+    margin-top: -20px;
   }
 
-  
-  .heroImageContainer {
-    
-    width: 350px;
-    
-  }
 }

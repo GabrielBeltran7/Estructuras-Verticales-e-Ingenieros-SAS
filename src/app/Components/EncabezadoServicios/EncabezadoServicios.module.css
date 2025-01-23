@@ -1,0 +1,81 @@
+/* Estilos para el Encabezado de Servicios */
+.hero {
+    background-color: #D3D3D3;
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+  }.color {
+    @font-face {
+      font-family: 'Century Gothic';
+      src: url('https://fonts.gstatic.com/s/centurygothic/v18/XpDYvQhyU4nD5tSfCbirnK3T.ttf') format('truetype');
+    }
+  
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+    color: #007BFF;
+  }
+  
+  .titulo {
+    margin-top: 60px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .textContainer {
+    
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: justify;
+  }
+  
+  .textContainer p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .subparrafo {
+    font-size: 1.2rem;
+    
+    color: black;
+  }
+  
+  .cta {
+    display: inline-block;
+    background-color: #FFCC00;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .cta:hover {
+    background-color: #ffff00;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .titulo {
+        margin-top: 60px;
+        font-size: 1.9rem;
+        font-weight: bold;
+        
+      }
+  
+    .textContainer {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  
+    .textContainer p {
+      font-size: 1.1rem;
+    }
+  }
+  
