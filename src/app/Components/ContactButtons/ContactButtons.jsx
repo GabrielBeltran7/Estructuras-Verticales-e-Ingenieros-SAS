@@ -7,7 +7,7 @@ export default function ContactButtons() {
   
   return (
     <div className={styles.contactContainer}>
-      <a href={`tel:+57${phoneNumber}`} className={styles.contactButton}>
+      <a href={`tel:${phoneNumber}`} className={styles.contactButton}>
         <FaPhoneAlt className={styles.icon} />
         Llamar
       </a>

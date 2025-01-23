@@ -22,7 +22,7 @@ const ImageCarousel = () => {
 
   // Agregar autoplay
   useEffect(() => {
-    const interval = setInterval(nextImage, 10000); // Cambiar la imagen cada 3 segundos
+    const interval = setInterval(nextImage, 5000); // Cambiar la imagen cada 3 segundos
 
     // Limpiar el intervalo cuando el componente se desmonte
     return () => clearInterval(interval);
