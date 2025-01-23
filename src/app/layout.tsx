@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Expertos en Interventoría y Supervisión de Obras | Estructuras Verticales e Ingenieros SAS",
     description: "Brindamos interventoría, supervisión de obras y diseño estructural con un enfoque en calidad y cumplimiento de las normativas NSR-10 en Colombia.",
-    url: "https://www.estructurasverticaleseingenieros.com/",
+    url: "https://estructuras-verticales-e-ingenieros-sas-five.vercel.app",
     siteName: "Estructuras Verticales e Ingenieros SAS",
     images: [
       {

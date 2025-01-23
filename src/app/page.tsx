@@ -19,7 +19,7 @@ export default function Home() {
         <Navbar />
         <header id="inicio" className={styles.hero}>
           <h1 className={styles.titulo}>
-          Expertos en Interventoría y Supervisión de Obras. Estructuras Verticales e Ingenieros SAS
+          Servicio de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia..
           </h1>
           <div className={styles.heroImageContainer}>
             <Image
