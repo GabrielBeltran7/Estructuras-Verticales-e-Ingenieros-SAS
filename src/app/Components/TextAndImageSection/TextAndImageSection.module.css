@@ -38,10 +38,12 @@
   background-color: #FFCC00;
   color: black;
   padding: 15px 30px;
-  text-decoration: none;
+ 
   border-radius: 5px;
   font-weight: bold;
   margin-top: 20px;
+}.contacto:hover{
+  background-color: #ffff00;
 }
 
 /* Contenedor de la imagen */

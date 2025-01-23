@@ -58,9 +58,12 @@
   line-height: 1.6rem;
   text-align: justify;
   margin-bottom: 10px;
+  margin: 0px 0px 20px 0px ;
+
 }
 
 .hero .cta {
+ 
   background-color: #FFCC00;
   color: black;
   padding: 15px 30px;
@@ -70,7 +73,7 @@
 }
 
 .hero .cta:hover {
-  background-color: #e79a4d;
+  background-color: #ffff00
 }
 
 /* Sección de Servicios */
@@ -113,10 +116,11 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: bold;
+
 }
 
 .ctaButton:hover {
-  background-color: #FFAA00;
+  background-color: #ffff00;
 }
 
 

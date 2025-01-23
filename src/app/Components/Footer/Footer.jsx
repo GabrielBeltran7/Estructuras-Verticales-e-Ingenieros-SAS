@@ -9,9 +9,19 @@ const Footer = () => {
                 <div className={styles.about}>
                     <h3 className={styles.heading}>Ubicacion</h3>
 
-                    <p className={styles.contactInfo}>Dirección: Ibague, Tolima, Colombia</p>
+                    <p className={styles.contactInfo}>Direccion: KR 7 B BIS # 126 - 36</p>
+                    <p className={styles.contactInfo}>Bogota, Colombia</p>
                     <p className={styles.contactInfo}>Teléfono: +57 3229578866</p>
-                    <p className={styles.contactInfo}>Email: gabrielbeltranmedina@gmail.com</p>
+                    <p className={styles.contactInfo}>Email: estructurasverticalessas@gmail.com</p>
+
+                </div>
+                <div className={styles.about}>
+                    <h3 className={styles.heading}>Sucursal</h3>
+
+                    <p className={styles.contactInfo}>Direccion: Barrio El salado</p>
+                    <p className={styles.contactInfo}>Ciudad: Ibague, Tolima, Colombia</p>
+                    <p className={styles.contactInfo}>Teléfono: +57 3229578866</p>
+                    <p className={styles.contactInfo}>Email: estructurasverticalessas@gmail.com</p>
 
                 </div>
                 <div className={styles.links}>
