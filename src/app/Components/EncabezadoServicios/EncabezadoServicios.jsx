@@ -6,7 +6,7 @@ const EncabezadoServicios = () => {
   return (
     <header id="inicio" className={styles.hero}>
       <h1 className={styles.titulo}>
-        Servicio de Interventoría, Supervisión de Obras y Diseño Estructural en Colombia.
+        Servico de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia.
       </h1>
       <ImageCarousel />
       <div className={styles.textContainer}>
