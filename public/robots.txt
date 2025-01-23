@@ -1,9 +1,3 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://estructuras-verticales-e-ingenieros-sas-five.vercel.app
-
-# Sitemaps
-Sitemap: https://estructuras-verticales-e-ingenieros-sas-five.vercel.app/sitemap.xml
