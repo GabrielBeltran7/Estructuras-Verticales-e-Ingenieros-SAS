@@ -46,12 +46,18 @@
   border-radius: 8px;
 }
 
-.hero p {
+.heroparrafo {
   margin-top: 60px;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.subparrafo {
   font-size: 1.2rem;
   line-height: 1.6rem;
   text-align: justify;
+  margin-bottom: 10px;
 }
 
 .hero .cta {
