@@ -8,8 +8,9 @@ import Image from "next/image";
 import ContactButtons from "./Components/ContactButtons/ContactButtons";
 import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSection';
 import Footer from "./Components/Footer/Footer"
+import ImageCarousel from "./Components/ImageCarousel/ImageCarousel"
 
-const img = "https://res.cloudinary.com/dby8lelja/image/upload/v1737496234/Estructuras%20Verticales%20e%20Ingenieros%20SAS/servicio_de_interventoria_supervision_de_obras_y_dise%C3%B1o_estructural_hnmfth.webp";
+const img = "https://res.cloudinary.com/dby8lelja/image/upload/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp";
 
 export default function Home() {
 
@@ -17,23 +18,12 @@ export default function Home() {
     <>
       <main className={styles.container}>
         <Navbar />
+        <div className={styles.barraazul}></div>
         <header id="inicio" className={styles.hero}>
           <h1 className={styles.titulo}>
           Servicio de Interventoria, Supervisión de Obras y Diseño Estructural en Colombia..
           </h1>
-          <div className={styles.heroImageContainer}>
-            <Image
-              src={img}
-              alt="Servicio de Interventoría, Supervisión de Obras y Diseño Estructural en Colombia"
-              width={400}
-              height={300}
-              priority
-              className="heroImage"
-              quality={75}
-
-            />
-          </div>
-
+          <ImageCarousel/>
           <p>
             En Estructuras Verticales e Ingenieros SAS, nos especializamos en ofrecer soluciones integrales para la interventoría y supervisión de obras,
             así como en el diseño y fabricación de montajes estructurales. Además, somos expertos en la elaboración de pliegos de condiciones,
@@ -59,6 +49,7 @@ export default function Home() {
         <section id="faq" className={styles.faq}>
           <FaqSection />
         </section>
+        
 
         <div className={styles.ctaContainer}>
           <h2 className={styles.ctaHeading}>¡Transforma tu proyecto con nosotros hoy mismo!</h2>

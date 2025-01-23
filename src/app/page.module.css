@@ -1,20 +1,23 @@
 /* Contenedor principal */
 .container {
   font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+  
   box-sizing: border-box;
   width: 100%;
-  margin: 0 auto;
+  
+}.barraazul {
+  background-color: #007BFF;
+  
+  height: 4.5rem;
 }
 
 /* Sección Hero */
 .hero {
-  background-color: #007BFF;
-  color: white;
+  background-color: #D3D3D3;
+  color: black;
   padding: 40px 20px;
   text-align: center;
-  margin-top: 20px;
+ 
 }
 
 .hero h1 {
@@ -28,6 +31,7 @@
   justify-content: center;
   align-items: center;
   margin: 20px auto;
+  border-radius: 35px;
 }
 
 .heroImage {
@@ -37,6 +41,7 @@
 }
 
 .hero p {
+  margin-top: 60px;
   margin-bottom: 30px;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -108,12 +113,14 @@
   .hero h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+  }.barraazul{
+    height: 6.5rem;
   }
 
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: white; 
+    color: black; 
     line-height: 1.6rem;
 
   }
@@ -125,11 +132,13 @@
 
   .hero {
     text-align: center;
-    margin-top: 35px;
+    
   }
 
-  .heroImage {
-    width: 100%;
-    height: auto;
+  
+  .heroImageContainer {
+    
+    width: 350px;
+    
   }
 }

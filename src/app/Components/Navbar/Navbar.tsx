@@ -36,7 +36,9 @@ const Navbar = () => {
         <li>
           <Link href="#contacto" className={styles.navLink} onClick={closeMenu}>Contacto</Link>
         </li>
+        
       </ul>
+      
 
       {/* Menú Hamburguesa (Solo en Móvil) */}
       <div className={styles.hamburger} onClick={toggleMenu}>
@@ -44,6 +46,7 @@ const Navbar = () => {
         <div className={menuOpen ? styles.open : ''}></div>
         <div className={menuOpen ? styles.open : ''}></div>
       </div>
+      
     </nav>
   );
 };

@@ -1,0 +1,108 @@
+/* ImageCarousel.module.css */
+.carouselContainer {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imageWrapper {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 900px;  /* Ajusta el tamaño máximo para escritorios grandes */
+    height: 600px;  /* Ajusta la altura para escritorios grandes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Asegura que las imágenes cubran el área sin deformarse */
+    transition: opacity 0.5s ease;
+  }
+  
+  .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prevButton {
+    
+    color: #007BFF;
+    background-color: #D3D3D3;
+    font-size: 5rem;
+    border: 0;
+  }
+  
+  .nextButton {
+    color: #007BFF;
+    background-color: #D3D3D3;
+    font-size: 5rem;
+    border: 0;
+  }
+  
+  /* Agregar transición de opacidad para imágenes */
+  .carousel .imageWrapper img {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Media query para pantallas más pequeñas (móviles) */
+  @media (max-width: 768px) {
+    .carouselContainer {
+      width: 100%;  /* Usa un poco más de espacio en pantallas pequeñas */
+      height: 100%;  /* Reduce la altura en pantallas pequeñas */
+      
+    }
+  
+    .imageWrapper {
+      max-width: 100%;  /* Usa el 100% del ancho en pantallas pequeñas */
+      height: 250px;  /* Reduce la altura en pantallas pequeñas */
+      width: 500px;
+      margin-top: 20px;
+    }
+  
+    .button {
+      font-size: 18px;  /* Reduce el tamaño de los botones en pantallas pequeñas */
+      padding: 8px;  /* Reduce el padding para botones en pantallas pequeñas */
+    }.prevButton {
+        
+        color: #007BFF;
+        background-color: #D3D3D3;
+        font-size: 2.5rem;
+        border: 0;
+      }
+      
+      .nextButton {
+       
+        color: #007BFF;
+        background-color: #D3D3D3;
+        font-size: 2.5rem;
+        border: 0;
+      }
+  }
+  
