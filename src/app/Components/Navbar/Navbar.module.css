@@ -17,18 +17,21 @@
 
 /* Agrega espacio superior al contenido para que no quede oculto detrás de la navbar */
 
-
 .empresa {
-  font-size: 1.5rem;
-  color: #007BFF;
+  @font-face {
+    font-family: 'Century Gothic';
+    src: url('https://fonts.gstatic.com/s/centurygothic/v18/XpDYvQhyU4nD5tSfCbirnK3T.ttf') format('truetype');
+  }
+
+  font-family: 'Century Gothic', sans-serif;
   font-weight: bold;
-  letter-spacing: 0.5px; 
-  font-family: 'Century Gothic', sans-serif; 
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  color: #007BFF;
 }
 
-/* ========================== */
-/*  ESTILOS DEL MENÚ (ESCRITORIO) */
-/* ========================== */
+
+
 .navLinks {
   list-style: none;
   display: flex;
@@ -87,7 +90,7 @@
 }
 @media screen and (max-width: 768px) {
   .empresa {
-    font-size: 1.5rem; /* Reducido en móviles (16px) */
+    font-size: 1.2rem; /* Reducido en móviles (16px) */
     align-items: center;
   }
 }
