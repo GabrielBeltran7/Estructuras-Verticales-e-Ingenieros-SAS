@@ -19,12 +19,11 @@
 
 
 .empresa {
-  font-size: 1.4rem;
-  color: black;
+  font-size: 1.5rem;
+  color: #007BFF;
   font-weight: bold;
-  letter-spacing: 0.5px;
-  right: 50rem;
- 
+  letter-spacing: 0.5px; 
+  font-family: 'Century Gothic', sans-serif; 
 }
 
 /* ========================== */
