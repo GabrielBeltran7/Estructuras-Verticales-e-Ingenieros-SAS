@@ -11,16 +11,16 @@ const Footer = () => {
 
                     <p className={styles.contactInfo}>Direccion: KR 7 B BIS # 126 - 36</p>
                     <p className={styles.contactInfo}>Bogota, Colombia</p>
-                    <p className={styles.contactInfo}>Teléfono: +57 3229578866</p>
+                    <p className={styles.contactInfo}>Teléfono: +57 3132581599</p>
                     <p className={styles.contactInfo}>Email: estructurasverticalessas@gmail.com</p>
 
                 </div>
                 <div className={styles.about}>
                     <h3 className={styles.heading}>Sucursal</h3>
 
-                    <p className={styles.contactInfo}>Direccion: Barrio El salado</p>
+                    <p className={styles.contactInfo}>Direccion: Kr 12 # 172- 60 barrio el pais</p>
                     <p className={styles.contactInfo}>Ciudad: Ibague, Tolima, Colombia</p>
-                    <p className={styles.contactInfo}>Teléfono: +57 3229578866</p>
+                    <p className={styles.contactInfo}>Teléfono: +57 3132581599</p>
                     <p className={styles.contactInfo}>Email: estructurasverticalessas@gmail.com</p>
 
                 </div>
