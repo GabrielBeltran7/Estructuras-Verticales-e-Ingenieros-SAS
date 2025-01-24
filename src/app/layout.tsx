@@ -29,19 +29,20 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
-    
   },
   robots: "index, follow",
 };
-
-
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
-    <head>
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+       
+
         {/* Google Tag Manager */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-961248864"></script>
         <script
@@ -54,6 +55,20 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Datos estructurados de Schema.org para el logo */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Estructuras Verticales e Ingenieros SAS",
+              "url": "https://www.estructurasverticales.com/",
+              "logo": "https://www.estructurasverticales.com/favicon.ico",
+            }),
+          }}
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
@@ -61,3 +76,4 @@ export default function RootLayout({
     </html>
   );
 }
+
