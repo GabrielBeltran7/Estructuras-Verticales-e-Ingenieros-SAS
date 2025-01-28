@@ -11,12 +11,12 @@ import "swiper/css/autoplay";
 // Datos de los servicios
 const services = [
   {
-    title: "Interventoría de Obras",
+    title: "Interventoria de Obras",
     description: "En nuestra empresa ofrecemos servicios de Interventoría de Obras para garantizar la ejecución adecuada de proyectos de construcción. Nos encargamos de supervisar y controlar todas las fases del proceso constructivo, asegurando el cumplimiento de los plazos, presupuestos y calidad especificada. Con nuestra experiencia, brindamos confianza a nuestros clientes, minimizando riesgos y maximizando la eficiencia en cada obra.",
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490968/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Interventoria_de_Obras_xaegll.webp",
   },
   {
-    title: "Impermeabilizaciones",
+    title: "Impermeabilizacion",
     description: "Ofrecemos soluciones profesionales de impermeabilización para proteger tus estructuras de filtraciones y humedad. Utilizamos materiales de alta calidad como membranas asfálticas, acrílicas y poliuretánicas según cada necesidad. Nuestro equipo experto garantiza un trabajo eficiente y duradero en techos, terrazas, muros y cimentaciones. Prevenimos filtraciones, moho y deterioro estructural con técnicas avanzadas. Confía en nosotros para mantener tus espacios seguros y en perfectas condiciones.",
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737576553/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Impermeabilizaciones_zkuz51.webp",
   },
@@ -36,7 +36,7 @@ const services = [
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Dise%C3%B1o_y_Fabricaci%C3%B3n_de_Montajes_Estructurales_wvnte9.webp",
   },
   {
-    title: "Diseños Estructurales",
+    title: "Diseño Estructura de Obras",
     description: "Nos especializamos en Diseños Estructurales personalizados para cada tipo de proyecto. Creamos soluciones innovadoras y eficientes que aseguran la estabilidad y seguridad de las construcciones. Utilizamos tecnología avanzada y un equipo de expertos para desarrollar diseños precisos. Nos comprometemos a cumplir con los estándares de calidad y normativas vigentes. Garantizamos un trabajo integral que respalde la durabilidad y rendimiento de cada estructura.",
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Dise%C3%B1os_Estructurales_qwi7ih.webp",
   },
@@ -46,7 +46,7 @@ const services = [
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Recibo_de_Zonas_Comunes_PH_dutlzr.webp",
   },
   {
-    title: "Informes Técnicos",
+    title: "Informes Técnicos de Obras",
     description: "Ofrecemos la elaboración de Informes Técnicos precisos y detallados para cada proyecto. Nuestro equipo se encarga de recopilar y analizar toda la información relevante. Redactamos informes claros que facilitan la toma de decisiones informadas. Aseguramos que cada informe cumpla con los estándares de calidad y normativa. Brindamos soporte a nuestros clientes con documentación técnica confiable y profesional.",
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Informes_T%C3%A9cnicos_wevtom.webp",
   },
