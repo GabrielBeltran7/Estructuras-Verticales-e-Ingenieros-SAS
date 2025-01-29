@@ -20,7 +20,7 @@ export default function Home() {
         </section>
         <ServicesCard />
         <div>
-          {/* Usamos el componente TextAndImageSection */}
+          
           <TextAndImageSection />
         </div>
         <section id="faq" className={styles.faq}>
