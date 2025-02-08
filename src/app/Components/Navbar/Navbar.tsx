@@ -36,7 +36,11 @@ const Navbar = () => {
         <li>
           <Link href="#contacto" className={styles.navLink} onClick={closeMenu}>Contacto</Link>
         </li>
-        
+        <Link href="https://sistema-estructuras-verticalese-ingenierossas.vercel.app/" legacyBehavior>
+  <a className={styles.navLink} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+    Acceso Corporativo
+  </a>
+</Link>
       </ul>
       
 
