@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
-import styles from "./ImageCarousel.module.css";
+import React, { useEffect, useState } from "react";
+import Head from "next/head";
 import Image from "next/image";
+import styles from "./ImageCarousel.module.css";
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
   const images = [
-    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_600/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
   ];
@@ -27,32 +28,39 @@ const ImageCarousel = () => {
   }, []);
 
   return (
-    <div className={styles.carouselContainer}>
-      <div className={styles.carousel}>
-        <button className={styles.prevButton} onClick={() => setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))}>
-          ❮
-        </button>
-        <div className={styles.imageWrapper}>
-          <Image
-            src={images[currentIndex]}
-            alt={`Imagen ${currentIndex + 1}`}
-            fill
-            priority={currentIndex === 0} // Carga la primera imagen con prioridad
-            sizes="(max-width: 768px) 100vw, 900px"
-            fetchPriority={currentIndex === 0 ? "high" : "low"}
-            className={styles.image}
-          />
+    <>
+      {/* ✅ PRELOAD de la primera imagen para mejorar LCP */}
+      <Head>
+        <link rel="preload" as="image" href={images[0]} />
+      </Head>
+
+      <div className={styles.carouselContainer}>
+        <div className={styles.carousel}>
+          <button className={styles.prevButton} onClick={() => setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))}>
+            ❮
+          </button>
+          <div className={styles.imageWrapper}>
+            <Image
+              src={images[currentIndex]}
+              alt={`Imagen ${currentIndex + 1}`}
+              width={isMobile ? 600 : 900} // Ancho optimizado en móviles
+              height={isMobile ? 300 : 500} // Altura optimizada en móviles
+              priority={currentIndex === 0} // La primera imagen se carga de inmediato
+              fetchPriority="high"
+              decoding="sync" // 🔥 Fuerza renderizado inmediato
+              className={styles.image}
+            />
+          </div>
+          <button className={styles.nextButton} onClick={() => setCurrentIndex((prev) => (prev + 1) % images.length)}>
+            ❯
+          </button>
         </div>
-        <button className={styles.nextButton} onClick={() => setCurrentIndex((prev) => (prev + 1) % images.length)}>
-          ❯
-        </button>
       </div>
-    </div>
+    </>
   );
 };
 
 export default ImageCarousel;
-
 
 
 
