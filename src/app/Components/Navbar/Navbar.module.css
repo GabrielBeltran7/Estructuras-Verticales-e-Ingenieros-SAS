@@ -85,13 +85,13 @@
 }
 @media screen and (max-width: 768px) {
   .empresa {
-    font-size: 1.2rem; /* Reducido en móviles (16px) */
+    font-size: 1rem; /* Reducido en móviles (16px) */
     align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
   .navbar {
-    font-size: 1.2rem;
+    font-size: 1rem;
     align-items: center;
   }
 }

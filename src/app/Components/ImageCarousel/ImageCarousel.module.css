@@ -1,108 +1,107 @@
-/* ImageCarousel.module.css */
 .carouselContainer {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .imageWrapper {
-    margin-top: 50px;
-    width: 100%;
-    max-width: 900px;  /* Ajusta el tamaño máximo para escritorios grandes */
-    height: 600px;  /* Ajusta la altura para escritorios grandes */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 1rem;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Asegura que las imágenes cubran el área sin deformarse */
-    transition: opacity 0.5s ease;
-  }
-  
-  .button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .prevButton {
-    
-    color: #007BFF;
-    background-color: #D3D3D3;
-    font-size: 5rem;
-    border: 0;
-  }
-  
-  .nextButton {
-    color: #007BFF;
-    background-color: #D3D3D3;
-    font-size: 5rem;
-    border: 0;
-  }
-  
-  /* Agregar transición de opacidad para imágenes */
-  .carousel .imageWrapper img {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-  }
-  
-  @keyframes fadeIn {
-    to {
+  width: 90%;
+  max-width: 1200px; /* Ajusta el tamaño máximo */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.2rem;
+}
+
+.imageWrapper img {
+  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@keyframes fadeIn {
+  to {
       opacity: 1;
-    }
   }
-  
-  /* Media query para pantallas más pequeñas (móviles) */
-  @media (max-width: 768px) {
-    .carouselContainer {
-      width: 100%;  /* Usa un poco más de espacio en pantallas pequeñas */
-      height: 100%;  /* Reduce la altura en pantallas pequeñas */
-      
-    }
-  
-    .imageWrapper {
-      max-width: 100%;  /* Usa el 100% del ancho en pantallas pequeñas */
-      height: 250px;  /* Reduce la altura en pantallas pequeñas */
-      width: 500px;
+}
+
+/* Botones de navegación */
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Botón anterior */
+.prevButton {
+  left: 10px;
+  color: #007BFF;
+  background-color: #D3D3D3;
+  font-size: 3rem;
+  border: 0;
+}
+
+/* Botón siguiente */
+.nextButton {
+  right: 10px;
+  color: #007BFF;
+  background-color: #D3D3D3;
+  font-size: 3rem;
+  border: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .carouselContainer {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .imageWrapper {
+      max-width: 100%;
+      height: 250px; /* Reducir altura en móviles */
       margin-top: 20px;
-    }
-  
-    .button {
-      font-size: 18px;  /* Reduce el tamaño de los botones en pantallas pequeñas */
-      padding: 8px;  /* Reduce el padding para botones en pantallas pequeñas */
-    }.prevButton {
-        
-        color: #007BFF;
-        background-color: #D3D3D3;
-        font-size: 2.5rem;
-        border: 0;
-      }
-      
-      .nextButton {
-       
-        color: #007BFF;
-        background-color: #D3D3D3;
-        font-size: 2.5rem;
-        border: 0;
-      }
   }
+
+  .button {
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+  }
+
+  .prevButton,
+  .nextButton {
+      font-size: 2rem;
+  }
+}
+
   

@@ -7,17 +7,16 @@ const EncabezadoServicios = () => {
   return (
     <header id="inicio" className={styles.hero}>
       <h1 className={styles.titulo}>
-        Servico de Interventoria, Supervisión de Obras y Diseño Estructural en
-        Colombia.
+      Interventoría y Supervisión de Obras | Diseño y Montaje Estructural
       </h1>
       <ImageCarousel />
       <div className={styles.textContainer}>
         <p>
-          En{" "}
+          En {" "}
           <strong className={styles.color}>
-            Estructuras Verticales e Ingenieros SAS
+            Estructuras Verticales e Ingenieros SAS,{" "}
           </strong>
-          , nos especializamos en ofrecer soluciones integrales para la
+           nos especializamos en ofrecer soluciones integrales para la
           interventoría y supervisión de obras, así como en el diseño y
           fabricación de montajes estructurales.
         </p>
