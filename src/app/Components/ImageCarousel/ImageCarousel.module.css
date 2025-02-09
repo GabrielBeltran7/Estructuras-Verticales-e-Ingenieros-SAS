@@ -48,7 +48,7 @@
     margin: 0 auto; /* Asegurar centrado horizontal */
   }.mobileImage
   {
-background-color: red;
+background-color: rgba(255, 0, 0, 0);
   }
 }
 
