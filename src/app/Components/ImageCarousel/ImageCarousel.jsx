@@ -36,11 +36,10 @@ const ImageCarousel = () => {
           <Image
             src={images[currentIndex]}
             alt={`Imagen ${currentIndex + 1}`}
-            width={isMobile ? 320 : 900}
-            height={isMobile ? 180 : 550}
-            priority={!isMobile && currentIndex === 0}
-            sizes="(max-width: 768px) 320px, 900px"
-            fetchPriority={isMobile ? "low" : "high"}
+            fill
+            priority={currentIndex === 0} // Carga la primera imagen con prioridad
+            sizes="(max-width: 768px) 100vw, 900px"
+            fetchPriority={currentIndex === 0 ? "high" : "low"}
             className={styles.image}
           />
         </div>
@@ -53,6 +52,7 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
 
 
 
