@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';  
 import styles from './ImageCarousel.module.css';
 import Image from "next/image";
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "https://res.cloudinary.com/dby8lelja/image/upload/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
-  
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
   ];
 
   const nextImage = () => {
@@ -21,7 +22,6 @@ const ImageCarousel = () => {
 
   useEffect(() => {
     const interval = setInterval(nextImage, 5000); 
-
     return () => clearInterval(interval);
   }, []);
 
@@ -31,11 +31,15 @@ const ImageCarousel = () => {
         <button className={styles.prevButton} onClick={prevImage}>❮</button>
         <div className={styles.imageWrapper}>
           <Image
-             src={images[currentIndex]}
-             alt={`Imagen ${currentIndex + 1}`}
-             width={900} 
-             height={550}
-             className={styles.image}
+            src={images[currentIndex]}
+            alt={`Imagen ${currentIndex + 1}`}
+            width={900} 
+            height={550}
+            priority={currentIndex === 0} // La primera imagen se carga antes
+            placeholder="blur" 
+            blurDataURL={images[currentIndex]} // Optimización con Cloudinary
+            fetchPriority="high" // Le da más importancia en la carga
+            className={styles.image}
           />
         </div>
         <button className={styles.nextButton} onClick={nextImage}>❯</button>
@@ -45,4 +49,5 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
 
