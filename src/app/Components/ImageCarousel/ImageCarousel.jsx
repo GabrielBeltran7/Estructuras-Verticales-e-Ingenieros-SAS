@@ -50,7 +50,7 @@ const ImageCarousel = () => {
             <Image
               src={images[currentIndex]}
               alt={`Imagen ${currentIndex + 1}`}
-              width={isMobile ? 200 : 900} // 📌 Tamaño dinámico según el viewport
+              width={isMobile ? 90 : 900} // 📌 Tamaño dinámico según el viewport
               height={isMobile ? 90 : 550}
               priority={true} // 🔥 Fuerza la carga inmediata en LCP
               className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`} // 📌 Estilos distintos para móviles
