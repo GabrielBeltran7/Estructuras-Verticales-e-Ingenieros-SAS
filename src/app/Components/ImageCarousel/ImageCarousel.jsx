@@ -47,14 +47,13 @@ const ImageCarousel = () => {
           </button>
           <div className={styles.imageWrapper}>
             <Image
-              src={images[currentIndex]}
-              alt={`Imagen descriptiva ${currentIndex + 1}`}
-              width={isMobile ? 400 : 900}
-              height={isMobile ? 180 : 550}
-              priority={currentIndex === 0}
-              loading={currentIndex === 0 ? "eager" : "lazy"}
-              decoding={currentIndex === 0 ? "sync" : "async"}
-              className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`}
+            src={images[currentIndex]}
+            alt={`Imagen descriptiva ${currentIndex + 1}`}
+            width={isMobile ? 400 : 900}
+            height={isMobile ? 180 : 550}
+            priority={true} // 🔥 Esto evita `lazy-loading`
+            decoding="sync" // 📌 Asegura carga rápida
+            className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`}
             />
           </div>
           <button
@@ -71,17 +70,6 @@ const ImageCarousel = () => {
 
 export default ImageCarousel;
 
-
-
-
-
-
-
-
-
-
-
-
 // import React, { useEffect, useState } from "react";
 // import Head from "next/head";
 // import Image from "next/image";
@@ -92,9 +80,9 @@ export default ImageCarousel;
 //   const [isMobile, setIsMobile] = useState(false);
 
 //   const images = [
-//     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
-//     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
-//     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
+//     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80,dpr_auto/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
+//     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80,dpr_auto/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
+//     "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80,dpr_auto/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
 //   ];
 
 //   useEffect(() => {
@@ -113,7 +101,6 @@ export default ImageCarousel;
 
 //   return (
 //     <>
-//       {/* ✅ PRELOAD de la imagen principal */}
 //       <Head>
 //         <link rel="preload" as="image" href={images[0]} />
 //       </Head>
@@ -133,11 +120,13 @@ export default ImageCarousel;
 //           <div className={styles.imageWrapper}>
 //             <Image
 //               src={images[currentIndex]}
-//               alt={`Imagen ${currentIndex + 1}`}
-//               width={isMobile ? 400 : 900} // 📌 Tamaño dinámico según el viewport
+//               alt={`Imagen descriptiva ${currentIndex + 1}`}
+//               width={isMobile ? 400 : 900}
 //               height={isMobile ? 180 : 550}
-//               priority={true} // 🔥 Fuerza la carga inmediata en LCP
-//               className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`} // 📌 Estilos distintos para móviles
+//               priority={currentIndex === 0}
+//               loading={currentIndex === 0 ? "eager" : "lazy"}
+//               decoding={currentIndex === 0 ? "sync" : "async"}
+//               className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`}
 //             />
 //           </div>
 //           <button
@@ -153,6 +142,8 @@ export default ImageCarousel;
 // };
 
 // export default ImageCarousel;
+
+
 
 
 
