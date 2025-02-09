@@ -53,7 +53,7 @@ const ImageCarousel = () => {
               height={isMobile ? 180 : 550}
               priority={currentIndex === 0}
               loading={currentIndex === 0 ? "eager" : "lazy"}
-              decoding="async"
+              decoding={currentIndex === 0 ? "sync" : "async"}
               className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`}
             />
           </div>
