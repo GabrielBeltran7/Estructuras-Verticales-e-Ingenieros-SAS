@@ -18,11 +18,6 @@
 /* Agrega espacio superior al contenido para que no quede oculto detrás de la navbar */
 
 .empresa {
-  @font-face {
-    font-family: 'Century Gothic';
-    src: url('https://fonts.gstatic.com/s/centurygothic/v18/XpDYvQhyU4nD5tSfCbirnK3T.ttf') format('truetype');
-  }
-
   font-family: 'Century Gothic', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;

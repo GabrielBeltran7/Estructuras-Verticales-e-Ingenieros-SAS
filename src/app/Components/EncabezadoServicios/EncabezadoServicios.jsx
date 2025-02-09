@@ -42,7 +42,7 @@ const EncabezadoServicios = () => {
           Nos enorgullece ofrecer informes técnicos detallados que facilitan la
           toma de decisiones informadas, brindando a nuestros clientes la
           confianza de que sus proyectos cumplen no solo con los más altos
-          estándares de calidad, sino también con las
+          estándares de calidad, sino también con las{' '}
           <Link href="https://www.minvivienda.gov.co" legacyBehavior>
             <a
               target="_blank"
