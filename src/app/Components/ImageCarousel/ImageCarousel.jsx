@@ -8,9 +8,9 @@ const ImageCarousel = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const images = [
-    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_500,q_75/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
-    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_75/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
-    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_75/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
   ];
 
   useEffect(() => {
@@ -36,20 +36,30 @@ const ImageCarousel = () => {
 
       <div className={styles.carouselContainer}>
         <div className={styles.carousel}>
-          <button className={styles.prevButton} onClick={() => setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))}>
+          <button
+            className={styles.prevButton}
+            onClick={() =>
+              setCurrentIndex((prev) =>
+                prev === 0 ? images.length - 1 : prev - 1
+              )
+            }
+          >
             ❮
           </button>
           <div className={styles.imageWrapper}>
             <Image
               src={images[currentIndex]}
               alt={`Imagen ${currentIndex + 1}`}
-              width={isMobile ? 500 : 900} // 🔥 Tamaño reducido en móviles
-              height={isMobile ? 280 : 500} // 🔥 Proporción optimizada
-              priority={true} // 🔥 Fuerza carga inmediata
-              className={styles.image}
+              width={isMobile ? 400 : 900} // 📌 Tamaño dinámico según el viewport
+              height={isMobile ? 180 : 550}
+              priority={true} // 🔥 Fuerza la carga inmediata en LCP
+              className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`} // 📌 Estilos distintos para móviles
             />
           </div>
-          <button className={styles.nextButton} onClick={() => setCurrentIndex((prev) => (prev + 1) % images.length)}>
+          <button
+            className={styles.nextButton}
+            onClick={() => setCurrentIndex((prev) => (prev + 1) % images.length)}
+          >
             ❯
           </button>
         </div>
@@ -59,6 +69,7 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
 
 
 

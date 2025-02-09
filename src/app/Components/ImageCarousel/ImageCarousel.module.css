@@ -44,8 +44,11 @@
 
   .imageWrapper {
     width: 100vw; 
-    height: 25vh; 
+    height: 25vh; /* Altura según lo solicitado */
     margin: 0 auto; /* Asegurar centrado horizontal */
+  }.mobileImage
+  {
+background-color: red;
   }
 }
 
