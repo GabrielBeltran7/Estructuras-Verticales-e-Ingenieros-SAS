@@ -5,8 +5,8 @@ import styles from "./ImageCarousel.module.css";
 
 const images = [
   "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
-  "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
-  "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_80/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
+  "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_400,q_80/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
+  "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_400,q_80/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
 ];
 
 const ImageCarousel = () => {
@@ -30,9 +30,8 @@ const ImageCarousel = () => {
   return (
     <>
       <Head>
-        {/* Precarga de las dos primeras imágenes para mejorar LCP */}
+        {/* Precarga solo de la primera imagen para mejorar LCP */}
         <link rel="preload" as="image" href={images[0]} />
-        <link rel="preload" as="image" href={images[1]} />
       </Head>
       <div className={styles.carouselContainer}>
         <div className={styles.carousel}>
@@ -48,10 +47,11 @@ const ImageCarousel = () => {
             <Image
               src={images[currentIndex]}
               alt={`Imagen ${currentIndex + 1}`}
-              width={isMobile ? 400 : 900}
-              height={isMobile ? 180 : 550}
+              width={isMobile ? 300 : 900} // Reducción de tamaño en móviles
+              height={isMobile ? 135 : 550}
               priority={currentIndex === 0} // Solo la primera imagen tiene prioridad
-              decoding="sync" // Decodificación más rápida
+              decoding="sync"
+              loading={currentIndex === 0 ? "eager" : "lazy"} // Lazy solo en imágenes secundarias
               className={`${styles.image} ${isMobile ? styles.mobileImage : ""}`}
             />
           </div>
@@ -68,6 +68,8 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
+
 
 
 
