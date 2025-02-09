@@ -8,9 +8,9 @@ const ImageCarousel = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const images = [
-    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_600/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
-    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
-    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_500,q_75/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_75/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
+    "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_900,q_75/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
   ];
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const ImageCarousel = () => {
 
   return (
     <>
-      {/* ✅ PRELOAD de la primera imagen para mejorar LCP */}
+      {/* ✅ PRELOAD de la imagen principal */}
       <Head>
         <link rel="preload" as="image" href={images[0]} />
       </Head>
@@ -43,11 +43,9 @@ const ImageCarousel = () => {
             <Image
               src={images[currentIndex]}
               alt={`Imagen ${currentIndex + 1}`}
-              width={isMobile ? 600 : 900} // Ancho optimizado en móviles
-              height={isMobile ? 300 : 500} // Altura optimizada en móviles
-              priority={currentIndex === 0} // La primera imagen se carga de inmediato
-              fetchPriority="high"
-              decoding="sync" // 🔥 Fuerza renderizado inmediato
+              width={isMobile ? 500 : 900} // 🔥 Tamaño reducido en móviles
+              height={isMobile ? 280 : 500} // 🔥 Proporción optimizada
+              priority={true} // 🔥 Fuerza carga inmediata
               className={styles.image}
             />
           </div>
@@ -61,6 +59,7 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
 
 
 
