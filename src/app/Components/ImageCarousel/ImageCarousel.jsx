@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ImageCarousel.module.css';
 import Image from 'next/image';
+import placeholderImage from './images/placeholder.jpg'; // Importa la imagen placeholder
+
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,18 +41,19 @@ const ImageCarousel = () => {
       <div className={styles.carousel}>
         <button className={styles.prevButton} onClick={prevImage}>❮</button>
         <div className={styles.imageWrapper}>
-          <Image
-            src={images[currentIndex].src}
-            alt={images[currentIndex].alt}
-            width={900}
-            height={600}
-            className={styles.image}
-            loading={currentIndex === 0 ? "eager" : "lazy"}
-            placeholder="blur"
-            blurDataURL="/images/placeholder.jpg" // Reemplaza con la URL de tu placeholder
-            objectFit="cover"
-            priority={currentIndex === 0} // Prioriza la carga de la primera imagen
-          />
+        <Image
+                        src={images[currentIndex].src}
+                        alt={images[currentIndex].alt}
+                        width={130}
+                        height={86}
+                        className={styles.image}
+                        loading={currentIndex === 0 ? "eager" : "lazy"}
+                        placeholder="blur"
+                        blurDataURL={placeholderImage.src} // Usa placeholderImage.src
+                        objectFit="cover"
+                        priority={currentIndex === 0}
+                        sizes="100vw"
+                    />
         </div>
         <button className={styles.nextButton} onClick={nextImage}>❯</button>
       </div>
