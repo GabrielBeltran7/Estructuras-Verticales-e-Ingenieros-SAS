@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import styles from './ImageCarousel.module.css';
 import Image from 'next/image';
@@ -5,12 +6,20 @@ import Image from 'next/image';
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "https://res.cloudinary.com/dby8lelja/image/upload/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
-    "https://res.cloudinary.com/dby8lelja/image/upload/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
-    "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
+    {
+      src: "https://res.cloudinary.com/dby8lelja/image/upload/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
+      alt: "Imagen 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dby8lelja/image/upload/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
+      alt: "Imagen 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
+      alt: "Imagen 3",
+    },
   ];
 
-  // Función para cambiar la imagen
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -21,11 +30,8 @@ const ImageCarousel = () => {
     );
   };
 
-  // Agregar autoplay
   useEffect(() => {
-    const interval = setInterval(nextImage, 5000); // Cambiar la imagen cada 3 segundos
-
-    // Limpiar el intervalo cuando el componente se desmonte
+    const interval = setInterval(nextImage, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -35,11 +41,15 @@ const ImageCarousel = () => {
         <button className={styles.prevButton} onClick={prevImage}>❮</button>
         <div className={styles.imageWrapper}>
           <Image
-             src={images[currentIndex]}
-             alt={`Imagen ${currentIndex + 1}`}
-             width={900}  // Ajusta según el tamaño deseado
-             height={600} // Ajusta según el tamaño deseado
-             className={styles.image}
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
+            width={900}
+            height={600}
+            className={styles.image}
+            loading={currentIndex === 0 ? "eager" : "lazy"} // Carga la primera imagen de inmediato
+            placeholder="blur" // O usa una imagen de baja resolución como placeholder
+            blurDataURL="/images/placeholder.jpg" // URL de la imagen placeholder
+            objectFit="cover" // Ajusta la imagen al contenedor
           />
         </div>
         <button className={styles.nextButton} onClick={nextImage}>❯</button>
@@ -54,6 +64,7 @@ export default ImageCarousel;
 
 // import React, { useState, useEffect } from 'react';
 // import styles from './ImageCarousel.module.css';
+// import Image from 'next/image';
 
 // const ImageCarousel = () => {
 //   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,7 +85,7 @@ export default ImageCarousel;
 //     );
 //   };
 
-//   // Agregar autoplay
+//   // Agregar autoplayoptim
 //   useEffect(() => {
 //     const interval = setInterval(nextImage, 5000); // Cambiar la imagen cada 3 segundos
 
@@ -87,10 +98,12 @@ export default ImageCarousel;
 //       <div className={styles.carousel}>
 //         <button className={styles.prevButton} onClick={prevImage}>❮</button>
 //         <div className={styles.imageWrapper}>
-//           <img
-//             src={images[currentIndex]}
-//             alt={`Imagen ${currentIndex + 1}`}
-//             className={styles.image}
+//           <Image
+//              src={images[currentIndex]}
+//              alt={`Imagen ${currentIndex + 1}`}
+//              width={900}  // Ajusta según el tamaño deseado
+//              height={600} // Ajusta según el tamaño deseado
+//              className={styles.image}
 //           />
 //         </div>
 //         <button className={styles.nextButton} onClick={nextImage}>❯</button>
@@ -100,3 +113,4 @@ export default ImageCarousel;
 // };
 
 // export default ImageCarousel;
+
