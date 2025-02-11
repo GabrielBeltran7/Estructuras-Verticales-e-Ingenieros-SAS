@@ -55,7 +55,7 @@ const EncabezadoServicios = () => {
         </p>
       </div>
       <a href="tel:3132581599" className={styles.cta}>
-        Llámanos ahora.
+        Llámanos ahora
       </a>
     </header>
   );
