@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
       description: data.description,
       images: [
         {
-          url: data.image, // ✅ Ahora usa la imagen definida en el MDX
+          url: data.image, // ✅ 
           width: 800,
           height: 533,
           alt: data.title,
@@ -78,7 +78,7 @@ export default async function BlogPost({ params }) {
           loading="eager"  // ✅ No espera a que cargue el resto del contenido
           fetchPriority="high"  // ✅ Corregido: la P en mayúscula
           className={styles.contentimgen} 
-        />
+        />     
       )}
 
       <p className={styles.date}>{data.date}</p>
