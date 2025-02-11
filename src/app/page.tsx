@@ -2,7 +2,7 @@
 import styles from "./page.module.css";
 
 import Navbar from "./Components/Navbar/Navbar";
-import ServicesList from "./Components/Card/ServicesList";
+import ServicesList from "./Components/Card/ServicesList"
 
 import FaqSection from "./Components/FAQSection/FaqSection";
 import ContactButtons from "./Components/ContactButtons/ContactButtons";
