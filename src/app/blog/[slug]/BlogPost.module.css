@@ -75,7 +75,7 @@
 }
 
 /* Imágenes */
-.content img {
+.contentimgen {
     display: block;
     max-width: 100%;
     height: auto;
@@ -85,9 +85,7 @@
     transition: transform 0.3s ease; /* Efecto de hover */
 }
 
-.content img:hover {
-    transform: scale(1.05); /* Efecto al pasar el mouse */
-}
+
 
 /* Enlaces */
 .content a {
@@ -158,7 +156,7 @@
     }
 
     /* Imágenes más pequeñas con márgenes reducidos */
-    .content img {
+    .contentimgen {
         margin: 20px auto;
         border-radius: 10px;
     }
