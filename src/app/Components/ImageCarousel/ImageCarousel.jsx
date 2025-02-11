@@ -41,19 +41,20 @@ const ImageCarousel = () => {
       <div className={styles.carousel}>
         <button className={styles.prevButton} onClick={prevImage}>❮</button>
         <div className={styles.imageWrapper}>
-          <Image
-            src={images[currentIndex].src}
-            alt={images[currentIndex].alt}
-            width={300} // Incrementar tamaño para LCP
-            height={200} // Incrementar tamaño para LCP
-            className={styles.image}
-            loading={currentIndex === 0 ? "eager" : "lazy"} // No lazy load en la primera imagen
-            placeholder="blur"
-            blurDataURL={placeholderImage.src} // Imagen de baja calidad para carga previa
-            priority={currentIndex === 0} // Priorizar la primera imagen para mejorar el LCP
-            sizes="(max-width: 768px) 100vw, 50vw" // Optimizar para diferentes dispositivos
-            style={{ objectFit: "cover" }} // Evitar distorsión
-          />
+        <Image
+  src={images[currentIndex].src}
+  alt={images[currentIndex].alt}
+  width={600} // Asegurar tamaño adecuado
+  height={400}
+  className={styles.image}
+  loading={currentIndex === 0 ? "eager" : "lazy"} // Primera imagen carga rápido
+  priority={currentIndex === 0} // 🔥 Primera imagen se carga antes que el resto
+  placeholder="blur"
+  blurDataURL={placeholderImage.src}
+  sizes="(max-width: 768px) 100vw, 50vw"
+  style={{ objectFit: "cover" }}
+/>
+
         </div>
         <button className={styles.nextButton} onClick={nextImage}>❯</button>
       </div>
