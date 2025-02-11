@@ -1,4 +1,4 @@
-import ServicesCard from "./servicescard.jsx"
+import ServicesCard from "./ServicesCard.jsx"
 
 const services = [
     {

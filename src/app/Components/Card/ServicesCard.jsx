@@ -29,7 +29,7 @@ export default function servicescard({ services }) {
           <Card
             sx={{
               width: 345,
-              height: 521,
+              height: 520,
               display: "flex",
               flexDirection: "column",
               boxShadow: 3,
