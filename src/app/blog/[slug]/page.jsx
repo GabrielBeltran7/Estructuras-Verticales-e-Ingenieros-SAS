@@ -8,7 +8,7 @@ import Image from "next/image";
 import styles from "./BlogPost.module.css";
 
 // URL fija de la imagen
-const imginterventoriaobras = "https://res.cloudinary.com/dby8lelja/image/upload/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp";
+const imginterventoriaobras = "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_600/interventoria_y_supervision_de_obras_pkb2ck.webp";
 
 // Función para obtener el contenido del blog de manera asíncrona
 async function getBlogPost(slug) {
@@ -78,7 +78,7 @@ export default async function BlogPost({ params }) {
         width={800} 
         height={533} 
         priority 
-        className={styles.contentimgen}
+        className={styles.contentimgen} 
       />
 
       <p className={styles.date}>{data.date}</p>
@@ -170,7 +170,7 @@ export default async function BlogPost({ params }) {
 //         width={800} 
 //         height={533} 
 //         priority 
-//         className={styles.contentImage}
+//         className={styles.contentimgen}
 //       />
 
 //       <p className={styles.date}>{data.date}</p>
@@ -181,12 +181,3 @@ export default async function BlogPost({ params }) {
 //     </main>
 //   );
 // }
-
-
-
-
-
-
-
-
-
