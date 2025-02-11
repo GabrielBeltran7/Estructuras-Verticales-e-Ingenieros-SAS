@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function servicescard({ services }) {
+export default function ServicesCard({ services }) {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
