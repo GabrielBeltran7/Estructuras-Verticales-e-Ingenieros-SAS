@@ -2,7 +2,8 @@
 import styles from "./page.module.css";
 
 import Navbar from "./Components/Navbar/Navbar";
-import ServicesCard from "./Components/Card/Servicescard";
+import ServicesList from "./Components/Card/ServicesList";
+
 import FaqSection from "./Components/FAQSection/FaqSection";
 import ContactButtons from "./Components/ContactButtons/ContactButtons";
 import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSection';
@@ -18,7 +19,7 @@ export default function Home() {
         <section id="servicios" className={styles.services}>
           <h2>Nuestros Servicios</h2>
         </section>
-        <ServicesCard />
+        <ServicesList />
         <div>
           
           <TextAndImageSection />
