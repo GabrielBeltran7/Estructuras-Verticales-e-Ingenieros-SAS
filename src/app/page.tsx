@@ -10,7 +10,7 @@ import EncabezadoServicios from "./Components/EncabezadoServicios/EncabezadoServ
 export default function Home() {
   return (
     <>
-  <Navbar />
+   <Navbar />
       <main className={styles.container}>
         <div className={styles.barraazul}></div>
         <EncabezadoServicios />
