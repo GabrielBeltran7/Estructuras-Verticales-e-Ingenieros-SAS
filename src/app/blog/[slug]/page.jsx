@@ -1,4 +1,3 @@
-
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -7,7 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import styles from "./BlogPost.module.css";
 
-// URL fija de la imagen
+// ✅ Imagen optimizada con Cloudinary (formato WebP, calidad auto, ancho 600px)
 const imginterventoriaobras = "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_600/interventoria_y_supervision_de_obras_pkb2ck.webp";
 
 // Función para obtener el contenido del blog de manera asíncrona
@@ -20,11 +19,11 @@ async function getBlogPost(slug) {
   return matter(fileContent);
 }
 
-// ✅ CORREGIDO: generateMetadata ahora es una función async con `params` await
+// ✅ generateMetadata optimizado (sin cambios en lógica)
 export async function generateMetadata({ params }) {
   if (!params) return {};
 
-  const { slug } = await params; // 👈 Importante: await params
+  const { slug } = await params;
   if (!slug) return {};
 
   const post = await getBlogPost(slug);
@@ -48,18 +47,18 @@ export async function generateMetadata({ params }) {
           url: imginterventoriaobras,
           width: 800,
           height: 533,
-          alt: "Interventoría de Obras en Construcción",
+          alt: "Interventoría de Obras",
         },
       ],
     },
   };
 }
 
-// ✅ CORREGIDO: Ahora `params` se obtiene con `await`
+// ✅ BlogPost optimizado (sin cambiar la lógica de carga de datos)
 export default async function BlogPost({ params }) {
   if (!params) return notFound();
 
-  const { slug } = await params; // 👈 Importante: await params
+  const { slug } = await params;
   if (!slug) return notFound();
 
   const post = await getBlogPost(slug);
@@ -71,13 +70,15 @@ export default async function BlogPost({ params }) {
     <main className={styles.blogContainer}>
       <h1 className={styles.title}>{data.title}</h1>
 
-      {/* Imagen fija */}
+      {/* ✅ Imagen optimizada para mejorar LCP */}
       <Image 
         src={imginterventoriaobras} 
         alt="Interventoría de Obras en Construcción" 
         width={800} 
         height={533} 
-        priority 
+        priority={true}  // ✅ Carga la imagen antes que otras
+        loading="eager"  // ✅ No espera a que cargue el resto del contenido
+        fetchPriority="high"  // ✅ Corregido: la P en mayúscula
         className={styles.contentimgen} 
       />
 
@@ -89,6 +90,7 @@ export default async function BlogPost({ params }) {
     </main>
   );
 }
+
 
 
 // import fs from "fs";
