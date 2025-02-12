@@ -62,14 +62,17 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <Link href="https://www.estructurasverticales.com/blog/" legacyBehavior>
+        <Link
+          href="/https://www.estructurasverticales.com/blog/"
+          legacyBehavior
+        >
           <a
             className={styles.navLink}
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
           >
-            Blog{" "}
+            Blog
           </a>
         </Link>
       </ul>

@@ -30,6 +30,8 @@ const Footer = () => {
                         <li className={styles.listItem}><a className={styles.link} href="#">Inicio</a></li>
                         <li className={styles.listItem}><a className={styles.link} href="#servicios">Servicios</a></li>
                         <li className={styles.listItem}><a className={styles.link} href="#contacto">Contacto</a></li>
+                        <li className={styles.listItem}><a className={styles.link} href="/blog">Blog</a></li>
+
 
                     </ul>
                 </div>
