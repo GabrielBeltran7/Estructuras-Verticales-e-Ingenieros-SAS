@@ -20,8 +20,7 @@ export default function ContactButtons() {
       <a
         href={`tel:${phoneNumber}`}
         className={styles.contactButton}
-        onClick={() => handleConversion("AW-961248864/X4F-CJSZ7ZQaEOD8rcoD")} // Reemplaza con el ID de conversión para llamadas
-      >
+        onClick={() => handleConversion("AW-961248864/X4F-CJSZ7ZQaEOD8rcoD")}       >
         <FaPhoneAlt className={styles.icon} />
         Llamar
       </a>
@@ -30,7 +29,7 @@ export default function ContactButtons() {
         className={styles.contactButton}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => handleConversion("AW-961248864/ER-dCK3k95QaEOD8rcoD")} // ID de conversión para WhatsApp
+        onClick={() => handleConversion("AW-961248864/ER-dCK3k95QaEOD8rcoD")} 
       >
         <FaWhatsapp className={styles.icon} />
         WhatsApp

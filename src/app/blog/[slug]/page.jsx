@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import styles from "./BlogPost.module.css";
+import ContactButtons from "@/app/Components/ContactButtons/ContactButtons";
+import Navbar from "@/app/Components/Navbar/Navbar";
 
 
 // Función para obtener el contenido del blog de manera asíncrona
@@ -65,6 +67,9 @@ export default async function BlogPost({ params }) {
   const { content, data } = post;
 
   return (
+  
+   <>
+   <Navbar />
     <main className={styles.blogContainer}>
       <h1 className={styles.title}>{data.title}</h1>
 
@@ -88,5 +93,7 @@ export default async function BlogPost({ params }) {
         <MDXRemote source={content} />
       </article>
     </main>
+    <ContactButtons/>
+    </>
   );
 }

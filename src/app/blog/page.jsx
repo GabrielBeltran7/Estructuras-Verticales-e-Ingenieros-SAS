@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Blog.module.css";
 import Navbar from "../Components/Navbar/Navbar";
+import ContactButtons from "../Components/ContactButtons/ContactButtons";
 
 
 export default function Blog() {
@@ -40,13 +41,10 @@ export default function Blog() {
   }, []);
 
   return (
-    
     <>
-   
   <Navbar/>
  
-
-    <main className={styles.container}>
+ <main className={styles.container}>
       <h1 className={styles.title}>Nuestro Blog</h1>
 
       {/* 📌 Imagen destacada ocupa todo el ancho */}
@@ -124,7 +122,11 @@ export default function Blog() {
  
     </main>
     
+
+    <ContactButtons/>
+
  
+
 
     </>
     
