@@ -2,7 +2,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5rem;
+  margin-top: 65px;
   text-align: center;
 }.readMore{
   
@@ -207,12 +207,18 @@
 
   .container {
     max-width: 100%;
-    padding: 2rem;
+    margin-top: 40px;
+   
   }
 
   .featuredContent {
     font-size: 1rem;
     padding: 10px;
+  } .title {
+    font-size: 1.2rem; /* Reducir el tamaño de fuente */
+    line-height: 1.2; /* Reducir espacio entre líneas */
+    margin-bottom: 0.5rem; /* Menos espacio debajo del título */
+    padding-bottom: 3px; /* Ajuste del subrayado */
   }
 }
 
