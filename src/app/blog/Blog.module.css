@@ -172,12 +172,12 @@
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 95%;
+    max-width: 100%;
     padding: 3rem; /* Reducir padding para evitar espacios vacíos */
   }
 
   .blogLayout {
-    max-width: 95%;
+    max-width: 100%;
   }
 
   .postGrid {
