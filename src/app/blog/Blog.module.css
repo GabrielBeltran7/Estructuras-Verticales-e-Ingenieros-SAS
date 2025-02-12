@@ -4,6 +4,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}.readMore{
+  
+  margin: 2px;
+  padding: 3px;
+  color: #0070f3;
+
 }
 
 /* ✅ Título del blog */
@@ -17,61 +23,66 @@
   padding-bottom: 5px;
 }
 
-/* ✅ Estructura en dos columnas */
-.blogLayout {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-}
-
-/* 📌 Columna principal */
-.mainContent {
-  display: flex;
-  flex-direction: column;
-}
-
-/* 📌 Post destacado */
+/* 📌 Imagen destacada */
 .featuredPost {
-  position: relative;
   width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin-bottom: 2rem;
+ 
 }
 
 .featuredImage {
   width: 100%;
   height: auto;
-  max-height: 350px; /* ✅ Controlamos la altura para evitar desbordamientos */
-  object-fit: cover;
+  border-radius: 8px;
 }
 
 .featuredContent {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10%;
+  left: 5%;
   background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
+  font-size: 1.8rem;
 }
 
 .featuredLink {
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: white;
   text-decoration: none;
-  color: #fff;
+  font-weight: bold;
 }
 
+/* 📌 Contenedor inferior (PostGrid 2/3 + Sidebar 1/3) */
+.blogLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 📌 PostGrid (2/3 del ancho) */
 .postGrid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🔥 2 posts por fila */
+  gap: 1.5rem;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+
 }
 
+/* 📌 Sidebar (1/3 del ancho) */
+.sidebar {
+  flex: 1;
+  max-width: 30%;
+}
+
+/* 📌 Post Item */
 .postItem {
   background: #f9f9f9;
   padding: 1rem;
@@ -85,46 +96,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* 📌 Imágenes de los posts */
 .postImage {
   width: 100%;
   height: auto;
-  max-height: 250px; /* ✅ Evita imágenes desproporcionadas */
+  max-height: 250px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.postContent {
-  margin-top: 10px;
-  text-align: left;
-}
-
-.postLink {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
-.readMore {
-  display: inline-block;
-  margin-top: 5px;
-  color: #0070f3;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.readMore:hover {
-  color: #0056b3;
-}
-
-/* 📌 Barra lateral */
-.sidebar {
-  display: flex;
-  flex-direction: column;
- 
-}
+/* 📌 Sidebar */
 .sidebarTitle {
   font-size: 1.5rem;
   font-weight: bold;
@@ -151,8 +131,8 @@
 }
 
 .sidebarImage {
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 60px;
   object-fit: cover;
   border-radius: 5px;
   margin-right: 10px;
@@ -174,59 +154,34 @@
   color: #0056b3;
 }
 
-/* ✅ RESPONSIVIDAD */
+/* ✅ Responsividad */
 @media (max-width: 1024px) {
   .blogLayout {
-    grid-template-columns: 1fr; /* ✅ Pasa a una sola columna */
+    flex-direction: column;
+    align-items: center;
   }
 
   .sidebar {
+    max-width: 100%;
     margin-top: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }.sidebarTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .featuredImage {
-    max-height: 250px; /* ✅ Reduce la altura en dispositivos más pequeños */
   }
 
   .postGrid {
-    grid-template-columns: 1fr; /* ✅ Un post por fila en móviles */
-  }
-
-  .sidebarImage {
-    width: 80px;
-    height: 60px;
+    grid-template-columns: 1fr;
   }
 }
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.5rem;
+@media (max-width: 768px) {
+  .blogLayout {
+    flex-direction: column;
+    align-items: center;
+  }.featuredLink {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+ 
   }
 
-  .featuredImage {
-    max-height: 200px; /* ✅ Aún más pequeña en pantallas muy reducidas */
-  }
-
-  .postLink {
-    font-size: 1rem;
-  }
-
-  .readMore {
-    font-size: 0.9rem;
-  }
+ 
 }
 

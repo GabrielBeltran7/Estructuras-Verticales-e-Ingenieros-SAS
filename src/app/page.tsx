@@ -7,6 +7,7 @@ import ContactButtons from "./Components/ContactButtons/ContactButtons";
 import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSection';
 import Footer from "./Components/Footer/Footer"
 import EncabezadoServicios from "./Components/EncabezadoServicios/EncabezadoServicios"
+
 export default function Home() {
   return (
     <>

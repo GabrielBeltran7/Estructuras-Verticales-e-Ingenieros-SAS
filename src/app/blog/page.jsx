@@ -1,4 +1,4 @@
-"use client"; // ✅ Hace que este componente sea cliente
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -10,23 +10,20 @@ export default function Blog() {
   const [featuredPost, setFeaturedPost] = useState(null);
   const [sidePosts, setSidePosts] = useState([]);
 
-  // ✅ Cargar los posts desde la API del servidor
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch("/blog/api/posts"); // 🔥 Hacemos la petición
+        const response = await fetch("/blog/api/posts");
         const data = await response.json();
         setPosts(data);
 
-        // ✅ Seleccionar un post aleatorio para el destacado
         if (data.length > 0) {
           setFeaturedPost(data[Math.floor(Math.random() * data.length)]);
         }
 
-        // ✅ Seleccionar 3 posts aleatorios para la barra lateral
         if (data.length > 3) {
           const shuffled = [...data].sort(() => 0.5 - Math.random());
-          setSidePosts(shuffled.slice(0, 8));
+          setSidePosts(shuffled.slice(0, 9));
         } else {
           setSidePosts(data);
         }
@@ -42,54 +39,56 @@ export default function Blog() {
     <main className={styles.container}>
       <h1 className={styles.title}>Nuestro Blog</h1>
 
-      {/* ✅ Estructura en dos columnas (adaptable) */}
+      {/* 📌 Imagen destacada ocupa todo el ancho */}
+      {featuredPost && (
+        <div className={styles.featuredPost}>
+          <Image
+            src={featuredPost.image}
+            alt={featuredPost.title}
+            width={1200}
+            height={500}
+            className={styles.featuredImage}
+            priority
+          />
+          <div className={styles.featuredContent}>
+            <Link href={`/blog/${featuredPost.slug}`} className={styles.featuredLink}>
+              {featuredPost.title}
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* 📌 PostGrid (2/3) y Sidebar (1/3) debajo */}
       <div className={styles.blogLayout}>
-        {/* 📌 Columna principal */}
-        <div className={styles.mainContent}>
-          {featuredPost && (
-            <div className={styles.featuredPost}>
+        {/* 📌 PostGrid a la izquierda */}
+        <ul className={styles.postGrid}>
+          {posts.slice(0, 6).map((post) => (
+            <li key={post.slug} className={styles.postItem}>
               <Image
-                src={featuredPost.image}
-                alt={featuredPost.title}
-                width={1200}
-                height={500}
-                className={styles.featuredImage}
-                priority
+                src={post.image}
+                alt={post.title}
+                width={400}
+                height={250}
+                className={styles.postImage}
               />
-              <div className={styles.featuredContent}>
-                <Link href={`/blog/${featuredPost.slug}`} className={styles.featuredLink}>
-                  {featuredPost.title}
+              <div className={styles.postContent}>
+                <Link href={`/blog/${post.slug}`} className={styles.postLink}>
+                  {post.title}
+                </Link>
+                <Link href={`/blog/${post.slug}`} className={styles.readMore}>
+                <div></div>
+                Leer más →
                 </Link>
                 
+                
+                  
+                
               </div>
-            </div>
-          )}
+            </li>
+          ))}
+        </ul>
 
-<ul className={styles.postGrid}>
-  {posts.slice(0, 8).map((post) => ( // 🔥 Muestra solo los primeros 8 posts
-    <li key={post.slug} className={styles.postItem}>
-      <Image
-        src={post.image}
-        alt={post.title}
-        width={350}
-        height={250}
-        className={styles.postImage}
-      />
-      <div className={styles.postContent}>
-        <Link href={`/blog/${post.slug}`} className={styles.postLink}>
-          {post.title}
-        </Link>
-        <Link href={`/blog/${post.slug}`} className={styles.readMore}>
-          Leer más →
-        </Link>
-      </div>
-    </li>
-  ))}
-</ul>
-
-        </div>
-
-        {/* 📌 Columna lateral con 3 posts */}
+        {/* 📌 Sidebar a la derecha */}
         <aside className={styles.sidebar}>
           <h2 className={styles.sidebarTitle}>Posts Recientes</h2>
           <ul className={styles.sidebarList}>
@@ -98,8 +97,8 @@ export default function Blog() {
                 <Image
                   src={post.image}
                   alt={post.title}
-                  width={100}
-                  height={80}
+                  width={80}
+                  height={60}
                   className={styles.sidebarImage}
                 />
                 <div className={styles.sidebarContent}>
@@ -115,3 +114,4 @@ export default function Blog() {
     </main>
   );
 }
+
