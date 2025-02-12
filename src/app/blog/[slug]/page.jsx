@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import styles from "./BlogPost.module.css";
 
+
 // Función para obtener el contenido del blog de manera asíncrona
 async function getBlogPost(slug) {
   const filePath = path.join(process.cwd(), "src/app/blog/posts", `${slug}.mdx`);

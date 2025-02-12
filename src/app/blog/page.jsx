@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Blog.module.css";
 import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
+
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -44,7 +44,7 @@ export default function Blog() {
     <>
    
   <Navbar/>
-  
+ 
 
     <main className={styles.container}>
       <h1 className={styles.title}>Nuestro Blog</h1>
