@@ -1,3 +1,4 @@
+
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -6,21 +7,20 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import styles from "./BlogPost.module.css";
 
-// Función para obtener el contenido del blog de manera asíncrona
+// Función para obtener el contenido del blog
 async function getBlogPost(slug) {
   const filePath = path.join(process.cwd(), "src/app/blog/posts", `${slug}.mdx`);
-
   if (!fs.existsSync(filePath)) return null;
 
   const fileContent = fs.readFileSync(filePath, "utf-8");
   return matter(fileContent);
 }
 
-// ✅ generateMetadata optimizado (sin cambios en lógica)
+// Metadata
 export async function generateMetadata({ params }) {
   if (!params) return {};
 
-  const { slug } = await params;
+  const { slug } = params;
   if (!slug) return {};
 
   const post = await getBlogPost(slug);
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
       description: data.description,
       images: [
         {
-          url: data.image, // ✅ 
+          url: data.image, 
           width: 800,
           height: 533,
           alt: data.title,
@@ -51,14 +51,11 @@ export async function generateMetadata({ params }) {
   };
 }
 
-// ✅ BlogPost optimizado (sin cambiar la lógica de carga de datos)
+// BlogPost
 export default async function BlogPost({ params }) {
-  if (!params) return notFound();
+  if (!params?.slug) return notFound();
 
-  const { slug } = await params;
-  if (!slug) return notFound();
-
-  const post = await getBlogPost(slug);
+  const post = await getBlogPost(params.slug);
   if (!post) return notFound();
 
   const { content, data } = post;
@@ -67,18 +64,19 @@ export default async function BlogPost({ params }) {
     <main className={styles.blogContainer}>
       <h1 className={styles.title}>{data.title}</h1>
 
-      {/* ✅ Ahora la imagen viene del MDX */}
+      {/* ✅ Evita errores de carga en Image */}
       {data.image && (
         <Image 
           src={data.image} 
-          alt={data.title} 
+          alt={data.title || "Imagen del blog"} 
           width={800} 
           height={533} 
-          priority={true}  // ✅ Carga la imagen antes que otras
-          loading="eager"  // ✅ No espera a que cargue el resto del contenido
-          fetchPriority="high"  // ✅ Corregido: la P en mayúscula
+          priority
+          loading="eager"
+          fetchPriority="high"
           className={styles.contentimgen} 
-        />     
+          unoptimized={true} // ✅ Desactiva optimización de Next.js si da error
+        />
       )}
 
       <p className={styles.date}>{data.date}</p>
@@ -97,9 +95,6 @@ export default async function BlogPost({ params }) {
 // import { MDXRemote } from "next-mdx-remote/rsc";
 // import Image from "next/image";
 // import styles from "./BlogPost.module.css";
-
-// // ✅ Imagen optimizada con Cloudinary (formato WebP, calidad auto, ancho 600px)
-// const imginterventoriaobras = "https://res.cloudinary.com/dby8lelja/image/upload/f_auto,q_auto,w_600/interventoria_y_supervision_de_obras_pkb2ck.webp";
 
 // // Función para obtener el contenido del blog de manera asíncrona
 // async function getBlogPost(slug) {
@@ -136,10 +131,10 @@ export default async function BlogPost({ params }) {
 //       description: data.description,
 //       images: [
 //         {
-//           url: imginterventoriaobras,
+//           url: data.image, // ✅ 
 //           width: 800,
 //           height: 533,
-//           alt: "Interventoría de Obras",
+//           alt: data.title,
 //         },
 //       ],
 //     },
@@ -162,17 +157,19 @@ export default async function BlogPost({ params }) {
 //     <main className={styles.blogContainer}>
 //       <h1 className={styles.title}>{data.title}</h1>
 
-//       {/* ✅ Imagen optimizada para mejorar LCP */}
-//       <Image 
-//         src={imginterventoriaobras} 
-//         alt="Interventoría de Obras en Construcción" 
-//         width={800} 
-//         height={533} 
-//         priority={true}  // ✅ Carga la imagen antes que otras
-//         loading="eager"  // ✅ No espera a que cargue el resto del contenido
-//         fetchPriority="high"  // ✅ Corregido: la P en mayúscula
-//         className={styles.contentimgen} 
-//       />
+//       {/* ✅ Ahora la imagen viene del MDX */}
+//       {data.image && (
+//         <Image 
+//           src={data.image} 
+//           alt={data.title} 
+//           width={800} 
+//           height={533} 
+//           priority={true}  // ✅ Carga la imagen antes que otras
+//           loading="eager"  // ✅ No espera a que cargue el resto del contenido
+//           fetchPriority="high"  // ✅ Corregido: la P en mayúscula
+//           className={styles.contentimgen} 
+//         />     
+//       )}
 
 //       <p className={styles.date}>{data.date}</p>
 
