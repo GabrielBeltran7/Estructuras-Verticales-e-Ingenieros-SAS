@@ -72,8 +72,8 @@ export default async function BlogPost({ params }) {
         <Image 
           src={data.image} 
           alt={data.title} 
-          width={800} 
-          height={533} 
+          width={600} 
+          height={350} 
           priority={true}  // ✅ Carga la imagen antes que otras
           loading="eager"  // ✅ No espera a que cargue el resto del contenido
           fetchPriority="high"  // ✅ Corregido: la P en mayúscula
