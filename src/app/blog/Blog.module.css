@@ -123,8 +123,8 @@
 .sidebar {
   display: flex;
   flex-direction: column;
+ 
 }
-
 .sidebarTitle {
   font-size: 1.5rem;
   font-weight: bold;
@@ -188,6 +188,11 @@
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
+  }.sidebarTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
   }
 
   .title {

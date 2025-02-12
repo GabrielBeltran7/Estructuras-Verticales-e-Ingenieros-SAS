@@ -26,7 +26,7 @@ export default function Blog() {
         // ✅ Seleccionar 3 posts aleatorios para la barra lateral
         if (data.length > 3) {
           const shuffled = [...data].sort(() => 0.5 - Math.random());
-          setSidePosts(shuffled.slice(0, 3));
+          setSidePosts(shuffled.slice(0, 8));
         } else {
           setSidePosts(data);
         }
@@ -65,27 +65,28 @@ export default function Blog() {
             </div>
           )}
 
-          <ul className={styles.postGrid}>
-            {posts.map((post) => (
-              <li key={post.slug} className={styles.postItem}>
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={350}
-                  height={250}
-                  className={styles.postImage}
-                />
-                <div className={styles.postContent}>
-                  <Link href={`/blog/${post.slug}`} className={styles.postLink}>
-                    {post.title}
-                  </Link>
-                  <Link href={`/blog/${post.slug}`} className={styles.readMore}>
-                    Leer más →
-                  </Link>
-                </div>
-              </li>
-            ))}
-          </ul>
+<ul className={styles.postGrid}>
+  {posts.slice(0, 8).map((post) => ( // 🔥 Muestra solo los primeros 8 posts
+    <li key={post.slug} className={styles.postItem}>
+      <Image
+        src={post.image}
+        alt={post.title}
+        width={350}
+        height={250}
+        className={styles.postImage}
+      />
+      <div className={styles.postContent}>
+        <Link href={`/blog/${post.slug}`} className={styles.postLink}>
+          {post.title}
+        </Link>
+        <Link href={`/blog/${post.slug}`} className={styles.readMore}>
+          Leer más →
+        </Link>
+      </div>
+    </li>
+  ))}
+</ul>
+
         </div>
 
         {/* 📌 Columna lateral con 3 posts */}
