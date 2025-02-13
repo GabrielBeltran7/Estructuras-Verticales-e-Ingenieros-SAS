@@ -28,7 +28,7 @@ export default function Blog() {
 
         if (data.length > 3) {
           const shuffled = [...data].sort(() => 0.5 - Math.random());
-          setSidePosts(shuffled.slice(0, 9));
+          setSidePosts(shuffled.slice(0, 10));
         } else {
           setSidePosts(data);
         }
