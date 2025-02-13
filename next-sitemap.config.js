@@ -1,6 +1,26 @@
+const fs = require('fs');
+const path = require('path');
+
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.estructurasverticales.com',  // URL con www
-     generateRobotsTxt: true, // Esto genera el robots.txt automáticamente
-    sitemapSize: 7000,  // Puedes ajustar este valor según la cantidad de URLs
-  outDir: './public', // El directorio de salida es 'public'
-  };
+  siteUrl: 'https://www.estructurasverticales.com',
+  generateRobotsTxt: true,
+  generateIndexSitemap: false,
+  sitemapSize: 10000,
+
+  // Agregar manualmente las rutas de los archivos MDX
+  additionalPaths: async (config) => {
+    const blogDir = path.join(process.cwd(), 'src/app/blog/posts'); // Ruta de los MDX
+    const files = fs.readdirSync(blogDir);
+
+    return files
+      .filter(file => file.endsWith('.mdx')) // Filtra solo archivos MDX
+      .map(file => ({
+        loc: `/blog/posts/${file.replace('.mdx', '')}`, // URL de cada post
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: 0.8,
+      }));
+  },
+};
+
