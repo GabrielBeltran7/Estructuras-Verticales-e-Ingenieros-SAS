@@ -6,4 +6,4 @@ Allow: /
 Host: https://www.estructurasverticales.com
 
 # Sitemaps
-Sitemap: https://www.estructurasverticales.com/sitemap.xml
+Sitemap: https://www.estructurasverticales.com/sitemap-new.xml

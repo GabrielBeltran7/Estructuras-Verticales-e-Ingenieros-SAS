@@ -7,20 +7,28 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   sitemapSize: 10000,
+  sitemapBaseFileName: 'sitemap-new', // Nombre del archivo generado
 
-  // Agregar manualmente las rutas de los archivos MDX
-  additionalPaths: async (config) => {
-    const blogDir = path.join(process.cwd(), 'src/app/blog/posts'); // Ruta de los MDX
-    const files = fs.readdirSync(blogDir);
+  additionalPaths: async () => {
+    try {
+      const blogDir = path.join(process.cwd(), 'src/app/blog/posts'); // Ruta donde están los MDX
 
-    return files
-      .filter(file => file.endsWith('.mdx')) // Filtra solo archivos MDX
-      .map(file => ({
-        loc: `/blog/posts/${file.replace('.mdx', '')}`, // URL de cada post
+      if (!fs.existsSync(blogDir)) {
+        console.warn('❗ Advertencia: La carpeta de posts no existe.');
+        return [];
+      }
+
+      const files = fs.readdirSync(blogDir).filter(file => file.endsWith('.mdx'));
+
+      return files.map(file => ({
+        loc: `/blog/posts/${file.replace('.mdx', '')}`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: 0.8,
       }));
+    } catch (error) {
+      console.error('🚨 Error al leer archivos MDX:', error);
+      return [];
+    }
   },
 };
-
