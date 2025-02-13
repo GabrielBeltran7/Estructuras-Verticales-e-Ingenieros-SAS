@@ -1,11 +1,10 @@
 {
-    "headers": [
-      {
-        "source": "/sitemap.xml",
-        "headers": [
-          { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
-        ]
-      }
-    ]
-  }
-  
+  "headers": [
+    {
+      "source": "/(.*).xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=0, stale-while-revalidate=0" }
+      ]
+    }
+  ]
+}
