@@ -7,7 +7,7 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   sitemapSize: 10000,
-  sitemapBaseFileName: 'sitemap-new', // Nombre del archivo generado
+  sitemapBaseFileName: 'sitemap', // Nombre del archivo generado
 
   additionalPaths: async () => {
     try {
@@ -15,17 +15,24 @@ module.exports = {
 
       if (!fs.existsSync(blogDir)) {
         console.warn('❗ Advertencia: La carpeta de posts no existe.');
-        return [];
+        return [
+          { loc: '/', lastmod: new Date().toISOString(), changefreq: 'weekly', priority: 1.0 },
+          { loc: '/blog', lastmod: new Date().toISOString(), changefreq: 'weekly', priority: 0.9 },
+        ];
       }
 
       const files = fs.readdirSync(blogDir).filter(file => file.endsWith('.mdx'));
 
-      return files.map(file => ({
-        loc: `/blog/posts/${file.replace('.mdx', '')}`,
-        lastmod: new Date().toISOString(),
-        changefreq: 'weekly',
-        priority: 0.8,
-      }));
+      return [
+        { loc: '/', lastmod: new Date().toISOString(), changefreq: 'weekly', priority: 1.0 }, // Página principal
+        { loc: '/blog', lastmod: new Date().toISOString(), changefreq: 'weekly', priority: 0.9 }, // Página del blog
+        ...files.map(file => ({
+          loc: `/blog/${file.replace('.mdx', '')}`, // ✅ Eliminamos "/posts/"
+          lastmod: new Date().toISOString(),
+          changefreq: 'weekly',
+          priority: 0.8,
+        })),
+      ];
     } catch (error) {
       console.error('🚨 Error al leer archivos MDX:', error);
       return [];
