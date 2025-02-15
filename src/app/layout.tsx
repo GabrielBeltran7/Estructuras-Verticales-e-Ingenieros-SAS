@@ -210,8 +210,6 @@ export default function RootLayout({
                   "description": "Creación de documentos técnicos y financieros para la contratación y ejecución de proyectos de construcción.",
                   "url": "https://www.estructurasverticales.com"
                 },
-
-
                 {
                   "@type": "Service",
                   "provider": {
