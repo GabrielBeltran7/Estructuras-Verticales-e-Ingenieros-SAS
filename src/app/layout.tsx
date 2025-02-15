@@ -86,7 +86,10 @@ export default function RootLayout({
                     "streetAddress": "KR 7 B BIS # 126 - 36",
                     "addressLocality": "Bogota",
                     "addressRegion": "Cundinamarca",
-                    "addressCountry": "CO",
+                    "addressCountry": {
+                      "@type": "Country",
+                      "name": "Colombia"
+                    },
                     "postalCode": "110611"  
                   },
                   "telephone": "+57 3132581599"
@@ -102,10 +105,15 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO",
+                      "addressCountry": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      },
                       "postalCode": "110611" 
                     },
-                    "telephone": "+57 3132581599"
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+
                   },
                   "name": "Interventoría de Obras",
                   "description": "Supervisión y control de proyectos de construcción para garantizar cumplimiento de normativas, costos y tiempos.",
@@ -117,14 +125,12 @@ export default function RootLayout({
                         "@type": "Service",
                         "name": "Supervisión de Obras",
                         "url": "https://www.estructurasverticales.com",
-                        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
 
                       },
                       {
                         "@type": "Service",
                         "name": "Consultoría de Obras",
                         "url": "https://www.estructurasverticales.com",
-                        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
 
                       }
                     ]
@@ -143,15 +149,19 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO",
+                      "addressCountry": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      },
                       "postalCode": "110611" 
                     },
-                    "telephone": "+57 3132581599"
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+
                   },
                   "name": "Consultoria de Obras",
                   "description": "Asesoría técnica especializada en planificación, ejecución y control de proyectos de construcción.",
-                  "url": "https://www.estructurasverticales.com",
-                  "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+                  "url": "https://www.estructurasverticales.com"
 
                 },
 
@@ -166,15 +176,19 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO",
+                      "addressCountry": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      },
                       "postalCode": "110611" 
                     },
-                    "telephone": "+57 3132581599"
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+
                   },
                   "name": "Impermeabilización",
                   "description": "Protección de estructuras contra filtraciones y humedad con materiales de alta calidad.",
                   "url": "https://www.estructurasverticales.com",
-                  "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
 
                 },
 
@@ -190,15 +204,19 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO",
+                      "addressCountry": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      },
                       "postalCode": "110611" 
                     },
-                    "telephone": "+57 3132581599"
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+
                   },
                   "name": "Supervisión de Obras",
                   "description": "Monitoreo integral de obras desde su inicio hasta su entrega, asegurando altos estándares de calidad.",
-                  "url": "https://www.estructurasverticales.com",
-                  "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+                  "url": "https://www.estructurasverticales.com"
 
                 },
 
@@ -214,15 +232,19 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO",
+                      "addressCountry": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      },
                       "postalCode": "110611" 
                     },
-                    "telephone": "+57 3132581599"
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+
                   },
                   "name": "Elaboración de Pliegos de Condiciones",
                   "description": "Creación de documentos técnicos y financieros para la contratación y ejecución de proyectos de construcción.",
                   "url": "https://www.estructurasverticales.com",
-                  "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
 
                 },
                 {
@@ -236,15 +258,19 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO",
+                      "addressCountry": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      },
                       "postalCode": "110611" 
                     },
-                    "telephone": "+57 3132581599"
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+
                   },
                   "name": "Montaje Estructural",
                   "description": "Diseño y fabricación de montajes estructurales personalizados con materiales de alta calidad.",
                   "url": "https://www.estructurasverticales.com",
-                  "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
 
                 },
                 {
@@ -258,10 +284,15 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO",
+                      "addressCountry": {
+                        "@type": "Country",
+                        "name": "Colombia"
+                      },
                       "postalCode": "110611" 
                     },
-                    "telephone": "+57 3132581599"
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+
                   },
                   "name": "Diseño Estructural",
                   "description": "Desarrollo de diseños estructurales eficientes y seguros, cumpliendo con la normativa NSR-10.",
@@ -273,14 +304,12 @@ export default function RootLayout({
                         "@type": "Service",
                         "name": "Supervisión de Obras",
                         "url": "https://www.estructurasverticales.com",
-                        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
 
                       },
                       {
                         "@type": "Service",
                         "name": "Consultoría de Obras",
                         "url": "https://www.estructurasverticales.com",
-                        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
 
                       }
                     ]
