@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title:
-    "Expertos en Interventoría, Supervisión de Obras y Diseño Estructural en Colombia.",
+    "Consultoría e Interventoría en Obras | Diseño Estructural.",
   description:
     "Brindamos interventoría de obras, supervisión y diseño estructural con enfoque en calidad y cumplimiento de las normativas de construcción en Colombia.",
   keywords:
