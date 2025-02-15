@@ -71,6 +71,7 @@ export default function RootLayout({
 
         {/* Adding structured data for services */}
         <Script
+          id="structured-data-services"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
