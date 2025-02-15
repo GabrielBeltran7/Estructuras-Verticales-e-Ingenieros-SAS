@@ -102,7 +102,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO"
+                      "addressCountry": "CO",
+                      "postalCode": "110611" 
                     },
                     "telephone": "+57 3132581599"
                   },
@@ -142,7 +143,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO"
+                      "addressCountry": "CO",
+                      "postalCode": "110611" 
                     },
                     "telephone": "+57 3132581599"
                   },
@@ -164,7 +166,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO"
+                      "addressCountry": "CO",
+                      "postalCode": "110611" 
                     },
                     "telephone": "+57 3132581599"
                   },
@@ -187,7 +190,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO"
+                      "addressCountry": "CO",
+                      "postalCode": "110611" 
                     },
                     "telephone": "+57 3132581599"
                   },
@@ -210,7 +214,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO"
+                      "addressCountry": "CO",
+                      "postalCode": "110611" 
                     },
                     "telephone": "+57 3132581599"
                   },
@@ -231,7 +236,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO"
+                      "addressCountry": "CO",
+                      "postalCode": "110611" 
                     },
                     "telephone": "+57 3132581599"
                   },
@@ -252,7 +258,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": "CO"
+                      "addressCountry": "CO",
+                      "postalCode": "110611" 
                     },
                     "telephone": "+57 3132581599"
                   },
