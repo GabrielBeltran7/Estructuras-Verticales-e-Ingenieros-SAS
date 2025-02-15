@@ -86,11 +86,8 @@ export default function RootLayout({
                     "streetAddress": "KR 7 B BIS # 126 - 36",
                     "addressLocality": "Bogota",
                     "addressRegion": "Cundinamarca",
-                    "addressCountry": {
-                      "@type": "Country",
-                      "name": "Colombia"
-                    },
-                    "postalCode": "110611"  
+                    "addressCountry": "CO",
+                    "postalCode": "110111"  
                   },
                   "telephone": "+57 3132581599"
                 },
@@ -105,11 +102,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": {
-                        "@type": "Country",
-                        "name": "Colombia"
-                      },
-                      "postalCode": "110611" 
+                      "addressCountry": "CO",
+                      "postalCode": "110111" 
                     },
                     "telephone": "+57 3132581599",
                     "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
@@ -149,11 +143,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": {
-                        "@type": "Country",
-                        "name": "Colombia"
-                      },
-                      "postalCode": "110611" 
+                      "addressCountry": "CO",
+                      "postalCode": "110111" 
                     },
                     "telephone": "+57 3132581599",
                     "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
@@ -176,11 +167,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": {
-                        "@type": "Country",
-                        "name": "Colombia"
-                      },
-                      "postalCode": "110611" 
+                      "addressCountry": "CO",
+                      "postalCode": "110111" 
                     },
                     "telephone": "+57 3132581599",
                     "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
@@ -204,11 +192,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": {
-                        "@type": "Country",
-                        "name": "Colombia"
-                      },
-                      "postalCode": "110611" 
+                      "addressCountry": "CO",
+                      "postalCode": "110111" 
                     },
                     "telephone": "+57 3132581599",
                     "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
@@ -232,11 +217,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": {
-                        "@type": "Country",
-                        "name": "Colombia"
-                      },
-                      "postalCode": "110611" 
+                     "addressCountry": "CO",
+                      "postalCode": "110111" 
                     },
                     "telephone": "+57 3132581599",
                     "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
@@ -258,11 +240,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": {
-                        "@type": "Country",
-                        "name": "Colombia"
-                      },
-                      "postalCode": "110611" 
+                     "addressCountry": "CO",                       
+                      "postalCode": "110111" 
                     },
                     "telephone": "+57 3132581599",
                     "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
@@ -284,11 +263,8 @@ export default function RootLayout({
                       "streetAddress": "KR 7 B BIS # 126 - 36",
                       "addressLocality": "Bogota",
                       "addressRegion": "Cundinamarca",
-                      "addressCountry": {
-                        "@type": "Country",
-                        "name": "Colombia"
-                      },
-                      "postalCode": "110611" 
+                      "addressCountry": "CO",
+                      "postalCode": "110111" 
                     },
                     "telephone": "+57 3132581599",
                     "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
