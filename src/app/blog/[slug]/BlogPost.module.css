@@ -11,7 +11,33 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Agrega sombra para profundidad */
     border-radius: 8px; /* Bordes suaves */
     margin-bottom: 100px;
+}.centeredImage {
+    display: block;
+    margin: 20px auto;  /* Centra la imagen horizontalmente */
+    max-width: 100%;    /* Se ajusta al tamaño del contenedor */
+    height: auto;       /* Mantiene la proporción */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    .centeredImage {
+        width: 90%;  /* Reduce el tamaño en pantallas pequeñas */
+        margin: 15px auto;
+    }
+    .content h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        
+        margin-top: 20px;
+        
+        padding-left: 12px; /* Espacio más amplio */
+        
+        letter-spacing: 0.5px; /* Espaciado suave */
+    }
+}
+
 
 /* Título principal */
 .title {
@@ -37,10 +63,12 @@
 /* Contenido del artículo */
 .content {
     font-size: 1.1rem; /* Ajuste de tamaño de texto */
+    margin-top: 20px;
     color: #444;
     text-align: justify;
     line-height: 1.75;
-    margin-bottom: 40px; /* Agregar más margen entre párrafos */
+    margin-bottom: 40; /* Agregar más margen entre párrafos */
+
 }
 
 /* Subtítulos */
@@ -53,10 +81,20 @@
     padding-left: 12px; /* Espacio más amplio */
     text-transform: uppercase; /* Añadir estilo en mayúsculas */
     letter-spacing: 0.5px; /* Espaciado suave */
+}.content h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+    margin-top: 20px;
+    
+    padding-left: 12px; /* Espacio más amplio */
+    
+    letter-spacing: 0.5px; /* Espaciado suave */
 }
 
 /* Listas */
 .content ul {
+
     margin: 20px 0px;
     padding-left: 20px;
     list-style: none;
@@ -66,6 +104,7 @@
     margin-bottom: 12px;
     position: relative;
     padding-left: 30px; /* Más espacio para los iconos */
+    
 }
 
 .content ul li::before {

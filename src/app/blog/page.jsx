@@ -28,7 +28,7 @@ export default function Blog() {
 
         if (data.length > 3) {
           const shuffled = [...data].sort(() => 0.5 - Math.random());
-          setSidePosts(shuffled.slice(0, 10));
+          setSidePosts(shuffled.slice(0, 15));
         } else {
           setSidePosts(data);
         }
@@ -70,7 +70,7 @@ export default function Blog() {
       <div className={styles.blogLayout}>
         {/* 📌 PostGrid a la izquierda */}
         <ul className={styles.postGrid}>
-          {posts.slice(0, 6).map((post) => (
+          {posts.slice(0, 15).map((post) => (
             <li key={post.slug} className={styles.postItem}>
               <Image
                 src={post.image}
