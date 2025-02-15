@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Brindamos interventoría de obras, supervisión y diseño estructural con enfoque en calidad y cumplimiento de las normativas de construcción en Colombia.",
   keywords:
-    "interventoría de obras, supervisión de obras, diseño estructural, consultoria de obras,  montajes estructurales, normativas NSR-10, recibo de zonas comunes propiedad horizontal, informes técnicos, diseño estructural en Bogotá, elaboracion de pliegos de condiciones,  supervisión de obras civiles en Colombia",
+    "interventoría de obras, supervisión de obras, diseño estructural, consultoria de obras, montajes estructurales, normativas NSR-10, recibo de zonas comunes propiedad horizontal, informes técnicos, diseño estructural en Bogotá, elaboracion de pliegos de condiciones, supervisión de obras civiles en Colombia",
   openGraph: {
     title:
       "Expertos en Interventoría, Supervisión de Obras y Diseño Estructural en Colombia.",
@@ -55,147 +55,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Datos estructurados de Schema.org */}
-        <Script
-          type="application/ld+json"
-          id="structured-data"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Interventoría de Obras",
-                  description:
-                    "Supervisión y control de proyectos de construcción para garantizar cumplimiento de normativas, costos y tiempos.",
-                  hasOfferCatalog: {
-                    "@type": "OfferCatalog",
-                    name: "Servicios Relacionados",
-                    itemListElement: [
-                      {
-                        "@type": "Service",
-                        name: "Supervisión de Obras",
-                        url: "https://www.estructurasverticales.com/servicios/supervision-obras",
-                      },
-                      {
-                        "@type": "Service",
-                        name: "Consultoría de Obras",
-                        url: "https://www.estructurasverticales.com/servicios/consultoria-obras",
-                      },
-                    ],
-                  },
-                  url: "https://www.estructurasverticales.com/servicios/interventoria-obras",
-                },
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Impermeabilización",
-                  description:
-                    "Protección de estructuras contra filtraciones y humedad con materiales de alta calidad.",
-                  url: "https://www.estructurasverticales.com/servicios/impermeabilizacion",
-                },
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Supervisión de Obras",
-                  description:
-                    "Monitoreo integral de obras desde su inicio hasta su entrega, asegurando altos estándares de calidad.",
-                  url: "https://www.estructurasverticales.com/servicios/supervision-obras",
-                },
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Elaboración de Pliegos de Condiciones",
-                  description:
-                    "Creación de documentos técnicos y financieros para la contratación y ejecución de proyectos de construcción.",
-                  url: "https://www.estructurasverticales.com/servicios/pliegos-condiciones",
-                },
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Montaje Estructural",
-                  description:
-                    "Diseño y fabricación de montajes estructurales personalizados con materiales de alta calidad.",
-                  url: "https://www.estructurasverticales.com/servicios/montaje-estructural",
-                },
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Diseño Estructural",
-                  description:
-                    "Desarrollo de diseños estructurales eficientes y seguros, cumpliendo con la normativa NSR-10.",
-                  hasOfferCatalog: {
-                    "@type": "OfferCatalog",
-                    name: "Servicios Relacionados",
-                    itemListElement: [
-                      {
-                        "@type": "Service",
-                        name: "Supervisión de Obras",
-                        url: "https://www.estructurasverticales.com/servicios/supervision-obras",
-                      },
-                      {
-                        "@type": "Service",
-                        name: "Consultoría de Obras",
-                        url: "https://www.estructurasverticales.com/servicios/consultoria-obras",
-                      },
-                    ],
-                  },
-                  url: "https://www.estructurasverticales.com/servicios/diseño-estructural",
-                },
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Recibo de Zonas Comunes en Propiedad Horizontal",
-                  description:
-                    "Inspección y verificación de calidad en zonas comunes antes de su entrega a propietarios o administradores.",
-                  url: "https://www.estructurasverticales.com/servicios/recibo-zonas-comunes",
-                },
-                {
-                  "@type": "Service",
-                  provider: {
-                    "@type": "Organization",
-                    name: "Estructuras Verticales e Ingenieros SAS",
-                    url: "https://www.estructurasverticales.com/",
-                  },
-                  name: "Consultoría de Obras",
-                  description:
-                    "Asesoría técnica especializada en planificación, ejecución y control de proyectos de construcción.",
-                  url: "https://www.estructurasverticales.com/servicios/consultoria-obras",
-                },
-              ],
-            }),
-          }}
-        />
-
         {/* Clarity tracking code */}
         <Script
           id="clarity-tracking"
@@ -209,8 +68,211 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Adding structured data for services */}
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "name": "Estructuras Verticales e Ingenieros SAS",
+                  "url": "https://www.estructurasverticales.com/",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "KR 7 B BIS # 126 - 36",
+                    "addressLocality": "Bogota",
+                    "addressRegion": "Cundinamarca",
+                    "addressCountry": "CO"
+                  },
+                  "telephone": "+57 3132581599"
+                },
+
+
+
+
+                {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO"
+                    },
+                    "telephone": "+57 3132581599"
+                  },
+                  "name": "Interventoría de Obras",
+                  "description": "Supervisión y control de proyectos de construcción para garantizar cumplimiento de normativas, costos y tiempos.",
+                  "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Servicios Relacionados",
+                    "itemListElement": [
+                      {
+                        "@type": "Service",
+                        "name": "Supervisión de Obras",
+                        "url": "https://www.estructurasverticales.com"
+                      },
+                      {
+                        "@type": "Service",
+                        "name": "Consultoría de Obras",
+                        "url": "https://www.estructurasverticales.com"
+                      }
+                    ]
+                  },
+                  "url": "https://www.estructurasverticales.com"
+                },
+
+             {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO"
+                    },
+                    "telephone": "+57 3132581599"
+                  },
+                  "name": "Consultoria de Obras",
+                  "description": "Asesoría técnica especializada en planificación, ejecución y control de proyectos de construcción.",
+                  "url": "https://www.estructurasverticales.com"
+                },
+
+                {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO"
+                    },
+                    "telephone": "+57 3132581599"
+                  },
+                  "name": "Impermeabilización",
+                  "description": "Protección de estructuras contra filtraciones y humedad con materiales de alta calidad.",
+                  "url": "https://www.estructurasverticales.com"
+                },
+
+
+                {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO"
+                    },
+                    "telephone": "+57 3132581599"
+                  },
+                  "name": "Supervisión de Obras",
+                  "description": "Monitoreo integral de obras desde su inicio hasta su entrega, asegurando altos estándares de calidad.",
+                  "url": "https://www.estructurasverticales.com"
+                },
+
+
+                {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO"
+                    },
+                    "telephone": "+57 3132581599"
+                  },
+                  "name": "Elaboración de Pliegos de Condiciones",
+                  "description": "Creación de documentos técnicos y financieros para la contratación y ejecución de proyectos de construcción.",
+                  "url": "https://www.estructurasverticales.com"
+                },
+
+
+                {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO"
+                    },
+                    "telephone": "+57 3132581599"
+                  },
+                  "name": "Montaje Estructural",
+                  "description": "Diseño y fabricación de montajes estructurales personalizados con materiales de alta calidad.",
+                  "url": "https://www.estructurasverticales.com"
+                },
+                {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO"
+                    },
+                    "telephone": "+57 3132581599"
+                  },
+                  "name": "Diseño Estructural",
+                  "description": "Desarrollo de diseños estructurales eficientes y seguros, cumpliendo con la normativa NSR-10.",
+                  "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Servicios Relacionados",
+                    "itemListElement": [
+                      {
+                        "@type": "Service",
+                        "name": "Supervisión de Obras",
+                        "url": "https://www.estructurasverticales.com"
+                      },
+                      {
+                        "@type": "Service",
+                        "name": "Consultoría de Obras",
+                        "url": "https://www.estructurasverticales.com"
+                      }
+                    ]
+                  },
+                  "url": "https://www.estructurasverticales.com"
+                }
+              ]
+            }),
+          }}
+        />
       </head>
       <body>{children}</body>
     </html>
   );
 }
+
