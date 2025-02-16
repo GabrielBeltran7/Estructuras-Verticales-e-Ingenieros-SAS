@@ -1,7 +1,11 @@
+# *
 User-agent: *
 Allow: /
 
+# Applebot
 User-agent: Applebot
 Allow: /
 
+
+# Sitemaps
 Sitemap: https://www.estructurasverticales.com/sitemap.xml

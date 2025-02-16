@@ -4,7 +4,7 @@ const path = require('path');
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://www.estructurasverticales.com',
-  generateRobotsTxt: true,
+  generateRobotsTxt: false,
   generateIndexSitemap: false,
   sitemapSize: 10000,
   sitemapBaseFileName: 'sitemap', // Nombre del archivo generado
