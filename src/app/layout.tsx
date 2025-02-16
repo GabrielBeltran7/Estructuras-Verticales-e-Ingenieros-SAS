@@ -91,7 +91,6 @@ export default function RootLayout({
                   },
                   "telephone": "+57 3132581599",
                   "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
-
                 },
                   {
                   "@type": "Service",
