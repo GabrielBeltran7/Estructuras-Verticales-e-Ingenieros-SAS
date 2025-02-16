@@ -1,9 +1,7 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.estructurasverticales.com
+User-agent: Applebot
+Allow: /
 
-# Sitemaps
 Sitemap: https://www.estructurasverticales.com/sitemap.xml
