@@ -69,7 +69,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Adding structured data for services */}
+      {/* Adding structured data for services */}
         <Script
           id="structured-data-services"
           type="application/ld+json"
@@ -119,7 +119,7 @@ export default function RootLayout({
                       {
                         "@type": "Service",
                         "name": "Supervisión de Obras",
-                        "url": "https://www.estructurasverticales.com",
+                        "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion",
 
                       },
                       {
@@ -177,7 +177,7 @@ export default function RootLayout({
                   },
                   "name": "Impermeabilización",
                   "description": "Protección de estructuras contra filtraciones y humedad con materiales de alta calidad.",
-                  "url": "https://www.estructurasverticales.com",
+                  "url": "https://www.estructurasverticales.com/blog/impermeabilizacion-construccion"
 
                 },
 
@@ -202,7 +202,7 @@ export default function RootLayout({
                   },
                   "name": "Supervisión de Obras",
                   "description": "Monitoreo integral de obras desde su inicio hasta su entrega, asegurando altos estándares de calidad.",
-                  "url": "https://www.estructurasverticales.com"
+                  "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
 
                 },
 
@@ -227,9 +227,11 @@ export default function RootLayout({
                   },
                   "name": "Elaboración de Pliegos de Condiciones",
                   "description": "Creación de documentos técnicos y financieros para la contratación y ejecución de proyectos de construcción.",
-                  "url": "https://www.estructurasverticales.com",
+                  "url": "https://www.estructurasverticales.com/blog/elaboracion-pliegos-condiciones"
 
                 },
+
+
                 {
                   "@type": "Service",
                   "provider": {
@@ -250,10 +252,52 @@ export default function RootLayout({
                   },
                   "name": "Montaje Estructural",
                   "description": "Diseño y fabricación de montajes estructurales personalizados con materiales de alta calidad.",
-                  "url": "https://www.estructurasverticales.com",
+                  "url": "https://www.estructurasverticales.com/blog/montaje-estructural-construccion"
 
                 },
                 {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO",
+                      "postalCode": "110111"
+                    },
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+                  },
+                  "name": "Recibo de Zonas Comunes PH",
+                  "description": "Inspección y certificación de zonas comunes en propiedades horizontales para garantizar cumplimiento normativo.",
+                  "url": "https://www.estructurasverticales.com/blog/recibo-zonas-comunes-ph"
+                }, 
+                {
+                  "@type": "Service",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Estructuras Verticales e Ingenieros SAS",
+                    "url": "https://www.estructurasverticales.com/",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "KR 7 B BIS # 126 - 36",
+                      "addressLocality": "Bogota",
+                      "addressRegion": "Cundinamarca",
+                      "addressCountry": "CO",
+                      "postalCode": "110111"
+                    },
+                    "telephone": "+57 3132581599",
+                    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp"
+                  },
+                  "name": "Informes Técnicos de Obras",
+                  "description": "Elaboración de informes técnicos detallados sobre el estado, avances y condiciones de obras en construcción.",
+                  "url": "https://www.estructurasverticales.com/blog/informes-tecnicos-obras"
+                },
+ {
                   "@type": "Service",
                   "provider": {
                     "@type": "Organization",
@@ -280,13 +324,13 @@ export default function RootLayout({
                       {
                         "@type": "Service",
                         "name": "Supervisión de Obras",
-                        "url": "https://www.estructurasverticales.com",
+                        "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
 
                       },
                       {
                         "@type": "Service",
                         "name": "Consultoría de Obras",
-                        "url": "https://www.estructurasverticales.com",
+                        "url": "https://www.estructurasverticales.com/blog/interventoria-obras-colombia"
 
                       }
                     ]
