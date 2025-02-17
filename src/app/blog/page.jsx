@@ -66,7 +66,7 @@ export default function Blog() {
         </div>
       )}
 
-      {/* 📌 PostGrid (2/3) y Sidebar (1/3) debajo */}
+      {/* 📌 PostGrid (2/3) y Sidebar (1/de3) debajo */}
       <div className={styles.blogLayout}>
         {/* 📌 PostGrid a la izquierda */}
         <ul className={styles.postGrid}>
