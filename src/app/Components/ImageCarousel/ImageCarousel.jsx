@@ -9,15 +9,15 @@ const ImageCarousel = () => {
   const images = [
     {
       src: "https://res.cloudinary.com/dby8lelja/image/upload/v1737605127/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Servicio_de_Interventoria_jpkw6n.webp",
-      alt: "Imagen 1",
+      alt: "Servicio de interventoria de obras",
     },
     {
       src: "https://res.cloudinary.com/dby8lelja/image/upload/v1739112965/interventoria_y_supervision_de_obras_pkb2ck.webp",
-      alt: "Imagen 2",
+      alt: "Interventoria y supervision de obras",
     },
     {
       src: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Supervisi%C3%B3n_de_Obras_s463d0.webp",
-      alt: "Imagen 3",
+      alt: "Estructuras Verticales e Ingenieros sas",
     },
   ];
 

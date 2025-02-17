@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Consultoría e Interventoría en Obras | Diseño Estructural.",
   description:
-    "Brindamos interventoría de obras, supervisión y diseño estructural con enfoque en calidad y cumplimiento de las normativas de construcción en Colombia.",
+    "Ofrecemos interventoría de obras, supervisión y diseño estructural, asegurando calidad y cumplimiento con las normativas de construcción en Colombia.",
   keywords:
     "interventoría de obras, supervisión de obras, diseño estructural, consultoria de obras, montajes estructurales, normativas NSR-10, recibo de zonas comunes propiedad horizontal, informes técnicos, diseño estructural en Bogotá, elaboracion de pliegos de condiciones, supervisión de obras civiles en Colombia",
   openGraph: {
