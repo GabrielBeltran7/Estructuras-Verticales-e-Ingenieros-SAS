@@ -14,6 +14,10 @@ type Servicio = {
   title: string;
   description: string;
   imagenprincipal:string;
+  parrafo1:string;
+  parrafo2:string;
+  parrafo3:string;
+  parrafo4:string;
   descripcionlarga: string;
   services: { title: string; description: string }[];
   benefits: string[];
@@ -90,7 +94,10 @@ export default function ServicioPage() {
                     
                   />
         <p className={styles.description}>{servicio.description}</p>
-        <p className={styles.descriptionlarga}>{servicio.descripcionlarga}</p>
+        <p className={styles.descriptionlarga}>{servicio.parrafo1}</p>
+        <p className={styles.descriptionlarga}>{servicio.parrafo2}</p>
+        <p className={styles.descriptionlarga}>{servicio.parrafo3}</p>
+        <p className={styles.descriptionlarga}>{servicio.parrafo4}</p>
 
      {/* Casos de éxito */}
  <section className={styles.sectionexito}>

@@ -1,10 +1,15 @@
-[{
-  "id": "consultoria-de-obras",
-  "title": "Consultoría de Obras",
-  "description": "Maximizamos la eficiencia de tu obra con asesoría experta para reducir costos y tiempos sin comprometer la calidad.",
- "descripcionlarga": "En el mundo de la construcción, cada decisión cuenta. Por eso, nuestra consultoría especializada está diseñada para optimizar cada etapa de tu obra, reduciendo costos innecesarios y acelerando los tiempos de ejecución sin comprometer la calidad. A través de estrategias innovadoras y un equipo de expertos en planificación y supervisión, te garantizamos resultados eficientes y rentables, adaptados a las necesidades específicas de tu proyecto.  Confía en nuestra experiencia para evitar sobrecostos, minimizar riesgos y asegurar el cumplimiento de normativas en cada detalle de tu construcción. Trabajamos contigo de la mano, implementando soluciones inteligentes que maximizan la productividad y la rentabilidad de tu inversión. Con nuestra asesoría, llevarás tu proyecto al siguiente nivel, asegurando un desarrollo exitoso y sin contratiempos.",
- "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
-  "services": [
+[
+  
+  {
+    "id": "consultoria-de-obras",
+    "title": "Consultoría de Obras",
+    "description": "Maximizamos la eficiencia de tu obra con asesoría experta para reducir costos y tiempos sin comprometer la calidad.",
+    "parrafo1": "En el mundo de la construcción, cada decisión cuenta. Por eso, nuestra consultoría especializada está diseñada para optimizar cada etapa de tu obra, reduciendo costos innecesarios y acelerando los tiempos de ejecución sin comprometer la calidad.",
+    "parrafo2": "A través de estrategias innovadoras y un equipo de expertos en planificación y supervisión, te garantizamos resultados eficientes y rentables, adaptados a las necesidades específicas de tu proyecto.",
+    "parrafo3": "Confía en nuestra experiencia para evitar sobrecostos, minimizar riesgos y asegurar el cumplimiento de normativas en cada detalle de tu construcción.",
+    "parrafo4": "Trabajamos contigo de la mano, implementando soluciones inteligentes que maximizan la productividad y la rentabilidad de tu inversión. Con nuestra asesoría, llevarás tu proyecto al siguiente nivel, asegurando un desarrollo exitoso y sin contratiempos.",
+     "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
+     "services": [
     {
       "title": "Planificación estratégica",
       "description": "Creamos un plan detallado para garantizar el éxito de tu obra desde el inicio, minimizando riesgos y optimizando recursos."
@@ -150,19 +155,15 @@
 },
 
 
-
-
-
-
-
-
-
 {
   "id": "interventoria-de-obras",
   "title": "Interventoría de Obras",
   "description": "Garantizamos el éxito de tu proyecto con un control riguroso en calidad, costos y tiempos, asegurando el cumplimiento de normativas y la optimización de recursos.",
-  "descripcionlarga": "La interventoría de obras es un proceso clave para asegurar que cada proyecto de construcción cumpla con los más altos estándares de calidad, normativas legales y eficiencia en la ejecución. Nuestro equipo de expertos supervisa cada fase del proyecto, garantizando el control de costos, tiempos y materiales, minimizando riesgos y evitando sobrecostos innecesarios. Con una metodología integral y tecnología avanzada, aseguramos una gestión efectiva, previniendo imprevistos y optimizando la rentabilidad de la inversión. Con nuestra intervención, cada obra avanza con transparencia, precisión y garantía de cumplimiento, asegurando resultados exitosos y sostenibles.",
-  "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990492/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_en_bogota_nb71ot.webp",
+"parrafo1": "Garantizamos el éxito de tu proyecto con un control riguroso en cada etapa del proceso.",
+  "parrafo2": "Nos enfocamos en mantener altos estándares de calidad para asegurar resultados óptimos.",
+  "parrafo3": "Aplicamos estrategias eficientes para reducir costos innecesarios y cumplir con los plazos establecidos.",
+  "parrafo4": "Garantizamos que cada fase del proyecto se ejecute conforme a las normativas vigentes y el mejor uso de los recursos.",
+    "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990492/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_en_bogota_nb71ot.webp",
   "services": [
     {
       "title": "Supervisión técnica y administrativa",
