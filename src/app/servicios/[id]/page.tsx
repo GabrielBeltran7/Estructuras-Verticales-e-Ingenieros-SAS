@@ -140,6 +140,8 @@ export default function ServicioPage() {
             ))}
           </ul>
         </section>
+
+        
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
             Optimiza tu Proyecto con Expertos en el Area ✅
@@ -164,9 +166,9 @@ export default function ServicioPage() {
             {servicio.faqs.map((faq, index) => (
               <li key={index} className={styles.listItemfaq}>
                 <h3 className={styles.faqQuestion}>{faq.question}</h3>{" "}
-                {/* Muestra la pregunta */}
+               
                 <p className={styles.faqAnswer}>{faq.answer}</p>{" "}
-                {/* Muestra la respuesta */}
+               
               </li>
             ))}
           </ul>

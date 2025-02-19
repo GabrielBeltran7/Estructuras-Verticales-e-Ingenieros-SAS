@@ -28,6 +28,8 @@
     margin-bottom: 25px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}.faqQuestions{
+    gap: 5rem;
 }
 
 /* Animación de entrada */
@@ -118,6 +120,8 @@
     list-style: none;
     padding: 0;
     font-family: inherit; /* Hereda la fuente */
+   
+    
 }
 
 .listItem {
@@ -149,7 +153,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     transition: all 0.3s ease-in-out;
     font-family: inherit; /* Hereda la fuente */
 }
@@ -416,6 +420,11 @@
     }
 
     .listItem {
+        font-size: 1.1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }.listItemfaq {
         font-size: 1.1rem;
         display: grid;
         grid-template-columns: 1fr;
