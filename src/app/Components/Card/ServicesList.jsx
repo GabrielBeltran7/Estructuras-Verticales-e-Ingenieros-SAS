@@ -1,6 +1,12 @@
 import ServicesCard from "./ServicesCard.jsx"
 
 const services = [
+  {
+    title: "Consultoría de Obras",
+    description: "Ofrecemos servicios de Consultoría de Obras para optimizar la planificación y ejecución de proyectos de construcción. Nuestro equipo de expertos asesora en cada fase del proceso, garantizando eficiencia, cumplimiento normativo y control de costos. Implementamos estrategias innovadoras para maximizar la rentabilidad y minimizar riesgos, asegurando el éxito de cada obra.",
+    image: "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp"
+  },
+  
     {
       title: "Interventoria de Obras",
       description: "En nuestra empresa ofrecemos servicios de Interventoría de Obras para garantizar la ejecución adecuada de proyectos de construcción. Nos encargamos de supervisar y controlar todas las fases del proceso constructivo, asegurando el cumplimiento de los plazos, presupuestos y calidad especificada. Con nuestra experiencia, brindamos confianza a nuestros clientes, minimizando riesgos y maximizando la eficiencia en cada obra.",

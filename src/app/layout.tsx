@@ -3,9 +3,9 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Consultoría e Interventoría en Obras | Diseño Estructural.",
+  title: "Consultoría e Interventoría en Obras | Diseño Estructural",
   description:
-    "Ofrecemos interventoría de obras, supervisión y diseño estructural, asegurando calidad y cumplimiento con las normativas de construcción en Colombia.",
+    "Ofrecemos interventoría Consultoria de obras, supervisión y diseño estructural, asegurando calidad y cumplimiento con las normativas de construcción.",
   keywords:
     "interventoría de obras, supervisión de obras, diseño estructural, consultoria de obras, montajes estructurales, normativas NSR-10, recibo de zonas comunes propiedad horizontal, informes técnicos, diseño estructural en Bogotá, elaboracion de pliegos de condiciones, supervisión de obras civiles en Colombia",
   openGraph: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/dby8lelja/image/upload/v1738035132/Estructuras%20Verticales%20e%20Ingenieros%20SAS/openGraph_xilvsc.webp",
         width: 1200,
         height: 630,
-        alt: "Consultoría e Interventoría en Obras | Diseño Estructural.",
+        alt: "Consultoría e Interventoría en Obras | Diseño Estructural",
       },
     ],
     type: "website",
@@ -95,7 +95,7 @@ export default function RootLayout({
                     name: "Interventoría de Obras",
                     description:
                       "Supervisión y control de proyectos de construcción para garantizar cumplimiento de normativas, costos y tiempos.",
-                    url: "https://www.estructurasverticales.com/blog/interventoria-obras-colombia",
+                    url: "https://www.estructurasverticales.com/servicios/interventoria-de-obras",
                     serviceType: "Interventoría de Obras",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
@@ -103,7 +103,7 @@ export default function RootLayout({
                     name: "Consultoría de Obras",
                     description:
                       "Asesoría técnica especializada en planificación, ejecución y control de proyectos de construcción.",
-                    url: "https://www.estructurasverticales.com",
+                    url: "https://www.estructurasverticales.com/servicios/consultoria-de-obras",
                     serviceType: "Consultoría de Obras",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
@@ -111,7 +111,7 @@ export default function RootLayout({
                     name: "Impermeabilización",
                     description:
                       "Protección de estructuras contra filtraciones y humedad con materiales de alta calidad.",
-                    url: "https://www.estructurasverticales.com/blog/impermeabilizacion-construccion",
+                    url: "https://www.estructurasverticales.com/servicios/impermeabilizacion",
                     serviceType: "Impermeabilización",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
