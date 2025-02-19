@@ -15,7 +15,7 @@
     width: 95%;
     max-width: 1100px;
     margin-top: 2rem;
-    background-color: rgb(235, 235, 241);
+    background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     padding: 1rem;
@@ -23,6 +23,11 @@
     animation: fadeIn 1s ease-in-out;
     margin-bottom: 5rem;
     font-family: inherit; /* Hereda la fuente del contenedor general */
+}.imagenprincipal {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 /* Animación de entrada */
@@ -425,5 +430,10 @@
 
     .caseImage {
         max-width: 280px;
+    } .imagenprincipal {
+        max-width: 300px; /* Reduce el tamaño en pantallas pequeñas */
+        max-height: 200px; /* Reduce el tamaño en pantallas pequeñas */
+        margin: 10px auto; /* Centrar la imagen en móviles */
+        display: block;
     }
 }

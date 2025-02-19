@@ -3,7 +3,7 @@
   "title": "Consultoría de Obras",
   "description": "Maximizamos la eficiencia de tu obra con asesoría experta para reducir costos y tiempos sin comprometer la calidad.",
  "descripcionlarga": "En el mundo de la construcción, cada decisión cuenta. Por eso, nuestra consultoría especializada está diseñada para optimizar cada etapa de tu obra, reduciendo costos innecesarios y acelerando los tiempos de ejecución sin comprometer la calidad. A través de estrategias innovadoras y un equipo de expertos en planificación y supervisión, te garantizamos resultados eficientes y rentables, adaptados a las necesidades específicas de tu proyecto.  Confía en nuestra experiencia para evitar sobrecostos, minimizar riesgos y asegurar el cumplimiento de normativas en cada detalle de tu construcción. Trabajamos contigo de la mano, implementando soluciones inteligentes que maximizan la productividad y la rentabilidad de tu inversión. Con nuestra asesoría, llevarás tu proyecto al siguiente nivel, asegurando un desarrollo exitoso y sin contratiempos.",
-
+ "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
   "services": [
     {
       "title": "Planificación estratégica",
@@ -111,22 +111,6 @@
     "cost_reduction_average": "15%"
   },
 
-  "images": [
-    {
-      "url": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp",
-      "title": "Estructuras Verticales e Ingenieros SAS"
-    },
-    {
-      "url": "https://res.cloudinary.com/dby8lelja/image/upload/v1739582229/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_proyectos_industriales_info_rhdals.webp",
-      "title": "Interventoría de Proyectos Industriales"
-    },
-    {
-      "url": "https://res.cloudinary.com/dby8lelja/image/upload/v1739577191/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_privadas_infografia_pk2j3r.webp",
-      "title": "Interventoría de Obras Privadas"
-    }
-  ],
-
-
   "blog": [
     {
       "title": "Consultoría de Obras: Garantiza el Éxito",
@@ -162,8 +146,177 @@
     "whatsapp": "https://wa.me/3132581599",
     "live_chat": true
   }
+
+},
+
+
+
+
+
+
+
+
+
+{
+  "id": "interventoria-de-obras",
+  "title": "Interventoría de Obras",
+  "description": "Garantizamos el éxito de tu proyecto con un control riguroso en calidad, costos y tiempos, asegurando el cumplimiento de normativas y la optimización de recursos.",
+  "descripcionlarga": "La interventoría de obras es un proceso clave para asegurar que cada proyecto de construcción cumpla con los más altos estándares de calidad, normativas legales y eficiencia en la ejecución. Nuestro equipo de expertos supervisa cada fase del proyecto, garantizando el control de costos, tiempos y materiales, minimizando riesgos y evitando sobrecostos innecesarios. Con una metodología integral y tecnología avanzada, aseguramos una gestión efectiva, previniendo imprevistos y optimizando la rentabilidad de la inversión. Con nuestra intervención, cada obra avanza con transparencia, precisión y garantía de cumplimiento, asegurando resultados exitosos y sostenibles.",
+  "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990492/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_en_bogota_nb71ot.webp",
+  "services": [
+    {
+      "title": "Supervisión técnica y administrativa",
+      "description": "Controlamos cada aspecto técnico y financiero de la obra para garantizar su correcta ejecución y cumplimiento normativo."
+    },
+    {
+      "title": "Gestión de calidad y seguridad",
+      "description": "Implementamos rigurosos controles de calidad y seguridad en todas las etapas del proyecto."
+    },
+    {
+      "title": "Optimización de costos y recursos",
+      "description": "Supervisamos el uso eficiente de materiales y mano de obra para evitar desperdicios y sobrecostos."
+    },
+    {
+      "title": "Cumplimiento normativo y legal",
+      "description": "Aseguramos que cada fase del proyecto cumpla con la normativa vigente y los estándares técnicos exigidos."
+    },
+    {
+      "title": "Gestión de riesgos y mitigación de impactos",
+      "description": "Identificamos y prevenimos posibles riesgos que puedan afectar el desarrollo del proyecto."
+    }
+  ],
+  "benefits": [
+    "Mayor eficiencia en la ejecución de obras, reduciendo retrasos y sobrecostos.",
+    "Garantía de cumplimiento normativo para evitar sanciones y problemas legales.",
+    "Optimización de recursos, asegurando el mejor uso de materiales y tiempo de trabajo.",
+    "Mayor seguridad y control de calidad en cada fase del proyecto."
+  ],
+  "testimonials": [
+    {
+      "client": "Carlos Rodríguez",
+      "project": "Edificio Empresarial Las Mercedes (Bogota)",
+      "feedback": "Gracias a su asesoría, logramos reducir los costos en un 20% y acortar los tiempos de entrega en 2 meses. ¡Altamente recomendados!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739978063/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Carlos_Rodr%C3%ADguez_aythel.jpg"
+    },
+    {
+      "client": "Ana Gómez",
+      "project": "Conjunto Residencial Los Pinos(Bogota)",
+      "feedback": "Un equipo altamente capacitado que brindó soluciones efectivas a los desafíos de nuestra obra, asegurando calidad y cumplimiento de plazos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739978707/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/ana_consultoria_cryfcj.webp"
+    },
+    {
+      "client": "Federico Guzman",
+      "project": "Conjunto Residencial, Prados Verdes (Bogota)",
+      "feedback": "Siempre estuvimos acompañados de su equipo de expertos, hicimos un buen equipo. Gracias por todo",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739979293/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/federico_guzman_consultoria_kobvqf.webp"
+    }
+  ],
+  
+    "faqs": [
+      {
+        "question": "¿Qué incluye el servicio de interventoría de obras?",
+        "answer": "La interventoría abarca supervisión técnica, control de calidad, cumplimiento normativo, gestión de costos y tiempos, y mitigación de riesgos para garantizar el éxito del proyecto."
+      },
+      {
+        "question": "¿Por qué es importante la interventoría en una obra?",
+        "answer": "Es crucial para asegurar que la ejecución del proyecto cumpla con los estándares de calidad, las normativas vigentes y el presupuesto establecido, evitando sobrecostos y retrasos."
+      },
+      {
+        "question": "¿Cuánto cuesta una interventoría de obra?",
+        "answer": "El costo varía según el tamaño y la complejidad del proyecto. Contáctanos para obtener una cotización personalizada adaptada a tus necesidades."
+      },
+      {
+        "question": "¿En qué tipo de proyectos aplican la interventoría?",
+        "answer": "Realizamos interventoría en proyectos residenciales, comerciales, industriales e infraestructura pública, asegurando calidad y cumplimiento normativo en cada obra."
+      },
+      {
+        "question": "¿Quiénes realizan la interventoría de obras?",
+        "answer": "Nuestro equipo está compuesto por ingenieros civiles, arquitectos y especialistas en normativas de construcción con amplia experiencia en supervisión y control de proyectos."
+      },
+      {
+        "question": "¿Cuáles son los beneficios de contratar una interventoría?",
+        "answer": "Optimización de costos, aseguramiento de calidad, cumplimiento normativo, reducción de riesgos y mayor eficiencia en la ejecución de la obra."
+      }
+    ],
+    "case_studies": [
+    {
+      "title": "Interventoría en obra vial para optimización del tráfico",
+      "description": "Supervisamos la construcción y rehabilitación de una vía principal, asegurando el cumplimiento de normativas y calidad de los materiales. Nuestra intervención permitió reducir en un 25% los tiempos de ejecución y mejorar la seguridad vial mediante un riguroso control técnico.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739989926/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_bogota_py6nn1.webp"
+    },
+    {
+      "title": "Control de calidad en la construcción de un hospital",
+      "description": "Garantizamos la correcta ejecución de cada fase constructiva en un centro hospitalario, asegurando el cumplimiento de estándares sanitarios y estructurales. Detectamos y corregimos desviaciones a tiempo, evitando sobrecostos y garantizando un ambiente seguro para futuras operaciones médicas.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990908/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_hospital_t3cu2u.webp"
+    },
+    {
+      "title": "Supervisión en la rehabilitación de una estructura patrimonial",
+      "description": "Realizamos la interventoría en la restauración de un edificio histórico, garantizando la conservación de su valor arquitectónico y estructural. Mediante auditorías técnicas y supervisión detallada, aseguramos que cada proceso respetara las normativas de restauración y protección del patrimonio.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990492/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_en_bogota_nb71ot.webp"
+    }
+],
+
+  "Proyectosrealizados": [
+    {
+      "title": "Gestión de riesgos en obras de infraestructura",
+      "description": "Implementamos un plan de gestión de riesgos para una obra vial, identificando posibles amenazas y mitigando impactos mediante medidas preventivas. Esto permitió reducir en un 40% los retrasos y garantizar la seguridad de los trabajadores y la comunidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739563731/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/elaboracion_pliegos_de_condicion_infografia_qglkel.webp"
+    },
+    {
+      "title": "Interventoría en rehabilitación estructural",
+      "description": "Supervisamos la recuperación estructural de un edificio afectado por deterioro, asegurando la correcta aplicación de refuerzos y materiales especializados. Nuestro control técnico garantizó el cumplimiento de normativas sísmicas y prolongó la vida útil de la edificación.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739476111/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_publicas_e7vtlq.webp"
+    },
+    {
+      "title": "Optimización de procesos en construcción hospitalaria",
+      "description": "Asesoramos en la planificación y ejecución de una clínica de alta complejidad, optimizando el uso de materiales y tiempos de obra. Nuestra intervención permitió una entrega eficiente del proyecto, asegurando condiciones óptimas para la atención médica.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739976739/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_clinica_kbodap.webp"
+    } 
+],
+  
+  
+  "statistics": {
+    "years_of_experience": 20,
+    "completed_projects": 300,
+    "satisfied_clients": 250,
+    "cost_reduction_average": "18%"
+  },
+  "blog": [
+    {
+      "title": "Consultoría de Obras: Garantiza el Éxito",
+      "excerpt": "Implementar una consultoría de obras adecuada puede reducir los costos de un proyecto de construcción en un 15% mediante una mejor planificación y control de recursos..",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
+      "url": "https://www.estructurasverticales.com/blog/consultoria-obras"
+    },
+    {
+      "title": "Supervisión de Obras de Construcción, su Importancia",
+      "excerpt": "Un proyecto con supervisión eficiente puede reducir costos en un 20% y mejorar la calidad final en un 35%, evitando errores y sobrecostos innecesarios.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_Obras_qkrufl.webp",
+      "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
+    },
+    {
+      "title": "Impermeabilización en Construcción",
+      "excerpt": "La impermeabilización en construcción es un proceso clave para evitar filtraciones de agua y humedad, garantizando la durabilidad de las edificaciones.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizacion_bnphge.webp",
+      "url": "https://www.estructurasverticales.com/blog/impermeabilizacion-construccion"
+    }
+  ],
+
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+    "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+
+  },
+  "cta": {
+    "primary": "Solicita una auditoría gratuita de tu proyecto hoy mismo.",
+    "secondary": "Habla con un experto en interventoría."
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
 }
 
-  
- 
 ]

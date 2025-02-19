@@ -13,6 +13,7 @@ type Servicio = {
   id: string;
   title: string;
   description: string;
+  imagenprincipal:string;
   descripcionlarga: string;
   services: { title: string; description: string }[];
   benefits: string[];
@@ -31,7 +32,7 @@ type Servicio = {
     satisfied_clients: number;
     cost_reduction_average: string;
   };
-  images: { title: string; url: string }[];
+ 
   blog: { title: string; excerpt: string; image: string; url: string }[];
   contact: {
     phone: string;
@@ -80,6 +81,14 @@ export default function ServicioPage() {
       <Navbar />
       <main className={styles.container}>
         <h1 className={styles.title}>{servicio.title}</h1>
+        <Image
+                    src={servicio.imagenprincipal}
+                    alt={servicio.title}
+                    width={1000}
+                    height={500}
+                    className={styles.imagenprincipal}
+                    
+                  />
         <p className={styles.description}>{servicio.description}</p>
         <p className={styles.descriptionlarga}>{servicio.descripcionlarga}</p>
 
