@@ -1,10 +1,14 @@
-import fs from "fs";
-import path from "path";
+
+"use client"; // 💡 Esto obliga a Next.js a procesarlo en el cliente
+
+import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import Navbar from "@/app/Components/Navbar/Navbar";
 import styles from "./serviciopage.module.css";
-import Image from "next/image";
 import ContactButtons from "@/app/Components/ContactButtons/ContactButtons";
+import Image from "next/image";
 
+// 📌 Definimos el tipo de Servicio
 type Servicio = {
   id: string;
   title: string;
@@ -27,9 +31,7 @@ type Servicio = {
     satisfied_clients: number;
     cost_reduction_average: string;
   };
- 
-
-  images: { title: string;  url: string }[];
+  images: { title: string; url: string }[];
   blog: { title: string; excerpt: string; image: string; url: string }[];
   contact: {
     phone: string;
@@ -37,26 +39,41 @@ type Servicio = {
     address: string;
     map_location: string;
   };
-
   chat: { whatsapp: string; live_chat: boolean };
 };
 
-export default async function ServicioPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const { id } = params;
+// 📌 Función para obtener los servicios desde el JSON
+async function getServicios(): Promise<Servicio[]> {
+  const res = await fetch("/data/services.json");
+  return res.json();
+}
 
-  const filePath = path.join(process.cwd(), "public", "data", "services.json");
-  const fileContents = fs.readFileSync(filePath, "utf-8");
-  const servicios: Servicio[] = JSON.parse(fileContents);
+// 📌 Componente principal
+export default function ServicioPage() {
+  const params = useParams();
+  const [servicio, setServicio] = useState<Servicio | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  const servicio = servicios.find((s) => s.id === id) || null;
+  useEffect(() => {
+    async function fetchServicio() {
+      if (!params?.id) return;
+      
+      const servicioId = decodeURIComponent(params.id.toString()).toLowerCase();
+      const servicios = await getServicios();
+      const foundServicio = servicios.find((s) => s.id.toLowerCase() === servicioId);
 
-  if (!servicio) {
-    return <h1 className={styles.error}>Página no encontrada</h1>;
-  }
+      setServicio(foundServicio || null);
+      setLoading(false);
+    }
+
+    fetchServicio();
+  }, [params?.id]);
+
+  if (loading) return <h1>Cargando...</h1>;
+  if (!servicio) return <h1 className={styles.error}>Servicio no encontrado</h1>;
+
+
+
 
   return (
     <div className={styles.containerdiv}>
