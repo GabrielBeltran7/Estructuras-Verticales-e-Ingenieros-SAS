@@ -1,0 +1,169 @@
+[{
+  "id": "consultoria-de-obras",
+  "title": "Consultoría de Obras",
+  "description": "Maximizamos la eficiencia de tu obra con asesoría experta para reducir costos y tiempos sin comprometer la calidad.",
+ "descripcionlarga": "En el mundo de la construcción, cada decisión cuenta. Por eso, nuestra consultoría especializada está diseñada para optimizar cada etapa de tu obra, reduciendo costos innecesarios y acelerando los tiempos de ejecución sin comprometer la calidad. A través de estrategias innovadoras y un equipo de expertos en planificación y supervisión, te garantizamos resultados eficientes y rentables, adaptados a las necesidades específicas de tu proyecto.  Confía en nuestra experiencia para evitar sobrecostos, minimizar riesgos y asegurar el cumplimiento de normativas en cada detalle de tu construcción. Trabajamos contigo de la mano, implementando soluciones inteligentes que maximizan la productividad y la rentabilidad de tu inversión. Con nuestra asesoría, llevarás tu proyecto al siguiente nivel, asegurando un desarrollo exitoso y sin contratiempos.",
+
+  "services": [
+    {
+      "title": "Planificación estratégica",
+      "description": "Creamos un plan detallado para garantizar el éxito de tu obra desde el inicio, minimizando riesgos y optimizando recursos."
+    },
+    {
+      "title": "Gestión y supervisión",
+      "description": "Supervisamos cada fase del proyecto para asegurar calidad, cumplimiento normativo y entrega en tiempos óptimos."
+    },
+    {
+      "title": "Optimización de costos y tiempos",
+      "description": "Implementamos estrategias avanzadas para reducir gastos sin afectar la calidad de la construcción."
+    },
+    {
+      "title": "Solución de problemas",
+      "description": "Detectamos y resolvemos imprevistos en tiempo real, evitando retrasos y sobrecostos."
+    },
+    {
+      "title": "Asesoría en normativas",
+      "description": "Aseguramos el cumplimiento de todos los requisitos legales y técnicos para evitar sanciones."
+    }
+  ],
+  "benefits": [
+    "Experiencia comprobada: Más de 15 años asesorando proyectos exitosos en diversas industrias.",
+    "Atención personalizada: Soluciones adaptadas a las necesidades específicas de cada cliente y obra.",
+    "Resultados garantizados: Optimizamos costos en un promedio del 15% sin afectar la calidad.",
+    "Cumplimiento normativo: Evita multas y retrasos asegurando que tu obra cumpla con la legislación vigente."
+  ],
+  "testimonials": [
+    {
+      "client": "Carlos Rodríguez",
+      "project": "Edificio Empresarial Las Mercedes (Bogota)",
+      "feedback": "Gracias a su asesoría, logramos reducir los costos en un 20% y acortar los tiempos de entrega en 2 meses. ¡Altamente recomendados!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739978063/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Carlos_Rodr%C3%ADguez_aythel.jpg"
+    },
+    {
+      "client": "Ana Gómez",
+      "project": "Conjunto Residencial Los Pinos(Bogota)",
+      "feedback": "Un equipo altamente capacitado que brindó soluciones efectivas a los desafíos de nuestra obra, asegurando calidad y cumplimiento de plazos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739978707/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/ana_consultoria_cryfcj.webp"
+    },
+    {
+      "client": "Federico Guzman",
+      "project": "Conjunto Residencial, Prados Verdes (Bogota)",
+      "feedback": "Siempre estuvimos acompañados de su equipo de expertos, hicimos un buen equipo. Gracias por todo",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739979293/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/federico_guzman_consultoria_kobvqf.webp"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Cuánto cuesta una consultoría de obra?",
+      "answer": "El costo varía según el alcance del proyecto. Contáctanos para recibir una cotización personalizada."
+    },
+    {
+      "question": "¿En qué tipo de obras pueden asesorarme?",
+      "answer": "Trabajamos en proyectos residenciales, comerciales e industriales de cualquier escala."
+    },
+    {
+      "question": "¿Cuánto tiempo tarda el servicio de consultoría?",
+      "answer": "El tiempo de consultoría se ajusta a la complejidad del proyecto y las necesidades del cliente."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "Reducción de costos en obra industrial",
+      "description": "Optimizamos el proceso constructivo mediante planificación estratégica, automatización de tareas y un mejor uso de materiales. Estas mejoras redujeron costos en un 20% y aumentaron la eficiencia operativa, agilizando tiempos de ejecución y minimizando desperdicios.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739582229/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_proyectos_industriales_info_rhdals.webp"
+    },
+    {
+      "title": "Supervisión efectiva en un complejo residencial",
+      "description": "Implementamos rigurosos controles de calidad y supervisión normativa en un proyecto habitacional de más de 500 viviendas, asegurando estándares óptimos en cada etapa y garantizando su cumplimiento sin contratiempos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739577191/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_privadas_infografia_pk2j3r.webp"
+    },
+    {
+      "title": "Renovación y optimización de un salón comunal",
+      "description": "Realizamos una modernización integral de un salón comunal, mejorando su infraestructura, acústica e iluminación. Implementamos soluciones sostenibles que redujeron el consumo energético en un 30%, brindando un espacio más eficiente y funcional para la comunidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739559119/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Interventor%C3%ADa_en_Infraestructura_de_Servicios_tobuif.webp"
+    }
+    
+    
+  ],
+
+"Proyectosrealizados": [
+    {
+      "title": "Gestión de riesgos en obras de infraestructura",
+      "description": "Implementamos un plan de gestión de riesgos para una obra vial, identificando posibles amenazas y mitigando impactos mediante medidas preventivas. Esto permitió reducir en un 40% los retrasos y garantizar la seguridad de los trabajadores y la comunidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739563731/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/elaboracion_pliegos_de_condicion_infografia_qglkel.webp"
+    },
+    {
+      "title": "Interventoría en rehabilitación estructural",
+      "description": "Supervisamos la recuperación estructural de un edificio afectado por deterioro, asegurando la correcta aplicación de refuerzos y materiales especializados. Nuestro control técnico garantizó el cumplimiento de normativas sísmicas y prolongó la vida útil de la edificación.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739476111/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_publicas_e7vtlq.webp"
+    },
+    {
+      "title": "Optimización de procesos en construcción hospitalaria",
+      "description": "Asesoramos en la planificación y ejecución de una clínica de alta complejidad, optimizando el uso de materiales y tiempos de obra. Nuestra intervención permitió una entrega eficiente del proyecto, asegurando condiciones óptimas para la atención médica.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739976739/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_clinica_kbodap.webp"
+    } 
+],
+
+  "statistics": {
+    "years_of_experience": 15,
+    "completed_projects": 250,
+    "satisfied_clients": 200,
+    "cost_reduction_average": "15%"
+  },
+
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/dby8lelja/image/upload/v1739641319/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Estructuras_Verticales_e_Ingenieros_SAS_qmjon6.webp",
+      "title": "Estructuras Verticales e Ingenieros SAS"
+    },
+    {
+      "url": "https://res.cloudinary.com/dby8lelja/image/upload/v1739582229/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_proyectos_industriales_info_rhdals.webp",
+      "title": "Interventoría de Proyectos Industriales"
+    },
+    {
+      "url": "https://res.cloudinary.com/dby8lelja/image/upload/v1739577191/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_privadas_infografia_pk2j3r.webp",
+      "title": "Interventoría de Obras Privadas"
+    }
+  ],
+
+
+  "blog": [
+    {
+      "title": "Consultoría de Obras: Garantiza el Éxito",
+      "excerpt": "Implementar una consultoría de obras adecuada puede reducir los costos de un proyecto de construcción en un 15% mediante una mejor planificación y control de recursos..",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
+      "url": "https://www.estructurasverticales.com/blog/consultoria-obras"
+    },
+    {
+      "title": "Supervisión de Obras de Construcción, su Importancia",
+      "excerpt": "Un proyecto con supervisión eficiente puede reducir costos en un 20% y mejorar la calidad final en un 35%, evitando errores y sobrecostos innecesarios.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_Obras_qkrufl.webp",
+      "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
+    },
+    {
+      "title": "Impermeabilización en Construcción",
+      "excerpt": "La impermeabilización en construcción es un proceso clave para evitar filtraciones de agua y humedad, garantizando la durabilidad de las edificaciones.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizacion_bnphge.webp",
+      "url": "https://www.estructurasverticales.com/blog/impermeabilizacion-construccion"
+    }
+  ],
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+"map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+
+  },
+  "cta": {
+    "primary": "Aprovecha una asesoría gratuita y optimiza tu obra hoy mismo.",
+    "secondary": "Habla con un experto ahora"
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
+}
+
+  
+ 
+]

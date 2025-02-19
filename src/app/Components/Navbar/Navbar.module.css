@@ -1,5 +1,4 @@
-
-/*  ESTILOS GENERALES         */
+/*  Estilos Generales */
 .navbar {
   background-color: #FFCC00;
   padding: 15px 30px;
@@ -15,8 +14,6 @@
   font-size: 1.2rem;
 }
 
-/* Agrega espacio superior al contenido para que no quede oculto detrás de la navbar */
-
 .empresa {
   font-family: 'Century Gothic', sans-serif;
   font-weight: bold;
@@ -25,19 +22,14 @@
   color: #007BFF;
 }
 
-
-
 .navLinks {
   list-style: none;
   display: flex;
   gap: 30px;
- 
-  
 }
 
 .navLinks li {
   margin: 0;
- 
 }
 
 .navLink {
@@ -59,9 +51,51 @@
   outline: none;
 }
 
+/*  Estilos para Submenú de Servicios */
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left:0;
+  background-color: #FFCC00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdownMenu li {
+  margin: 10px 0;
+}
+
+.dropdownLink {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownLink:hover {
+  background-color: #f7a300;
+  color: white;
+}
+
+/* Mostrar el menú desplegable */
+.dropdown.open .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+}
 
 /*  MENÚ HAMBURGUESA (MÓVIL) */
-
 .hamburger {
   display: none; /* Oculto en escritorio */
   flex-direction: column;
@@ -89,12 +123,14 @@
 .hamburger div.open:nth-child(3) {
   transform: rotate(-45deg) translateY(-7px);
 }
+
 @media screen and (max-width: 768px) {
   .empresa {
     font-size: 1.2rem; /* Reducido en móviles (16px) */
     align-items: center;
   }
 }
+
 @media screen and (max-width: 768px) {
   .navbar {
     font-size: 1.1rem;
@@ -114,6 +150,19 @@
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }.dropdownMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFCC00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
   .navLinks.show {
@@ -124,8 +173,3 @@
     display: flex;
   }
 }
-
-
-
-
-  
