@@ -318,6 +318,170 @@
     "whatsapp": "https://wa.me/3132581599",
     "live_chat": true
   }
+},
+
+
+{
+  "id": "impermeabilizacion",
+  "title": "Impermeabilización",
+  "description": "Protegemos tus estructuras contra filtraciones y humedades, garantizando durabilidad y seguridad en cada proyecto con materiales y técnicas de alta calidad.",
+  "parrafo1": "Somos una empresa experta en impermeabilizaciones, dedicada a proteger tus estructuras con soluciones innovadoras y efectivas contra filtraciones y humedades. Confía en nosotros para mantener tus proyectos seguros y duraderos.",
+"parrafo2": "Trabajamos con materiales de la más alta calidad y técnicas avanzadas, asegurando que cada proyecto cuente con la máxima durabilidad y resistencia. Por eso, somos la opción más confiable y recomendada en el mercado.",
+"parrafo3": "Aplicamos estrategias eficientes y profesionales para prevenir daños causados por el agua, garantizando la integridad y estabilidad de tus edificaciones. Tu tranquilidad es nuestra prioridad.",
+"parrafo4": "Nos comprometemos a que cada proyecto cumpla con los más altos estándares de calidad y las normativas vigentes. Con nosotros, obtendrás resultados que superan tus expectativas.",
+"imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizacion_bnphge.webp",
+  "services": [
+    {
+      "title": "Aplicación de membranas líquidas",
+      "description": "Utilizamos membranas líquidas de alta resistencia para proteger superficies contra filtraciones y humedades."
+    },
+    {
+      "title": "Instalación de láminas impermeables",
+      "description": "Instalamos láminas impermeables de última generación para garantizar una protección duradera."
+    },
+    {
+      "title": "Tratamiento de juntas y grietas",
+      "description": "Aplicamos selladores especializados para prevenir filtraciones en juntas y grietas."
+    },
+    {
+      "title": "Impermeabilización de cubiertas y terrazas",
+      "description": "Protegemos cubiertas y terrazas con sistemas avanzados que aseguran su durabilidad y estanqueidad."
+    },
+    {
+      "title": "Rehabilitación de estructuras afectadas por humedad",
+      "description": "Recuperamos estructuras dañadas por filtraciones, aplicando soluciones integrales de impermeabilización."
+    }
+  ],
+  "benefits": [
+    "Protección duradera contra filtraciones y humedades.",
+    "Uso de materiales de alta calidad y técnicas avanzadas.",
+    "Prevención de daños estructurales causados por el agua.",
+    "Cumplimiento de normativas y estándares de calidad."
+  ],
+  "testimonials": [
+    {
+      "client": "Carlos Rodríguez",
+      "project": "Edificio Empresarial Las Mercedes (Bogotá)",
+      "feedback": "Gracias a su trabajo de impermeabilización, logramos proteger nuestro edificio de filtraciones y humedades. ¡Excelente servicio!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739978063/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Carlos_Rodr%C3%ADguez_aythel.jpg"
+    },
+    {
+      "client": "Ana Gómez",
+      "project": "Conjunto Residencial Los Pinos (Bogotá)",
+      "feedback": "Un equipo profesional que resolvió nuestros problemas de humedad de manera eficiente. ¡Altamente recomendados!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739978707/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/ana_consultoria_cryfcj.webp"
+    },
+    {
+      "client": "Federico Guzmán",
+      "project": "Conjunto Residencial, Prados Verdes (Bogotá)",
+      "feedback": "Gracias a su trabajo, nuestra terraza quedó perfectamente protegida. ¡Muy satisfecho con el resultado!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739979293/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/federico_guzman_consultoria_kobvqf.webp"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Qué incluye el servicio de impermeabilización?",
+      "answer": "Nuestro servicio incluye diagnóstico, aplicación de membranas líquidas, instalación de láminas impermeables, tratamiento de juntas y grietas, y rehabilitación de estructuras afectadas por humedad."
+    },
+    {
+      "question": "¿Por qué es importante la impermeabilización en una construcción?",
+      "answer": "Es crucial para prevenir filtraciones y humedades que pueden causar daños estructurales y afectar la durabilidad de la edificación."
+    },
+    {
+      "question": "¿Cuánto cuesta un servicio de impermeabilización?",
+      "answer": "El costo varía según el tamaño y la complejidad del proyecto. Contáctanos para obtener una cotización personalizada."
+    },
+    {
+      "question": "¿En qué tipo de proyectos aplican la impermeabilización?",
+      "answer": "Aplicamos soluciones de impermeabilización en proyectos residenciales, comerciales, industriales y de infraestructura."
+    },
+    {
+      "question": "¿Qué materiales utilizan para la impermeabilización?",
+      "answer": "Utilizamos membranas líquidas, láminas impermeables y selladores especializados de alta calidad."
+    },
+    {
+      "question": "¿Cuáles son los beneficios de la impermeabilización?",
+      "answer": "Protección contra filtraciones, durabilidad de las estructuras, prevención de daños por humedad y cumplimiento de normativas."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "Impermeabilización de cubiertas en edificio comercial",
+      "description": "Aplicamos membranas líquidas en las cubiertas de un edificio comercial, garantizando protección duradera contra filtraciones y humedades.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739996454/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeablizacion_bogota_ju554p.webp"
+    },
+    {
+      "title": "Rehabilitación de terraza afectada por humedad",
+      "description": "Recuperamos una terraza dañada por filtraciones, aplicando láminas impermeables y selladores especializados.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739571005/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizaciones_infogra_y3fskm.webp"
+    },
+    {
+      "title": "Tratamiento de juntas en estructura residencial",
+      "description": "Aplicamos selladores en juntas y grietas de una estructura residencial, previniendo filtraciones y garantizando su integridad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739997177/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Tratamiento_de_juntas_en_estructura_residencial_plv8rt.webp"
+    }
+  ],
+  "Proyectosrealizados": [
+    {
+      "title": "Impermeabilización de cubiertas en hospital",
+      "description": "Protegimos las cubiertas de un hospital con membranas líquidas, asegurando un ambiente libre de humedades.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739997676/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizacion_terraza_hospital_wk73mh.webp"
+    },
+    {
+      "title": "Rehabilitación de estructura afectada por filtraciones",
+      "description": "Recuperamos una estructura dañada por filtraciones, aplicando soluciones integrales de impermeabilización.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739998210/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Rehabilitaci%C3%B3n_de_estructura_afectada_por_filtraciones_clohos.webp"
+    },
+    {
+      "title": "Impermeabilización de terraza en conjunto residencial",
+      "description": "Aplicamos láminas impermeables en una terraza residencial, garantizando su protección y durabilidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739998621/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Impermeabilizaci%C3%B3n_de_terraza_en_conjunto_residencial_lspytj.webp"
+    }
+  ],
+  "statistics": {
+    "years_of_experience": 20,
+    "completed_projects": 300,
+    "satisfied_clients": 250,
+    "cost_reduction_average": "18%"
+  },
+  "blog": [
+    {
+      "title": "Interventoría de Obras en Colombia",
+      "excerpt": "¿Sabías que una buena interventoría puede reducir sobrecostos en construcción hasta en un 30%?",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventorias_de_obras_ozqjnx.webp",
+      "url": "https://www.estructurasverticales.com/blog/interventoria-obras-colombia"
+    },
+    {
+      "title": "Consultoría de Obras: Garantiza el Éxito",
+      "excerpt": "Dato clave: Implementar una consultoría de obras adecuada puede reducir los costos de un proyecto de construcción en un 15% mediante una mejor planificación y control de recursos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
+      "url": "https://www.estructurasverticales.com/blog/consultoria-obras"
+    },
+    {
+      "title": "Diseño Estructural:Su Importancia en la Construcción",
+      "excerpt": "El diseño estructural es la base de cualquier construcción segura y eficiente. Su objetivo principal es garantizar que las estructuras sean resistentes, estables y duraderas, soportando cargas y condiciones ambientales adversas.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1os_Estructurales_qx5xxw.webp",
+      "url": "https://www.estructurasverticales.com/blog/beneficios-impermeabilizacion"
+    }
+  ],
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+    "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+  },
+  "cta": {
+    "primary": "Solicita una evaluación gratuita de impermeabilización para tu proyecto.",
+    "secondary": "Habla con un experto en impermeabilización."
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
 }
+
+
+
+
 
 ]
