@@ -54,7 +54,7 @@ export async function generateMetadata({ params }) {
   }
 
   const { data } = post;
-
+  console.log("SEO Metadata:", data); // 🔥 Verificar en la consola del servidor
   return {
     title: data.title,
     description: data.description,
