@@ -77,9 +77,6 @@ export default function ServicioPage() {
   if (loading) return <h1>Cargando...</h1>;
   if (!servicio) return <h1 className={styles.error}>Servicio no encontrado</h1>;
 
-
-
-
   return (
     <div className={styles.containerdiv}>
       <Navbar />

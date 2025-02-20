@@ -1,4 +1,3 @@
-
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -38,7 +37,7 @@ const CustomImage = (props) => {
   return <img {...props} className={styles.centeredImage} />;
 };
 
-// ✅ Optimización de generateMetadata
+// ✅ generateMetadata optimizado con SEO completo
 export async function generateMetadata({ params }) {
   if (!params) return {};
 
@@ -50,6 +49,7 @@ export async function generateMetadata({ params }) {
     return {
       title: "Artículo no encontrado",
       description: "El artículo que buscas no está disponible.",
+      robots: "noindex, nofollow",
     };
   }
 
@@ -58,9 +58,17 @@ export async function generateMetadata({ params }) {
   return {
     title: data.title,
     description: data.description,
+    keywords: data.keywords || [],
+    robots: "index, follow",
+    alternates: {
+      canonical: `https://estructurasverticales.com/blog/${slug}`,
+    },
     openGraph: {
       title: data.title,
       description: data.description,
+      url: `https://estructurasverticales.com/blog/${slug}`,
+      type: "article",
+      publishedTime: data.date,
       images: [
         {
           url: data.image,
@@ -69,6 +77,12 @@ export async function generateMetadata({ params }) {
           alt: data.title,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: data.title,
+      description: data.description,
+      images: [data.image],
     },
   };
 }
@@ -116,4 +130,3 @@ export default async function BlogPost({ params }) {
     </>
   );
 }
-
