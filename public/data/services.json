@@ -676,6 +676,7 @@
     "live_chat": true
   }
 },
+
 {
   "metadata": [
     {
@@ -844,5 +845,170 @@
     "whatsapp": "https://wa.me/3132581599",
     "live_chat": true
   }
+},
+{
+  "metadata": [
+    {
+      "title": "Supervisión de Obras",
+      "slug": "supervision-de-obra",
+      "description": "Ofrecemos supervisión de obra profesional, garantizando el cumplimiento de normativas, calidad y eficiencia en cada proyecto de construcción.",
+      "keywords": "supervisión de obra, control de calidad en construcción, supervisión de proyectos, gestión de obra, inspección de construcción, Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Ibagué, Cartagena, Cúcuta, Manizales, Pereira",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervision_de_obra_profesional_xyz123.webp"
+    }
+  ],
+  "id": "supervision-de-obra",
+  "title": "Supervisión de Obras",
+  "description": "Ofrecemos supervisión de obra profesional, garantizando el cumplimiento de normativas, calidad y eficiencia en cada proyecto de construcción.",
+  "parrafo1": "Nuestro equipo de supervisores especializados garantiza que cada fase de la construcción cumpla con los estándares de calidad, seguridad y normativas vigentes.",
+  "parrafo2": "Implementamos procesos de control y seguimiento rigurosos para asegurar que los proyectos se ejecuten según lo planeado, optimizando tiempos y recursos.",
+  "parrafo3": "Trabajamos en coordinación con contratistas, arquitectos e ingenieros para resolver problemas técnicos y garantizar la correcta ejecución de la obra.",
+  "parrafo4": "Nuestra supervisión incluye revisiones periódicas, informes detallados y recomendaciones para mejorar la eficiencia y calidad del proyecto.",
+  "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_Obras_qkrufl.webp",
+  "services": [
+    {
+      "title": "Supervisión de calidad en construcción",
+      "description": "Aseguramos que los materiales y procesos cumplan con los estándares de calidad y normativas vigentes."
+    },
+    {
+      "title": "Control de avance de obra",
+      "description": "Monitoreamos el progreso de la obra para garantizar que se cumplan los plazos establecidos."
+    },
+    {
+      "title": "Inspección de seguridad en obra",
+      "description": "Verificamos que se implementen las medidas de seguridad necesarias para proteger a los trabajadores y el proyecto."
+    },
+    {
+      "title": "Gestión de contratistas y proveedores",
+      "description": "Supervisamos la gestión de contratistas y proveedores para asegurar la correcta ejecución de la obra."
+    },
+    {
+      "title": "Elaboración de informes técnicos",
+      "description": "Generamos informes detallados sobre el estado de la obra, identificando áreas de mejora y soluciones técnicas."
+    }
+  ],
+  "benefits": [
+    "Cumplimiento de normativas y estándares de calidad.",
+    "Optimización de tiempos y recursos en la construcción.",
+    "Reducción de riesgos y sobrecostos en proyectos.",
+    "Informes técnicos detallados y transparentes."
+  ],
+  "testimonials": [
+    {
+      "client": "Carlos Ramírez",
+      "project": "Edificio Residencial Altos de la Colina (Ibague)",
+      "feedback": "La supervisión de obra fue impecable. Cumplieron con todos los estándares y nos mantuvieron informados en cada etapa. ¡Muy recomendados!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Laura Gómez",
+      "project": "Centro Comercial Plaza Central (Bogota)",
+      "feedback": "Gracias a su supervisión, el proyecto se ejecutó sin contratiempos y dentro del presupuesto. ¡Excelente trabajo!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Andrés Fernández",
+      "project": "Clinica San Juan (Bogota)",
+      "feedback": "La supervisión técnica fue clave para el éxito del proyecto. Profesionales altamente capacitados y comprometidos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Qué incluye el servicio de supervisión de obra?",
+      "answer": "Incluye control de calidad, seguimiento de avances, inspección de seguridad, gestión de contratistas y elaboración de informes técnicos."
+    },
+    {
+      "question": "¿Por qué es importante la supervisión de obra en construcción?",
+      "answer": "Es fundamental para garantizar el cumplimiento de normativas, la calidad del proyecto y la optimización de recursos."
+    },
+    {
+      "question": "¿Cuánto cuesta un servicio de supervisión de obra?",
+      "answer": "El costo varía según el tamaño y complejidad del proyecto. Contáctanos para una cotización personalizada."
+    },
+    {
+      "question": "¿En qué tipo de proyectos aplica la supervisión de obra?",
+      "answer": "Aplicamos nuestros servicios en proyectos residenciales, comerciales, industriales y de infraestructura."
+    },
+    {
+      "question": "¿Qué beneficios ofrece la supervisión de obra?",
+      "answer": "Cumplimiento normativo, reducción de riesgos, optimización de recursos y garantía de calidad."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "Supervisión de obra en edificio residencial",
+      "description": "Realizamos la supervisión de un edificio residencial en Bogotá, garantizando el cumplimiento de normativas y estándares de calidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990908/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_hospital_t3cu2u.webp"
+    },
+    {
+      "title": "Control de calidad en construcción de centro comercial",
+      "description": "Supervisamos la construcción de un centro comercial en Bogota, optimizando tiempos y recursos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740075960/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervison_de_obra_Centro_comercial_lma0ov.webp"
+    },
+    {
+      "title": "Inspección de seguridad en obra industrial",
+      "description": "Implementamos medidas de seguridad en una obra industrial en Zipaquira, asegurando la protección de los trabajadores.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740076101/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Inspecci%C3%B3n_de_seguridad_en_obra_industrial_a3dlig.webp"
+    }
+  ],
+  "Proyectosrealizados": [
+    {
+      "title": "Supervisión de obra en conjunto residencial",
+      "description": "Supervisamos la construcción de un conjunto residencial en Ibagué, garantizando calidad y cumplimiento normativo.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740076178/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_obra_en_conjunto_residencial_inga5o.webp"
+    },
+    {
+      "title": "Control de avance en construcción de una Clinica",
+      "description": "Monitoreamos el avance de la construcción de una Clinica, optimizando tiempos y recursos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740076426/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Control_de_avance_en_construcci%C3%B3n_de_una_Clinica_pvkj1u.webp"
+    },
+    {
+      "title": "Supervisión de obra en nave industrial",
+      "description": "Supervisamos la construcción de una nave industrial en Funza Cundinamarca, asegurando calidad y seguridad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740063008/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1o_de_estructura_metalica_para_nave_industrial_jplgyv.jpg"
+    }
+  ],
+  "statistics": {
+    "years_of_experience": 20,
+    "completed_projects": 300,
+    "satisfied_clients": 250,
+    "cost_reduction_average": "18%"
+  },
+  "blog": [
+    {
+      "title": "Interventoría de Obras en Colombia",
+      "excerpt": "¿Sabías que una buena interventoría puede reducir sobrecostos en construcción hasta en un 30%?, puede optener mas informacion ingresando al link",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventorias_de_obras_ozqjnx.webp",
+      "url": "https://www.estructurasverticales.com/blog/interventoria-obras-colombia"
+    },
+    {
+      "title": "Diseño Estructural:Su Importancia en la Construcción",
+      "excerpt": "El diseño estructural es la base de cualquier construcción segura y eficiente. Su objetivo principal es garantizar que las estructuras sean resistentes.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1os_Estructurales_qx5xxw.webp",
+      "url": "https://www.estructurasverticales.com/blog/beneficios-impermeabilizacion"
+    },
+    {
+      "title": "Consultoría de Obras: Garantiza el Éxito",
+      "excerpt": "Dato clave: Implementar una consultoría de obras adecuada puede reducir los costos de un proyecto de construcción en un 15%, ingresa a este link, para mas informacion",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
+      "url": "https://www.estructurasverticales.com/blog/consultoria-obras"
+    }
+    
+  ],
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+    "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+  },
+  "cta": {
+    "primary": "Solicita una evaluación gratuita de supervisión de obra para tu proyecto.",
+    "secondary": "Habla con un experto en supervisión de obra."
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
 }
+
 ]
