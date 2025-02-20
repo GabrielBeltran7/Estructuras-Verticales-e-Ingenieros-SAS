@@ -1,6 +1,15 @@
 [
   
   {
+  "metadata": [  
+     {
+    "title": "Consultoría de Obras",
+    "slug": "consultoria-de-obras",
+    "description": "Descubre qué es la consultoría de obras, cómo optimiza el proceso de construcción, y las mejores recomendaciones para garantizar el éxito en tus proyectos.",
+    "keywords": "consultoria de obras, consultoria construccion, asesoría en construcción, gestión de proyectos, Consultoría en Obras, Consultoría de Obras Civiles, Consultoría de Obras Publicas, interventoría de obras, supervisión de obras, planificación de obras, control de calidad en construcción, gestión de riesgos en proyectos, optimización de costos en obras, consultoría en obras Colombia, Bogotá, Medellín, Cali, Ibagué, Girardot.",
+    "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp"
+    }
+],
     "id": "consultoria-de-obras",
     "title": "Consultoría de Obras",
     "description": "Maximizamos la eficiencia de tu obra con asesoría experta para reducir costos y tiempos sin comprometer la calidad.",
@@ -10,6 +19,7 @@
     "parrafo4": "Trabajamos contigo de la mano, implementando soluciones inteligentes que maximizan la productividad y la rentabilidad de tu inversión. Con nuestra asesoría, llevarás tu proyecto al siguiente nivel, asegurando un desarrollo exitoso y sin contratiempos.",
      "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
      "services": [
+  
     {
       "title": "Planificación estratégica",
       "description": "Creamos un plan detallado para garantizar el éxito de tu obra desde el inicio, minimizando riesgos y optimizando recursos."
@@ -31,6 +41,7 @@
       "description": "Aseguramos el cumplimiento de todos los requisitos legales y técnicos para evitar sanciones."
     }
   ],
+  
   "benefits": [
     "Experiencia comprobada: Más de 15 años asesorando proyectos exitosos en diversas industrias.",
     "Atención personalizada: Soluciones adaptadas a las necesidades específicas de cada cliente y obra.",
@@ -136,6 +147,7 @@
       "url": "https://www.estructurasverticales.com/blog/impermeabilizacion-construccion"
     }
   ],
+
   "contact": {
     "phone": "+57 3132581599",
     "email": "estructurasverticalessas@gmail.com",
@@ -156,6 +168,15 @@
 
 
 {
+  "metadata": [  
+    {
+   "title": "Interventoría de Obras",
+   "slug": "interventoria-de-obras",
+   "description": "Garantizamos el éxito de tu proyecto con un control riguroso en calidad, costos y tiempos, asegurando el cumplimiento de las normas",
+   "keywords": "interventoría de obras, supervisión de obras, consultoría en construcción, gestión de proyectos de construcción, control de calidad en obras, planificación de obras civiles, optimización de costos en construcción, gestión de riesgos en proyectos, asesoría en construcción, consultoría en obras públicas, interventoría de obras civiles, inspección de obras, auditoría de construcción, cumplimiento normativo en obras, interventoría estructural, interventoría de infraestructura, Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Ibagué, Cartagena, Cúcuta, Manizales, Pereira",
+   "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990492/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_en_bogota_nb71ot.webp"
+   }
+],
   "id": "interventoria-de-obras",
   "title": "Interventoría de Obras",
   "description": "Garantizamos el éxito de tu proyecto con un control riguroso en calidad, costos y tiempos, asegurando el cumplimiento de normativas y la optimización de recursos.",
@@ -322,6 +343,16 @@
 
 
 {
+  "metadata": [  
+    {
+      "title": "Impermeabilización",
+      "slug": "impermeabilizacion",
+      "description": "Protege tus estructuras con impermeabilización de alta calidad, evitando filtraciones y daños por humedad.",
+      "keywords": "impermeabilización de techos, impermeabilización de terrazas, impermeabilización de cubiertas, soluciones contra humedad, control de filtraciones, protección estructural, mantenimiento de edificaciones, Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Ibagué, Cartagena, Cúcuta, Manizales, Pereira",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizacion_bnphge.webp"
+    }
+    
+],
   "id": "impermeabilizacion",
   "title": "Impermeabilización",
   "description": "Protegemos tus estructuras contra filtraciones y humedades, garantizando durabilidad y seguridad en cada proyecto con materiales y técnicas de alta calidad.",

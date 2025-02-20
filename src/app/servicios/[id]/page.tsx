@@ -7,6 +7,8 @@ import Navbar from "@/app/Components/Navbar/Navbar";
 import styles from "./serviciopage.module.css";
 import ContactButtons from "@/app/Components/ContactButtons/ContactButtons";
 import Image from "next/image";
+import Head from "next/head"; // ✅ Importamos Head para configurar metadatos
+
 
 // 📌 Definimos el tipo de Servicio
 type Servicio = {
@@ -28,6 +30,7 @@ type Servicio = {
     image: string;
   }[];
   faqs: { question: string; answer: string }[];
+  metadata: { title: string; slug: string; description: string, keywords: string, image: string }[];
   Proyectosrealizados: { title: string; description: string; image: string }[];
   case_studies: { title: string; description: string; image: string }[];
   statistics: {
@@ -77,7 +80,29 @@ export default function ServicioPage() {
   if (loading) return <h1>Cargando...</h1>;
   if (!servicio) return <h1 className={styles.error}>Servicio no encontrado</h1>;
 
+  const metadata = servicio.metadata[0]; // 📌 Tomamos la metadata del servicio
+  console.log("metadata")
+
   return (
+    <>
+   <Head>
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <meta property="og:title" content={metadata.title} />
+  <meta name="keywords" content={metadata.keywords} />
+  <meta property="og:description" content={metadata.description} />
+  <meta property="og:image" content={metadata.image} />
+  <meta property="og:url" content={`https://estructurasverticales.com/servicios/${metadata.slug}`} />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={metadata.title} />
+  <meta name="twitter:description" content={metadata.description} />
+  <meta name="twitter:image" content={metadata.image} />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={`https://estructurasverticales.com/servicios/${metadata.slug}`} />
+</Head>
+
+    
     <div className={styles.containerdiv}>
       <Navbar />
       <main className={styles.container}>
@@ -317,5 +342,6 @@ export default function ServicioPage() {
       </main>
       <ContactButtons />
     </div>
+    </>
   );
 }
