@@ -58,20 +58,19 @@
 
 .dropdownMenu {
   list-style: none;
-  padding: 0;
-  margin: 0;
   position: absolute;
   top: 100%;
-  left:0;
+  left: 0;
   background-color: #FFCC00;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  border-radius: 0.5rem;
 }
 
 .dropdownMenu li {
-  margin: 10px 0;
+  margin: 2px 0; /* Reduce el margen entre elementos */
 }
 
 .dropdownLink {
@@ -79,9 +78,10 @@
   text-decoration: none;
   padding: 10px 20px;
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   transition: background-color 0.3s ease;
+  margin-bottom: -10px;
 }
 
 .dropdownLink:hover {
@@ -147,7 +147,7 @@
     right: 0;
     background-color: #FFCC00;
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }.dropdownMenu {

@@ -22,6 +22,7 @@ module.exports = {
         { loc: '/servicios/supervision-de-obra', lastmod: new Date().toISOString() },
         { loc: '/servicios/informes-tecnicos-de-obras', lastmod: new Date().toISOString() },
         { loc: '/servicios/elaboracion-de-pliegos-de-condiciones', lastmod: new Date().toISOString() },
+        { loc: '/servicios/recibo-de-zonas-comunes-en-propiedad-horizontal-ph', lastmod: new Date().toISOString() },
         { loc: '/', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 1.0 }, // Página principal
         { loc: '/blog', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 0.9 }, // Página del blog
       ];

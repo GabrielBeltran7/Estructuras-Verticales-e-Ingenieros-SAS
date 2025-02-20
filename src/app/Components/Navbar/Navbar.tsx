@@ -127,9 +127,7 @@ export default Navbar;
 
 
 
-
-
-// "use client"; // Esto es importante para que funcione el hook useRouter
+// "use client";
 
 // import Link from "next/link";
 // import { useState, useEffect } from "react";
@@ -201,7 +199,7 @@ export default Navbar;
 //         </li>
 
 //         {/* Sección de Servicios con Submenú */}
-//         <li className={styles.dropdown}>
+//         <li className={`${styles.dropdown} ${subMenuOpen ? styles.open : ""}`}>
 //           <button className={styles.navLink} onClick={toggleSubMenu}>
 //             Servicios ▾
 //           </button>
@@ -255,4 +253,5 @@ export default Navbar;
 // };
 
 // export default Navbar;
+
 

@@ -846,6 +846,7 @@
     "live_chat": true
   }
 },
+
 {
   "metadata": [
     {
@@ -1010,6 +1011,7 @@
     "live_chat": true
   }
 },
+
 {
   "metadata": [
     {
@@ -1172,7 +1174,9 @@
     "whatsapp": "https://wa.me/3132581599",
     "live_chat": true
   }
-},{
+},
+
+{
   "metadata": [
     {
       "title": "Elaboración de Pliegos de Condiciones",
@@ -1334,6 +1338,175 @@
     "whatsapp": "https://wa.me/3132581599",
     "live_chat": true
   }
+},
+
+
+{
+  "metadata": [
+    {
+      "title": "Recibo de Zonas Comunes en Propiedad Horizontal PH",
+      "slug": "recibo-de-zonas-comunes-en-propiedad-horizontal-ph",
+      "description": "Recibo de zonas comunes en propiedad horizontal PH para garantizar cumplimiento normativo y óptimo estado de las áreas compartidas.",
+      "keywords": "recibo de zonas comunes, propiedad horizontal, PH, administración de conjuntos, inspección de zonas comunes, mantenimiento de áreas compartidas, Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Ibagué, Cartagena, Cúcuta, Manizales, Pereira",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392553/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Recibo_de_Zonas_Comunes_Ph_s5k00j.webp"
+    }
+  ],
+  "id": "recibo-de-zonas-comunes-en-propiedad-horizontal-ph",
+  "title": "Recibo de Zonas Comunes en Propiedad Horizontal PH",
+  "description": "Recibo de zonas comunes en propiedad horizontal PH para garantizar cumplimiento normativo y óptimo estado de las áreas compartidas.",
+  "parrafo1": "El recibo de zonas comunes en propiedad horizontal es un procedimiento clave para validar el estado y mantenimiento de los espacios compartidos antes de su entrega formal a la administración.",
+  "parrafo2": "Nuestro equipo realiza una inspección técnica minuciosa para asegurar que cada área común cumpla con las normativas y estándares de calidad exigidos.",
+  "parrafo3": "Este proceso previene problemas de deterioro prematuro, asegurando que las áreas de uso colectivo sean seguras y funcionales para todos los residentes.",
+  "parrafo4": "Proporcionamos informes detallados sobre hallazgos, recomendaciones y medidas correctivas necesarias para garantizar la óptima conservación de las zonas comunes.",
+  "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392553/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Recibo_de_Zonas_Comunes_Ph_s5k00j.webp",
+  "services": [
+    {
+      "title": "Inspección de Zonas Comunes",
+      "description": "Revisamos y evaluamos el estado de las áreas compartidas, asegurando su correcto funcionamiento y cumplimiento normativo."
+    },
+    {
+      "title": "Entrega Formal de Espacios",
+      "description": "Supervisamos el proceso de entrega de zonas comunes, verificando que se cumplan los acuerdos contractuales y estándares de calidad."
+    },
+    {
+      "title": "Revisión de Instalaciones y Acabados",
+      "description": "Evaluamos instalaciones eléctricas, hidráulicas y acabados en áreas compartidas para detectar posibles fallas o pendientes."
+    },
+    {
+      "title": "Correcciones y Ajustes Finales",
+      "description": "Identificamos anomalías y brindamos recomendaciones para garantizar la correcta recepción de las zonas comunes."
+    },
+    {
+      "title": "Asesoría en Mantenimiento Preventivo",
+      "description": "Ofrecemos planes y estrategias para el mantenimiento adecuado de las áreas compartidas a largo plazo."
+    }
+  ],
+  "benefits": [
+    "Garantiza el buen estado de las zonas comunes.",
+    "Evita futuros problemas de mantenimiento.",
+    "Asegura el cumplimiento de normativas.",
+    "Mejora la convivencia en la propiedad horizontal."
+  ],
+  "testimonials": [
+    {
+      "client": "Juan Pérez",
+      "project": "Conjunto Residencial El Bosque (Bogotá)",
+      "feedback": "El recibo de zonas comunes fue clave para detectar fallas a tiempo y exigir correcciones antes de la entrega final.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "María González",
+      "project": "Conjunto Residencial Los Álamos (Bogota)",
+      "feedback": "La inspección de las zonas comunes nos permitió asegurar que todo estaba en perfectas condiciones antes de la entrega final.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Carlos Ramírez",
+      "project": "Conjunto Residencial Torres del Sol (Ibague)",
+      "feedback": "Gracias al recibo de zonas comunes, logramos identificar detalles que debían corregirse antes de la entrega del proyecto.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Qué es el recibo de zonas comunes en un conjunto residencial?",
+      "answer": "Es el proceso de inspección y verificación de los espacios compartidos del conjunto antes de la entrega final, asegurando que cumplen con las especificaciones y normativas establecidas."
+    },
+    {
+      "question": "¿Por qué es importante realizar el recibo de zonas comunes?",
+      "answer": "Permite detectar fallas o defectos en infraestructura, acabados y servicios antes de la entrega, asegurando que la constructora realice las correcciones necesarias."
+    },
+    {
+      "question": "¿Quién debe participar en el recibo de zonas comunes?",
+      "answer": "Generalmente, participan representantes de la constructora, la administración del conjunto, miembros del consejo de propietarios y, en algunos casos, un ingeniero o arquitecto especializado."
+    },
+    {
+      "question": "¿Qué aspectos se revisan durante el recibo de zonas comunes?",
+      "answer": "Se inspeccionan elementos como acabados, sistemas eléctricos, hidráulicos, áreas recreativas, ascensores, parqueaderos, accesos y cumplimiento de normativas de seguridad."
+    },
+    {
+      "question": "¿Qué hacer si se encuentran fallas en las zonas comunes?",
+      "answer": "Se debe documentar cada irregularidad en un acta de observaciones y presentarla a la constructora para que realice las correcciones antes de la entrega oficial del proyecto."
+    }
+  ],
+  
+"case_studies": [
+    {
+      "title": "Recibo de zonas comunes en conjunto residencial",
+      "description": "Realizamos la inspección de zonas comunes en un conjunto residencial en Bogotá, asegurando que todas las áreas cumplieran con las especificaciones y normativas antes de la entrega final.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739586936/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/recibo_de_zonas_comunes_info_jcnant.jpg"
+    },
+    {
+      "title": "Verificación de infraestructura en conjunto de apartamentos",
+      "description": "Supervisamos la calidad de la infraestructura en un conjunto de apartamentos en Medellín, detectando fallas a tiempo y gestionando su corrección con la constructora.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739997177/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Tratamiento_de_juntas_en_estructura_residencial_plv8rt.webp"
+    },
+    {
+      "title": "Evaluación de acabados en zonas comunes",
+      "description": "Llevamos a cabo una evaluación exhaustiva de los acabados en las zonas comunes de un complejo residencial en Bogota, garantizando que cumplieran con los estándares de calidad establecidos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739575271/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_en_Colombia_inforgrafia_gmtyka.webp"
+    }
+  ],
+  "Proyectosrealizados": [
+    {
+      "title": "Supervisión de estructura en edificio corporativo",
+      "description": "Realizamos la inspección técnica de la estructura de un edificio corporativo en Bogota, verificando la correcta ejecución de los elementos estructurales y garantizando la seguridad antes de su entrega.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740062487/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1o_estructural_para_edificio_corporativo_kxncdz.webp"
+    },
+    {
+      "title": "Inspección de acabados en zonas comunes de clínica",
+      "description": "Evaluamos el estado de las zonas comunes de una clínica en su fase final de construcción, garantizando la calidad y cumplimiento de especificaciones.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740063954/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1o_de_estructura_de_concreto_para_centro_educativo_njapqu.webp"
+    },
+    {
+      "title": "Revisión de espacios compartidos en nave industrial",
+      "description": "Llevamos a cabo la verificación de espacios comunes en una nave industrial en Funza, asegurando accesibilidad y seguridad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740063008/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1o_de_estructura_metalica_para_nave_industrial_jplgyv.jpg"
+    }
+  ],
+
+  "statistics": {
+    "years_of_experience": 20,
+    "completed_projects": 300,
+    "satisfied_clients": 250,
+    "cost_reduction_average": "18%"
+  },
+ "blog": [
+    {
+      "title": "Impermeabilización en Construcción",
+      "excerpt": "La impermeabilización en construcción es un proceso clave para evitar filtraciones de agua y humedad, garantizando la durabilidad de las edificaciones.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizacion_bnphge.webp",
+      "url": "https://www.estructurasverticales.com/blog/impermeabilizacion-construccion"
+    },
+    {
+      "title": "Supervisión de Obras de Construcción, su Importancia",
+      "excerpt": "Un proyecto con supervisión eficiente puede reducir costos en un 20% y mejorar la calidad final en un 35%, evitando errores y sobrecostos innecesarios.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_Obras_qkrufl.webp",
+      "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
+    },
+    {
+      "title": "Recibo de Zonas Comunes en Propiedad Horizontal ph.",
+      "excerpt": "El recibo de zonas comunes en propiedad horizontal es un proceso fundamental para garantizar que las áreas compartidas de un conjunto residencial.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392553/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Recibo_de_Zonas_Comunes_Ph_s5k00j.webp",
+      "url": "https://www.estructurasverticales.com/blog/recibo-zonas-comunes-ph"
+    }
+  ],
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+    "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+  },
+  "cta": {
+    "primary": "Solicita la inspección de zonas comunes para tu proyecto.",
+    "secondary": "Habla con un experto en propiedad horizontal."
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
 }
+
+
 
 ]
