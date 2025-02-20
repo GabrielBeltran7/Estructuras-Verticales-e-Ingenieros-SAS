@@ -271,7 +271,7 @@ export default function ServicioPage() {
         </section>
         {/* Blog */}
         <section className={styles.sectionblog}>
-          <h2 className={styles.subtitle}>Blog</h2>
+          <h2 className={styles.subtitle}>Temas Relacionados</h2>
 
           <div className={styles.blogContainer}>
             {servicio.blog.map((post, index) => {

@@ -675,8 +675,174 @@
     "whatsapp": "https://wa.me/3132581599",
     "live_chat": true
   }
+},
+{
+  "metadata": [
+    {
+      "title": "Montaje Estructural",
+      "slug": "montaje-estructural",
+      "description": "Ofrecemos servicios de montaje estructural precisos y eficientes, garantizando la seguridad y calidad en cada proyecto de construcción.",
+      "keywords": "montaje estructural, construcción de estructuras, instalación de estructuras metálicas, montaje industrial, estructuras de acero, montaje de estructuras de concreto, Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Ibagué, Cartagena, Cúcuta, Manizales, Pereira",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Montaje_estructural_umbdwo.webp"
+    }
+  ],
+  "id": "montaje-estructural",
+  "title": "Montaje Estructural",
+  "description": "Ofrecemos servicios de montaje estructural precisos y eficientes, garantizando la seguridad y calidad en cada proyecto de construcción.",
+  "parrafo1": "Somos especialistas en montaje estructural, comprometidos con la ejecución precisa y segura de proyectos de construcción, desde estructuras metálicas hasta edificaciones complejas.",
+  "parrafo2": "Utilizamos técnicas avanzadas y equipos especializados para garantizar que cada estructura sea montada con la máxima precisión y cumplimiento de normativas.",
+  "parrafo3": "Nuestro equipo de profesionales asegura que cada proyecto se complete en tiempo y forma, manteniendo los más altos estándares de calidad y seguridad.",
+  "parrafo4": "Trabajamos en estrecha colaboración con nuestros clientes para garantizar que cada detalle del montaje estructural cumpla con sus expectativas y requerimientos.",
+  "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Montaje_estructural_umbdwo.webp",
+  "services": [
+    {
+      "title": "Montaje de estructuras metálicas",
+      "description": "Realizamos el montaje de estructuras metálicas con precisión y seguridad, garantizando su resistencia y durabilidad."
+    },
+    {
+      "title": "Instalación de estructuras de concreto",
+      "description": "Ejecutamos el montaje de estructuras de concreto, asegurando su estabilidad y cumplimiento con los diseños estructurales."
+    },
+    {
+      "title": "Montaje industrial",
+      "description": "Especializados en el montaje de estructuras para proyectos industriales, optimizando tiempos y recursos."
+    },
+    {
+      "title": "Montaje de cubiertas y techos",
+      "description": "Instalamos cubiertas y techos con materiales de alta calidad, garantizando su estanqueidad y durabilidad."
+    },
+    {
+      "title": "Supervisión y control de montaje",
+      "description": "Ofrecemos supervisión especializada durante el proceso de montaje, asegurando el cumplimiento de normativas y estándares de calidad."
+    }
+  ],
+  "benefits": [
+    "Montaje preciso y seguro de estructuras.",
+    "Cumplimiento de normativas y estándares de calidad.",
+    "Uso de equipos y técnicas avanzadas.",
+    "Optimización de tiempos y recursos en construcción."
+  ],
+ "testimonials": [
+    {
+      "client": "Javier Méndez",
+      "project": "Edificio Empresarial Tres Esquinas (Zipaquirá)",
+      "feedback": "El montaje estructural que realizaron fue impecable. Cumplieron con los plazos y garantizaron la seguridad del proyecto. ¡Excelente servicio!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Mariana Torres",
+      "project": "Centro Comercial Plaza Norte (Bogotá)",
+      "feedback": "El equipo demostró gran profesionalismo en el montaje de estructuras metálicas. ¡Muy satisfechos con el resultado!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Ricardo Álvarez",
+      "project": "Cinica san Vicente (Bogota)",
+      "feedback": "Gracias a su trabajo, la supervisión estructural y construcción fueron eficientes y seguras. ¡Recomendados!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    }
+],
+
+
+  "faqs": [
+    {
+      "question": "¿Qué incluye el servicio de montaje estructural?",
+      "answer": "Nuestro servicio incluye montaje de estructuras metálicas y de concreto, instalación de cubiertas, supervisión especializada y cumplimiento de normativas."
+    },
+    {
+      "question": "¿Por qué es importante el montaje estructural en una construcción?",
+      "answer": "Es crucial para garantizar la estabilidad, seguridad y durabilidad de las estructuras, asegurando que cumplan con los diseños y normativas."
+    },
+    {
+      "question": "¿Cuánto cuesta un servicio de montaje estructural?",
+      "answer": "El costo varía según la complejidad y el tamaño del proyecto. Contáctanos para una cotización personalizada."
+    },
+    {
+      "question": "¿En qué tipo de proyectos aplican el montaje estructural?",
+      "answer": "Aplicamos nuestros servicios en proyectos residenciales, comerciales, industriales y de infraestructura."
+    },
+    {
+      "question": "¿Qué materiales utilizan en el montaje estructural?",
+      "answer": "Utilizamos estructuras metálicas, de concreto y materiales de alta calidad, garantizando su resistencia y durabilidad."
+    },
+    {
+      "question": "¿Qué beneficios ofrece el montaje estructural?",
+      "answer": "Precisión, seguridad, cumplimiento normativo y optimización de tiempos y recursos."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "Montaje de estructura metálica en centro comercial",
+      "description": "Realizamos el montaje de la estructura metálica de un centro comercial en Bogotá, garantizando su resistencia y cumplimiento normativo.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740068456/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Montaje_de_estructura_met%C3%A1lica_en_centro_comercial_f5dttl.webp"
+    },
+    {
+      "title": "Montaje de estructura de concreto en conjunto residencial",
+      "description": "Ejecutamos el montaje de la estructura de concreto de un conjunto residencial en en Ibague, optimizando tiempos y recursos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740069875/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Montaje_de_estructura_de_concreto_en_conjunto_residencial_11zon_dxws0l.webp"
+    },
+    {
+      "title": "Montaje de cubiertas en nave industrial",
+      "description": "Instalamos las cubiertas de una nave industrial, asegurando, estabilidad y  durabilidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740063008/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1o_de_estructura_metalica_para_nave_industrial_jplgyv.jpg"
+    }
+  ],
+  "Proyectosrealizados": [
+    {
+      "title": "Montaje de estructura metálica en una bodega",
+      "description": "Realizamos el montaje de la estructura metálica de una bodega en Bogotá, garantizando su seguridad y cumplimiento normativo.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740070386/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Montaje_de_estructura_met%C3%A1lica_en_una_bodega_cxlpmq.webp"
+    },
+    {
+      "title": "Montaje de estructura de concreto en centro educativo",
+      "description": "Ejecutamos el montaje de la estructura de concreto de un centro educativo en Ibagué, optimizando tiempos y recursos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740070752/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Montaje_de_estructura_de_concreto_en_centro_educativo_pkzavo.webp"
+    },
+    {
+      "title": "Montaje de cubiertas en edificio corporativo",
+      "description": "Instalamos las cubiertas de un edificio corporativo en Bogota, asegurando su estanqueidad y durabilidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740071012/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Montaje_de_cubiertas_en_edificio_corporativo_dlpxno.webp"
+    }
+  ],
+  "statistics": {
+    "years_of_experience": 20,
+    "completed_projects": 300,
+    "satisfied_clients": 250,
+    "cost_reduction_average": "18%"
+  },
+  "blog": [
+    {
+      "title": "Pliegos de Condiciones en Construcción. Como elaborarlos",
+      "excerpt": "La elaboración de pliegos de condiciones es un proceso fundamental en cualquier proyecto de construcción. Debes tener en cuenta varias normas para su elaboracion",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739563731/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/elaboracion_pliegos_de_condicion_infografia_qglkel.webp",
+      "url": "https://www.estructurasverticales.com/blog/elaboracion-pliegos-condiciones"
+    },
+    {
+      "title": "Interventoría en Infraestructura de Servicios",
+      "excerpt": "¿Sabías que una buena interventoría puede reducir sobrecostos en construcción hasta en un 30%?, aca te explicamos como hacerlo, para mas informacion puede ingresar al link del post completo", 
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739559119/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Interventor%C3%ADa_en_Infraestructura_de_Servicios_tobuif.webp",
+      "url": "https://www.estructurasverticales.com/blog/interventoria-infraestructura-servicios"
+    },
+    {
+      "title": "Recibo de Zonas Comunes en Propiedad Horizontal ph.",
+      "excerpt": "El recibo de zonas comunes en propiedad horizontal es un proceso fundamental para garantizar que las áreas compartidas de un conjunto residencial.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392553/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Recibo_de_Zonas_Comunes_Ph_s5k00j.webp",
+      "url": "https://www.estructurasverticales.com/blog/recibo-zonas-comunes-ph"
+    }
+  ],
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+    "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+  },
+  "cta": {
+    "primary": "Solicita una evaluación gratuita de montaje estructural para tu proyecto.",
+    "secondary": "Habla con un experto en montaje estructural."
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
 }
-
-
-
 ]

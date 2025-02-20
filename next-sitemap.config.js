@@ -17,6 +17,8 @@ module.exports = {
         { loc: '/servicios/interventoria-de-obras', lastmod: new Date().toISOString() },
         { loc: '/servicios/consultoria-de-obras', lastmod: new Date().toISOString() },
         { loc: '/servicios/impermeabilizacion', lastmod: new Date().toISOString() },
+        { loc: '/servicios/diseno-estructural', lastmod: new Date().toISOString() },
+        { loc: '/servicios/montaje-estructural', lastmod: new Date().toISOString() },
         { loc: '/', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 1.0 }, // Página principal
         { loc: '/blog', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 0.9 }, // Página del blog
       ];
