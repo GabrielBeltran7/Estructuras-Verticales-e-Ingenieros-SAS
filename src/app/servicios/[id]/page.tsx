@@ -101,9 +101,7 @@ export default function ServicioPage() {
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href={`https://estructurasverticales.com/servicios/${metadata.slug}`} />
 </Head>
-
-    
-    <div className={styles.containerdiv}>
+ <div className={styles.containerdiv}>
       <Navbar />
       <main className={styles.container}>
         <h1 className={styles.title}>{servicio.title}</h1>
