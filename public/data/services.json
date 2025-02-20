@@ -1009,6 +1009,169 @@
     "whatsapp": "https://wa.me/3132581599",
     "live_chat": true
   }
+},
+{
+  "metadata": [
+    {
+      "title": "Informes Técnicos de Obras",
+      "slug": "informes-tecnicos-de-obras",
+      "description": "Elaboramos informes técnicos de obras detallados y profesionales, garantizando precisión y cumplimiento de normativas en cada proyecto.",
+      "keywords": "informes técnicos de obras,informes tecnicos,  documentación de construcción, informes de avance, informes de calidad, informes de seguridad, Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Ibagué, Cartagena, Cúcuta, Manizales, Pereira",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Informes_T%C3%A9cnicos_jifheh.webp"
+    }
+  ],
+  "id": "informes-tecnicos-de-obras",
+  "title": "Informes Técnicos de Obras",
+  "description": "Elaboramos informes técnicos de obras detallados y profesionales, garantizando precisión y cumplimiento de normativas en cada proyecto.",
+  "parrafo1": "Nuestros informes técnicos de obras son herramientas esenciales para garantizar la transparencia, calidad y cumplimiento normativo en cada fase de la construcción.",
+  "parrafo2": "Documentamos de manera precisa el avance, calidad y seguridad de los proyectos, proporcionando información clara y detallada para la toma de decisiones.",
+  "parrafo3": "Trabajamos en coordinación con ingenieros, arquitectos y contratistas para asegurar que los informes reflejen fielmente el estado de la obra.",
+  "parrafo4": "Nuestros informes incluyen análisis técnicos, recomendaciones y soluciones para optimizar la ejecución de los proyectos.",
+  "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Informes_T%C3%A9cnicos_jifheh.webp",
+  "services": [
+    {
+      "title": "Elaboración de informes de avance",
+      "description": "Documentamos el progreso de la obra, detallando los avances y cumplimiento de plazos establecidos."
+    },
+    {
+      "title": "Informes de control de calidad",
+      "description": "Evaluamos y reportamos el cumplimiento de los estándares de calidad en materiales y procesos constructivos."
+    },
+    {
+      "title": "Informes de inspección de seguridad",
+      "description": "Verificamos y documentamos las medidas de seguridad implementadas en la obra para proteger a los trabajadores."
+    },
+    {
+      "title": "Informes técnicos de cumplimiento normativo",
+      "description": "Garantizamos que la obra cumpla con las normativas locales y nacionales vigentes."
+    },
+    {
+      "title": "Informes de recomendaciones técnicas",
+      "description": "Proporcionamos soluciones y recomendaciones para optimizar la ejecución y calidad del proyecto."
+    }
+  ],
+  "benefits": [
+    "Documentación precisa y detallada.",
+    "Cumplimiento de normativas y estándares de calidad.",
+    "Transparencia en la gestión de proyectos.",
+    "Optimización de recursos y toma de decisiones informada."
+  ],
+  "testimonials": [
+    {
+      "client": "Carlos Ramírez",
+      "project": "Edificio Residencial Altos de la Colina (Ibagué)",
+      "feedback": "Los informes técnicos fueron fundamentales para el éxito del proyecto. Claros, precisos y muy profesionales.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Laura Gómez",
+      "project": "Centro Comercial Plaza Central (Bogotá)",
+      "feedback": "Gracias a los informes técnicos, pudimos tomar decisiones informadas y optimizar el proyecto. ¡Excelente servicio!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Andrés Fernández",
+      "project": "Clínica San Juan (Bogotá)",
+      "feedback": "Los informes técnicos fueron clave para garantizar el cumplimiento normativo y la calidad del proyecto. ¡Muy recomendados!",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Qué incluye un informe técnico de obra?",
+      "answer": "Incluye detalles sobre el avance, calidad, seguridad y cumplimiento normativo del proyecto, así como recomendaciones técnicas."
+    },
+    {
+      "question": "¿Por qué son importantes los informes técnicos en construcción?",
+      "answer": "Son esenciales para garantizar transparencia, calidad y cumplimiento normativo, además de facilitar la toma de decisiones."
+    },
+    {
+      "question": "¿Cuánto cuesta la elaboración de un informe técnico?",
+      "answer": "El costo varía según la complejidad y tamaño del proyecto. Contáctanos para una cotización personalizada."
+    },
+    {
+      "question": "¿En qué tipo de proyectos aplican los informes técnicos?",
+      "answer": "Aplicamos nuestros servicios en proyectos residenciales, comerciales, industriales y de infraestructura."
+    },
+    {
+      "question": "¿Qué beneficios ofrecen los informes técnicos?",
+      "answer": "Transparencia, cumplimiento normativo, optimización de recursos y garantía de calidad."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "Informe técnico para edificio residencial",
+      "description": "Elaboramos el informe técnico de un edificio residencial en Bogotá, garantizando transparencia y cumplimiento normativo.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739990908/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/interventoria_de_obras_hospital_t3cu2u.webp"
+    },
+    {
+      "title": "Informe de calidad para centro comercial",
+      "description": "Documentamos el control de calidad en la construcción de un centro comercial en Bogotá, optimizando recursos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740075960/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervison_de_obra_Centro_comercial_lma0ov.webp"
+    },
+    {
+      "title": "Informe de seguridad en obra industrial",
+      "description": "Elaboramos el informe de seguridad para una obra industrial en Mosquera Cundinamacar, asegurando la protección de los trabajadores.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740076101/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Inspecci%C3%B3n_de_seguridad_en_obra_industrial_a3dlig.webp"
+    }
+  ],
+  "Proyectosrealizados": [
+    {
+      "title": "Informe técnico para conjunto residencial",
+      "description": "Elaboramos el informe técnico de un conjunto residencial en Ibagué, garantizando calidad y cumplimiento normativo.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740076178/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_obra_en_conjunto_residencial_inga5o.webp"
+    },
+    {
+      "title": "Informe de avance para clínica",
+      "description": "Documentamos el avance de la construcción de una clínica, optimizando tiempos y recursos.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740076426/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Control_de_avance_en_construcci%C3%B3n_de_una_Clinica_pvkj1u.webp"
+    },
+    {
+      "title": "Informe técnico para nave industrial",
+      "description": "Elaboramos el informe técnico de una nave industrial en Funza, Cundinamarca, asegurando calidad y seguridad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740063008/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Dise%C3%B1o_de_estructura_metalica_para_nave_industrial_jplgyv.jpg"
+    }
+  ],
+  "statistics": {
+    "years_of_experience": 20,
+    "completed_projects": 300,
+    "satisfied_clients": 250,
+    "cost_reduction_average": "18%"
+  },
+  "blog": [
+    {
+      "title": "Consultoría de Obras: Garantiza el Éxito",
+      "excerpt": "Implementar una consultoría de obras adecuada puede reducir los costos de un proyecto de construcción en un 15% mediante una mejor planificación y control de recursos..",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
+      "url": "https://www.estructurasverticales.com/blog/consultoria-obras"
+    },
+    {
+      "title": "Supervisión de Obras de Construcción, su Importancia",
+      "excerpt": "Un proyecto con supervisión eficiente puede reducir costos en un 20% y mejorar la calidad final en un 35%, evitando errores y sobrecostos innecesarios.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_Obras_qkrufl.webp",
+      "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
+    },
+    {
+      "title": "Impermeabilización en Construcción",
+      "excerpt": "La impermeabilización en construcción es un proceso clave para evitar filtraciones de agua y humedad, garantizando la durabilidad de las edificaciones.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/impermeabilizacion_bnphge.webp",
+      "url": "https://www.estructurasverticales.com/blog/impermeabilizacion-construccion"
+    }
+  ],
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+    "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+  },
+  "cta": {
+    "primary": "Solicita la elaboración de un informe técnico para tu proyecto.",
+    "secondary": "Habla con un experto en informes técnicos de obras."
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
 }
 
 ]
