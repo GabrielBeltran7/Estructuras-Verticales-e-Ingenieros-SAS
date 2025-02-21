@@ -1,151 +1,49 @@
 
-"use client"; // 💡 Esto obliga a Next.js a procesarlo en el cliente
-
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { getServicioById, getAllServicios, getMetadata  } from "@/utils/getServicios"; 
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Navbar from "@/app/Components/Navbar/Navbar";
 import styles from "./serviciopage.module.css";
 import ContactButtons from "@/app/Components/ContactButtons/ContactButtons";
 import Image from "next/image";
-import Head from "next/head"; // ✅ Importamos Head para configurar metadatos
-import Script from "next/script";
 
 
 
-// 📌 Definimos el tipo de Servicio
-type Servicio = {
-  id: string;
-  title: string;
-  description: string;
-  imagenprincipal:string;
-  parrafo1:string;
-  parrafo2:string;
-  parrafo3:string;
-  parrafo4:string;
-  descripcionlarga: string;
-  services: { title: string; description: string }[];
-  benefits: string[];
-  testimonials: {
-    client: string;
-    project: string;
-    feedback: string;
-    image: string;
-  }[];
-  faqs: { question: string; answer: string }[];
-  metadata: { title: string; slug: string; description: string, keywords: string, image: string }[];
-  Proyectosrealizados: { title: string; description: string; image: string }[];
-  case_studies: { title: string; description: string; image: string }[];
-  statistics: {
-    years_of_experience: number;
-    completed_projects: number;
-    satisfied_clients: number;
-    cost_reduction_average: string;
-  };
- 
-  blog: { title: string; excerpt: string; image: string; url: string }[];
-  contact: {
-    phone: string;
-    email: string;
-    address: string;
-    map_location: string;
-  };
-  chat: { whatsapp: string; live_chat: boolean };
-};
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  // Esperamos a que `params` se resuelva, ya que es una promesa
+  const { id } = await params;
 
-// 📌 Función para obtener los servicios desde el JSON
-async function getServicios(): Promise<Servicio[]> {
-  const res = await fetch("/data/services.json");
-  return res.json();
+  // Obtenemos el servicio usando el ID
+  const servicio = await getServicioById(id);
+
+  // Si no existe el servicio, devolvemos metadatos básicos
+  if (!servicio) {
+    return {
+      title: "Servicio no encontrado",
+      description: "El servicio solicitado no existe.",
+    };
+  }
+  const metadata = getMetadata(servicio);
+  // Usamos la función getMetadata() para obtener los metadatos del servicio
+  return metadata;
+
 }
 
-// 📌 Componente principal
-export default function ServicioPage() {
-  const params = useParams();
-  const [servicio, setServicio] = useState<Servicio | null>(null);
-  const [loading, setLoading] = useState(true);
+export async function generateStaticParams() {
+  const servicios = await getAllServicios();
+  return servicios.map((servicio) => ({ id: servicio.id }));
+}
 
-  useEffect(() => {
-    async function fetchServicio() {
-      if (!params?.id) return;
-      
-      const servicioId = decodeURIComponent(params.id.toString()).toLowerCase();
-      const servicios = await getServicios();
-      const foundServicio = servicios.find((s) => s.id.toLowerCase() === servicioId);
+export default async function ServicioPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params; // 👈 Ahora se espera `params` antes de usar `id`
 
-      setServicio(foundServicio || null);
-      setLoading(false);
-    }
+  const servicio = await getServicioById(id);
+  if (!servicio) return notFound();
 
-    fetchServicio();
-  }, [params?.id]);
-
-  if (loading) return <h1>Cargando...</h1>;
-  if (!servicio) return <h1 className={styles.error}>Servicio no encontrado</h1>;
-
-  const metadata = servicio.metadata[0]; // 📌 Tomamos la metadata del servicio
-  console.log("metadata", metadata)
-  
 
   return (
     <>
-      <Head>
-  <title>{metadata.title}</title>
-  <meta name="description" content={metadata.description} />
-  <meta property="og:title" content={metadata.title} />
-  <meta name="keywords" content={metadata.keywords} />
-  <meta property="og:description" content={metadata.description} />
-  <meta property="og:image" content={metadata.image} />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content={`https://estructurasverticales.com/servicios/${metadata.slug}`} />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={metadata.title} />
-  <meta name="twitter:description" content={metadata.description} />
-  <meta name="twitter:image" content={metadata.image} />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href={`https://estructurasverticales.com/servicios/${metadata.slug}`} />
-</Head>
-<Script
-  id="structured-data-services"
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": metadata.title, // Nombre del servicio (ej. Impermeabilización)
-      "serviceType": metadata.title, // Tipo de servicio
-      "description": metadata.description, // Descripción del servicio
-      "provider": {
-        "@type": "Organization",
-        "name": "Estructuras Verticales e Ingenieros SAS",
-        "url": "https://www.estructurasverticales.com/",
-        "logo": "https://www.estructurasverticales.com/favicon.ico",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "KR 7 B BIS # 126 - 36",
-          "addressLocality": "Bogotá",
-          "addressRegion": "Cundinamarca",
-          "addressCountry": "CO",
-          "postalCode": "110111"
-        },
-        "telephone": "+57 3132581599"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Bogotá, Colombia"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "A convenir",
-        "priceCurrency": "COP",
-        "availability": "InStock"
-      },
-      "url": `https://www.estructurasverticales.com/servicios/${metadata.slug}`,
-      "image": metadata.image // ✅ Asegurar que tenga una imagen relevante
-    }),
-  }}
-/>  
+ 
 
  <div className={styles.containerdiv}>
       <Navbar />
@@ -389,3 +287,5 @@ export default function ServicioPage() {
     </>
   );
 }
+
+
