@@ -119,7 +119,7 @@ export default function RootLayout({
                     name: "Supervisión de Obras",
                     description:
                       "Monitoreo integral de obras desde su inicio hasta su entrega, asegurando altos estándares de calidad.",
-                    url: "https://www.estructurasverticales.com/blog/supervision-obras-construccion",
+                    url: "https://www.estructurasverticales.com/servicios/supervision-de-obra",
                     serviceType: "Supervisión de Obras",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
@@ -127,7 +127,7 @@ export default function RootLayout({
                     name: "Elaboración de Pliegos de Condiciones",
                     description:
                       "Creación de documentos técnicos y financieros para la contratación y ejecución de proyectos de construcción.",
-                    url: "https://www.estructurasverticales.com/blog/elaboracion-pliegos-condiciones",
+                    url: "https://www.estructurasverticales.com/servicios/elaboracion-de-pliegos-de-condiciones",
                     serviceType: "Elaboración de Pliegos de Condiciones",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
@@ -135,7 +135,7 @@ export default function RootLayout({
                     name: "Montaje Estructural",
                     description:
                       "Diseño y fabricación de montajes estructurales personalizados con materiales de alta calidad.",
-                    url: "https://www.estructurasverticales.com/blog/montaje-estructural-construccion",
+                    url: "https://www.estructurasverticales.com/servicios/montaje-estructural",
                     serviceType: "Montaje Estructural",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
@@ -143,7 +143,7 @@ export default function RootLayout({
                     name: "Recibo de Zonas Comunes PH",
                     description:
                       "Inspección y certificación de zonas comunes en propiedades horizontales para garantizar cumplimiento normativo.",
-                    url: "https://www.estructurasverticales.com/blog/recibo-zonas-comunes-ph",
+                    url: "https://www.estructurasverticales.com/servicios/recibo-de-zonas-comunes-en-propiedad-horizontal-ph",
                     serviceType: "Recibo de Zonas Comunes PH",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
@@ -151,7 +151,7 @@ export default function RootLayout({
                     name: "Informes Técnicos de Obras",
                     description:
                       "Elaboración de informes técnicos detallados sobre el estado, avances y condiciones de obras en construcción.",
-                    url: "https://www.estructurasverticales.com/blog/informes-tecnicos-obras",
+                    url: "https://www.estructurasverticales.com/servicios/informes-tecnicos-de-obras",
                     serviceType: "Informes Técnicos de Obras",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
@@ -159,7 +159,7 @@ export default function RootLayout({
                     name: "Diseño Estructural",
                     description:
                       "Desarrollo de diseños estructurales eficientes y seguros, cumpliendo con la normativa NSR-10.",
-                    url: "https://www.estructurasverticales.com",
+                    url: "https://www.estructurasverticales.com/servicios/diseno-estructural",
                     serviceType: "Diseño Estructural",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },

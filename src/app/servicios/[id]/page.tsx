@@ -8,6 +8,8 @@ import styles from "./serviciopage.module.css";
 import ContactButtons from "@/app/Components/ContactButtons/ContactButtons";
 import Image from "next/image";
 import Head from "next/head"; // ✅ Importamos Head para configurar metadatos
+import Script from "next/script";
+
 
 
 // 📌 Definimos el tipo de Servicio
@@ -81,17 +83,20 @@ export default function ServicioPage() {
   if (!servicio) return <h1 className={styles.error}>Servicio no encontrado</h1>;
 
   const metadata = servicio.metadata[0]; // 📌 Tomamos la metadata del servicio
-  console.log("metadata")
+  console.log("metadata", metadata)
+  
 
   return (
     <>
-   <Head>
+      <Head>
   <title>{metadata.title}</title>
   <meta name="description" content={metadata.description} />
   <meta property="og:title" content={metadata.title} />
   <meta name="keywords" content={metadata.keywords} />
   <meta property="og:description" content={metadata.description} />
   <meta property="og:image" content={metadata.image} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content={`https://estructurasverticales.com/servicios/${metadata.slug}`} />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -101,6 +106,47 @@ export default function ServicioPage() {
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href={`https://estructurasverticales.com/servicios/${metadata.slug}`} />
 </Head>
+<Script
+  id="structured-data-services"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": metadata.title, // Nombre del servicio (ej. Impermeabilización)
+      "serviceType": metadata.title, // Tipo de servicio
+      "description": metadata.description, // Descripción del servicio
+      "provider": {
+        "@type": "Organization",
+        "name": "Estructuras Verticales e Ingenieros SAS",
+        "url": "https://www.estructurasverticales.com/",
+        "logo": "https://www.estructurasverticales.com/favicon.ico",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "KR 7 B BIS # 126 - 36",
+          "addressLocality": "Bogotá",
+          "addressRegion": "Cundinamarca",
+          "addressCountry": "CO",
+          "postalCode": "110111"
+        },
+        "telephone": "+57 3132581599"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Bogotá, Colombia"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "A convenir",
+        "priceCurrency": "COP",
+        "availability": "InStock"
+      },
+      "url": `https://www.estructurasverticales.com/servicios/${metadata.slug}`,
+      "image": metadata.image // ✅ Asegurar que tenga una imagen relevante
+    }),
+  }}
+/>  
+
  <div className={styles.containerdiv}>
       <Navbar />
       <main className={styles.container}>
