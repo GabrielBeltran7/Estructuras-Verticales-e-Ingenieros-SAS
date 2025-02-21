@@ -98,7 +98,14 @@ export function getMetadata(servicio: Servicio) {
       url: `https://www.estructurasverticales.com/servicios/${servicio.id}`,
       type: "article",
       siteName: "Estructuras Verticales e Ingenieros SAS",
-      images: [{ url: metadata.image }],
+      images: [
+        {
+          url: metadata.image,
+          width: 1200,  // Asegura el tamaño recomendado
+          height: 630,
+          alt: metadata.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
