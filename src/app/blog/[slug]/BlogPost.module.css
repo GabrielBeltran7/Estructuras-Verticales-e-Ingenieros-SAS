@@ -154,6 +154,7 @@
 @media (max-width: 768px) {
     /* Ajuste del contenedor */
     .blogContainer {
+       
         max-width: 380px;
         margin-top: 5rem;
     
