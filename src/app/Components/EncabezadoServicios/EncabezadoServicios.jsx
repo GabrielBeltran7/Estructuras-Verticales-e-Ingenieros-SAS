@@ -16,7 +16,7 @@ const EncabezadoServicios = () => {
             Estructuras Verticales e Ingenieros SAS,{" "}
           </strong>
           nos especializamos en ofrecer soluciones integrales para la
-          interventoría y supervisión de obras, así como en el diseño y
+          Consultoria, interventoría y supervisión de obras, así como en el diseño y
           fabricación de montajes estructurales.
         </p>
         <p>

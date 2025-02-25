@@ -12,11 +12,7 @@ const services = [
       description: "En nuestra empresa ofrecemos servicios de Interventoría de Obras para garantizar la ejecución adecuada de proyectos de construcción. Nos encargamos de supervisar y controlar todas las fases del proceso constructivo, asegurando el cumplimiento de los plazos, presupuestos y calidad especificada. Con nuestra experiencia, brindamos confianza a nuestros clientes, minimizando riesgos y maximizando la eficiencia en cada obra.",
       image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490968/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Interventoria_de_Obras_xaegll.webp",
     },
-    {
-      title: "Impermeabilizacion",
-      description: "Ofrecemos soluciones profesionales de impermeabilización para proteger tus estructuras de filtraciones y humedad. Utilizamos materiales de alta calidad como membranas asfálticas, acrílicas y poliuretánicas según cada necesidad. Nuestro equipo experto garantiza un trabajo eficiente y duradero en techos, terrazas, muros y cimentaciones. Prevenimos filtraciones, moho y deterioro estructural con técnicas avanzadas. Confía en nosotros para mantener tus espacios seguros y en perfectas condiciones.",
-      image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737576553/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Impermeabilizaciones_zkuz51.webp",
-    },
+  
     {
       title: "Supervisión de Obras",
       description: "Brindamos servicios de Supervisión de Obras para asegurar el correcto desarrollo de cada proyecto. Nos encargamos de supervisar todas las etapas de la construcción, desde el inicio hasta la entrega final, asegurando que se cumplan los estándares de calidad y los plazos establecidos. Con un enfoque integral y profesional, velamos por la eficiencia, minimizando imprevistos y garantizando resultados óptimos para nuestros clientes.",

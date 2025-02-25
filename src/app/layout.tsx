@@ -107,14 +107,7 @@ export default function RootLayout({
                     serviceType: "Consultoría de Obras",
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
-                  {
-                    name: "Impermeabilización",
-                    description:
-                      "Protección de estructuras contra filtraciones y humedad con materiales de alta calidad.",
-                    url: "https://www.estructurasverticales.com/servicios/impermeabilizacion",
-                    serviceType: "Impermeabilización",
-                    offers: { "@type": "Offer", price: "A convenir" },
-                  },
+                 
                   {
                     name: "Supervisión de Obras",
                     description:
