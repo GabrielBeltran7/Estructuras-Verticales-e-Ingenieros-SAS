@@ -54,19 +54,19 @@ export async function generateMetadata({ params }) {
   }
 
   const { data } = post;
- 
+  const BASE_URL = "https://www.estructurasverticales.com";
   return {
     title: data.title,
     description: data.description,
     keywords: data.keywords || [],
     robots: "index, follow",
     alternates: {
-      canonical: `https://estructurasverticales.com/blog/${slug}`,
+      canonical: `${BASE_URL}/blog/${slug}`,
     },
     openGraph: {
       title: data.title,
       description: data.description,
-      url: `https://estructurasverticales.com/blog/${slug}`,
+      url: `${BASE_URL}/blog/${slug}`,
       type: "article",
       publishedTime: data.date,
       images: [
