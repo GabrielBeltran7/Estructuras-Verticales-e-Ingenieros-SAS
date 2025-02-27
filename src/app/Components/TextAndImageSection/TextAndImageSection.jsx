@@ -20,7 +20,7 @@ const TextAndImageSection = () => {
           Trabajamos de cerca con nuestros clientes para entender sus necesidades específicas y garantizar que sus expectativas sean superadas.
           La confianza que depositan en nosotros es la base de nuestro trabajo.
           Además, nos aseguramos de estar al día con las mejores prácticas y tecnologías para ofrecer resultados óptimos en todos nuestros proyectos.
-          Nuestro compromiso es con la excelencia en cada detalle.
+        
         </p>
       </div>
       <div className={styles.ImagenContainer}>
