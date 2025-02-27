@@ -22,7 +22,8 @@
   margin: 40px auto 0;
   padding-top: 20px;
   border-top: 2px solid #ddd;
-}.pageButton {
+}
+.pageButton {
   background-color: #0070f3;
   color: white;
   padding: 12px 18px;
@@ -202,6 +203,22 @@
   }
 }
 @media (max-width: 768px) {
+
+  .pageButton {
+    background-color: #0070f3;
+    font-size: 12px;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .pageButton:hover {
+    background-color: #005bb5;
+  }
   .container {
     max-width: 100%;
     padding: 3rem; /* Reducir padding para evitar espacios vacíos */
