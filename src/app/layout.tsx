@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   robots: "index, follow",
+  alternates: {
+    canonical: "https://www.estructurasverticales.com/",
+  },
 };
 
 export default function RootLayout({
