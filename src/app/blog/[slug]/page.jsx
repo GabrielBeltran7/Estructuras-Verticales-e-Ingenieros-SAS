@@ -103,7 +103,7 @@ export default async function BlogPost({ params }) {
     <>
       <Navbar />
       <main className={styles.blogContainer}>
-        <h2 className={styles.title}>{data.title}</h2>
+        <h1 className={styles.title}>{data.title}</h1>
 
         {/* ✅ Imagen principal del artículo */}
         {data.image && (
