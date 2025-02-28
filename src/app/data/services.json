@@ -1084,7 +1084,7 @@
     },
     {
       "question": "¿Cuánto cuesta la elaboración de un pliego de condiciones?",
-      "answer": "El costo varía según la complejidad del proyecto. Contáctanos para una cotización personalizada."
+      "answer": "El costo  puede varíar según cada proyecto y su complegidad. Contáctanos para una cotización personalizada."
     },
     {
       "question": "¿En qué tipo de proyectos aplican los pliegos de condiciones?",
@@ -1337,7 +1337,4 @@
     "live_chat": true
   }
 }
-
-
-
 ]
