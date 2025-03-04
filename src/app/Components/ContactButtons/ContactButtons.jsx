@@ -10,9 +10,9 @@ export default function ContactButtons() {
     if (typeof window !== "undefined" && window.dataLayer) {
       window.dataLayer.push({
         event: "contact_click",
-        category: "Contacto",
-        action: "Click",
-        label: eventLabel,
+        eventCategory: "Contacto",
+        eventAction: "Click",
+        eventLabel: eventLabel,
       });
       console.log("Evento enviado a GTM:", eventLabel);
 
