@@ -11,7 +11,7 @@ export default async function Blog({ searchParams }) {
   const posts = await getPosts();
 
   // 📌 Configuración de paginación
-  const postsPerPage = 8;
+  const postsPerPage = 6;
   const currentPage = resolvedParams?.page ? parseInt(resolvedParams.page, 10) : 1;
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
