@@ -1,5 +1,5 @@
 import styles from "./EncabezadoServicios.module.css";
-import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import VideoComponent from "../ImageCarousel/VideoComponent";
 import Link from "next/link";
 
 const EncabezadoServicios = () => {
@@ -8,7 +8,7 @@ const EncabezadoServicios = () => {
       <h1 className={styles.titulo}>
         Consultoría e Interventoría en Obras | Diseño Estructural
       </h1>
-      <ImageCarousel />
+      <VideoComponent />
       <div className={styles.textContainer}>
         <p>
           En {" "}
