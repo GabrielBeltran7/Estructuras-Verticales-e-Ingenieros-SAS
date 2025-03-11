@@ -24,7 +24,7 @@ export default async function Blog({ searchParams }) {
   const paginatedPosts = remainingPosts.slice((currentPage - 1) * postsPerPage, (currentPage - 1) * postsPerPage + postsPerPage);
 
   // 📌 Configuración de posts para la sidebar
-  const sidebarPostsPerPage = 5; // Ahora solo mostramos 5 posts por página
+  const sidebarPostsPerPage = 8; // Ahora solo mostramos 5 posts por página
   const sidebarOffset = (currentPage - 1) * sidebarPostsPerPage;
 
   const sidebarPosts = remainingPosts
