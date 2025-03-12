@@ -8,6 +8,10 @@ const nextConfig = withMDX({
         protocol: "https",
         hostname: "res.cloudinary.com",
       },
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
+      },
     ],
   },
 });
