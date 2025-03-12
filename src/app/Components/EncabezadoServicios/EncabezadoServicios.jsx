@@ -1,5 +1,5 @@
 import styles from "./EncabezadoServicios.module.css";
-import VideoComponent from "../ImageCarousel/VideoComponent";
+import VideoComponent from "../VideoComponents/VideoComponent";
 import Link from "next/link";
 
 const EncabezadoServicios = () => {

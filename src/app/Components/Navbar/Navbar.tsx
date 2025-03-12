@@ -121,15 +121,13 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
 // "use client";
 
 // import Link from "next/link";
 // import { useState, useEffect } from "react";
 // import { usePathname, useRouter } from "next/navigation";
 // import styles from "./Navbar.module.css";
+// import servicesData from "@/app/data/services.json";
 
 // type Servicio = {
 //   id: string;
@@ -144,11 +142,7 @@ export default Navbar;
 //   const pathname = usePathname();
 
 //   useEffect(() => {
-//     // Cargar servicios desde el archivo JSON en 'public/data'
-//     fetch("/data/services.json")
-//       .then((res) => res.json())
-//       .then((data) => setServicios(data))
-//       .catch((err) => console.error("Error cargando servicios:", err));
+//     setServicios(servicesData);
 //   }, []);
 
 //   const toggleMenu = () => {
@@ -250,5 +244,3 @@ export default Navbar;
 // };
 
 // export default Navbar;
-
-
