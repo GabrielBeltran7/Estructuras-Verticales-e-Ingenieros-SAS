@@ -24,7 +24,7 @@ const VideoComponent = () => {
           className={styles.video}
           width="800"
           height="450"
-          src="https://www.youtube-nocookie.com/embed/6YjE9wgWJlw?autoplay=1"
+          src="https://www.youtube-nocookie.com/embed/6YjE9wgWJlw?autoplay=1&rel=0"
           title="Video Institucional | Estructuras Verticales e Ingenieros SAS"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
