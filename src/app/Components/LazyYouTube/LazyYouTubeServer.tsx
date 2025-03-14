@@ -1,13 +1,10 @@
-// app/components/LazyYouTubeServer.tsx (Next.js 15 - Server Component)
-
 import styles from "./LazyYouTubeServer.module.css";
 
 const LazyYouTubeServer = () => {
   const videoId = "_eyZlySGT7c";
   const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-  const videoUrl = `https://www.youtube.com/embed/${videoId}`;
+  const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}`; // ✅ Ahora sin cookies
   const contentUrl = `https://www.youtube.com/watch?v=${videoId}`; // ✅ Enlace directo al video
-
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -26,11 +23,11 @@ const LazyYouTubeServer = () => {
       {/* ✅ SEO: Datos estructurados para mejorar indexación en Google */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* ✅ Directamente el iframe (sin eventos del cliente) */}
+      {/* ✅ Ahora YouTube sin cookies de terceros */}
       <iframe
         width="100%"
         height="500"
-        src={videoUrl}
+        src={videoUrl} // ✅ Usa youtube-nocookie.com
         title="Diseño Estructural Profesional"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -40,3 +37,4 @@ const LazyYouTubeServer = () => {
 };
 
 export default LazyYouTubeServer;
+
