@@ -1,7 +1,7 @@
 .videoContainer {
   position: relative;
   width: 100%;
-  max-width: 1600px; /* ✅ Asegura que el video no supere este ancho */
+  max-width: 1500px; /* ✅ Asegura que el video no supere este ancho */
   aspect-ratio: 16 / 9; /* ✅ Mantiene la relación de aspecto */
   margin: auto;
 }
