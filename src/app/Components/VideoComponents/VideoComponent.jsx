@@ -1,25 +1,32 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./VideoComponent.module.css";
+
 const VideoComponent = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
   return (
     <div className={styles.videoContainer}>
       {!isVideoLoaded ? (
-        <div className={styles.videoPlaceholder} onClick={() => setIsVideoLoaded(true)}>
+        <button
+          className={styles.videoPlaceholder}
+          onClick={() => setIsVideoLoaded(true)}
+          aria-label="Reproducir video"
+        >
           <Image
             src="https://res.cloudinary.com/dby8lelja/image/upload/q_auto,f_webp,w_800/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Estructuras_Verticales_e_Ingenieros_sas_idjptp.webp"
-            alt="Ver video"
+            alt="Estructuras Verticales e Ingenieros SAS"
             width={800}
             height={450}
             className={styles.thumbnail}
             placeholder="blur"
             blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAA..."
-            priority={true}
-            quality={75}
+            fetchPriority="low"
+            loading="lazy"
+            quality={85}
           />
-          <button className={styles.playButton}>▶</button>
-        </div>
+          <span className={styles.playButton}>▶</span>
+        </button>
       ) : (
         <iframe
           className={styles.video}
