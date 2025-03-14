@@ -1,0 +1,52 @@
+.videoContainer {
+    position: relative;
+    max-width: 1470px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 5rem;
+    
+    /* 🔹 Fondo con degradado elegante */
+    background-color: white;
+  
+  
+  
+    /* 🔹 Borde difuminado alrededor */
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  /* 📌 Título centrado */
+  .titulo {
+
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  /* 📌 Contenedor del iframe */
+  .videoContainer iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* 🔹 Mantiene la proporción exacta */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📌 Ajustes responsivos */
+  @media (max-width: 768px) {
+    .videoContainer {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    .videoContainer iframe {
+      max-width: 100%;
+    } .titulo {
+        margin-top: 5rem;
+        margin-bottom: 15px;
+        font-size: 2rem;
+      }
+  }
+  

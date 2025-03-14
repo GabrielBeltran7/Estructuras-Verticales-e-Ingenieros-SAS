@@ -7,6 +7,7 @@ import ContactButtons from "./Components/ContactButtons/ContactButtons";
 import TextAndImageSection from './Components/TextAndImageSection/TextAndImageSection';
 import Footer from "./Components/Footer/Footer"
 import EncabezadoServicios from "./Components/EncabezadoServicios/EncabezadoServicios"
+import LazyYouTube from "./Components/LazyYouTube/LazyYouTubeServer";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         </section>
         <ServicesList />
         <div>
-          
+        <LazyYouTube />
           <TextAndImageSection />
         </div>
         <section id="faq" className={styles.faq}>
