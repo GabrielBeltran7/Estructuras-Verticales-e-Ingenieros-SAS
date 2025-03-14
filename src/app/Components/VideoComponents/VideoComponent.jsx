@@ -1,10 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./VideoComponent.module.css";
-
 const VideoComponent = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-
   return (
     <div className={styles.videoContainer}>
       {!isVideoLoaded ? (
