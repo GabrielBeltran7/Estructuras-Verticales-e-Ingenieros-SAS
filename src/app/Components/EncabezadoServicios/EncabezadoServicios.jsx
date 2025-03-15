@@ -1,5 +1,7 @@
+export const dynamic = "force-static"; // ✅ Garantiza que es un componente de servidor
+
 import styles from "./EncabezadoServicios.module.css";
-// import VideoComponent from "../VideoComponents/VideoComponent";
+import VideoComponent from "../VideoComponents/VideoComponent";
 import Link from "next/link";
 
 const EncabezadoServicios = () => {
@@ -8,11 +10,11 @@ const EncabezadoServicios = () => {
       <h1 className={styles.titulo}>
         Consultoría e Interventoría en Obras | Diseño Estructural
       </h1>
-      {/* <VideoComponent /> */}
+      <VideoComponent /> {/* ✅ Componente servidor, no hay problema */}
       <div className={styles.textContainer}>
         <p>
           En Estructuras Verticales e Ingenieros SAS, nos especializamos en ofrecer soluciones integrales para la
-          Consultoria, interventoría y supervisión de obras, así como en el diseño y
+          Consultoría, interventoría y supervisión de obras, así como en el diseño y
           fabricación de montajes estructurales.
         </p>
         <p>
@@ -57,3 +59,4 @@ const EncabezadoServicios = () => {
 };
 
 export default EncabezadoServicios;
+
