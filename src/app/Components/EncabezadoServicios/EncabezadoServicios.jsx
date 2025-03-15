@@ -11,11 +11,7 @@ const EncabezadoServicios = () => {
       {/* <VideoComponent /> */}
       <div className={styles.textContainer}>
         <p>
-          En {" "}
-          <strong className={styles.color}>
-            Estructuras Verticales e Ingenieros SAS,{" "}
-          </strong>
-          nos especializamos en ofrecer soluciones integrales para la
+          En Estructuras Verticales e Ingenieros SAS, nos especializamos en ofrecer soluciones integrales para la
           Consultoria, interventoría y supervisión de obras, así como en el diseño y
           fabricación de montajes estructurales.
         </p>
