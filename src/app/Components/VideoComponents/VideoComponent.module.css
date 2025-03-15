@@ -1,83 +1,40 @@
 .videoContainer {
   position: relative;
+  max-width: 1470px;
+  margin: 0 auto;
+  text-align: center;
   width: 100%;
-  max-width: 1500px; /* ✅ Asegura que el video no supere este ancho */
-  aspect-ratio: 16 / 9; /* ✅ Mantiene la relación de aspecto */
-  margin: auto;
+  margin-top: 2rem;
+  
+  /* 🔹 Fondo con degradado elegante */
+  background-color: white;
+
+
+
+  /* 🔹 Borde difuminado alrededor */
+  border-radius: 12px;
+  padding: 20px;
 }
 
-.videoPlaceholder {
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* 📌 Contenedor del iframe */
+.videoContainer iframe {
   width: 100%;
-  height: 100%;
-}
-
-.thumbnail {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.playButton {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fefa00;
-  font-size: 50px;
-  border: none;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.playButton:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.video {
-  width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* 🔹 Mantiene la proporción exacta */
   border: none;
   border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* 🔹 Adaptación para pantallas más pequeñas */
-@media (max-width: 1024px) { /* Tablets */
+/* 📌 Ajustes responsivos */
+@media (max-width: 768px) {
   .videoContainer {
-    max-width: 800px;
+    max-width: 100%;
+    padding: 0 10px;
   }
+
+  .videoContainer iframe {
+    max-width: 100%;
+  } 
 }
-
-@media (max-width: 768px) { /* Móviles en horizontal */
-  .videoContainer {
-    max-width: 600px;
-  }
-
-  .playButton {
-    font-size: 40px;
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 480px) { /* Móviles en vertical */
-  .videoContainer {
-    max-width: 100%; /* ✅ Ocupa todo el ancho disponible */
-  }
-
-  .playButton {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-  }
-}
-
