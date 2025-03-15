@@ -22,8 +22,6 @@ const LazyYouTubeServer = () => {
       <h2 className={styles.titulo}>Diseño y Montaje Estructural</h2>
       {/* ✅ SEO: Datos estructurados para mejorar indexación en Google */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      {/* ✅ Ahora YouTube sin cookies de terceros */}
       <iframe
         width="100%"
         height="500"
