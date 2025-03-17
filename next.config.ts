@@ -17,5 +17,3 @@ const nextConfig = withMDX({
 });
 
 module.exports = nextConfig;
-
-
