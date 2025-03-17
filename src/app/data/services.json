@@ -1,5 +1,161 @@
 [
-  
+{
+    "metadata": [
+      {
+        "title": "Alquiler de Maquinaria Pesada",
+        "slug": "alquiler-de-maquinaria-pesada",
+        "description": "Ofrecemos alquiler de bulldozers de alta calidad para proyectos de construcción, minería y movimientos de tierra. Garantizamos eficiencia y rendimiento en cada tarea.",
+        "keywords": "alquiler de maquinaria pesada, alquiler de bulldozer, bulldozer en Colombia, maquinaria pesada para construcción, alquiler de maquinaria para minería, bulldozer en Bogotá, Medellín, Cali, Ibagué, Girardot.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245115/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer2_u317hc.webp"
+      }
+
+    ],
+    "id": "alquiler-de-maquinaria-pesada",
+    "title": "Alquiler de Maquinaria Pesada",
+    "description": "Alquila bulldozers de alta calidad para construcción, minería y movimientos de tierra. Garantizamos eficiencia, rendimiento y soporte técnico.",
+    "parrafo1": "Nuestros bulldozers están diseñados para ofrecer el máximo rendimiento en proyectos de construcción, minería y movimientos de tierra, garantizando eficiencia y productividad.",
+    "parrafo2": "Contamos con equipos  bien mantenidos, listos para enfrentar los desafíos más exigentes en cualquier tipo de terreno.",
+    "parrafo3": "Ofrecemos opciones flexibles de alquiler, adaptadas a las necesidades de tu proyecto, ya sea a corto o largo plazo.",
+    "parrafo4": "Nuestro equipo de expertos te brindará asesoría técnica para garantizar que el bulldozer sea la solución ideal para tus necesidades.",
+    "imagenprincipal": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245115/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer2_u317hc.webp",
+    "services": [
+      {
+        "title": "Alquiler de bulldozer",
+        "description": "Ofrecemos bulldozers en alquiler para proyectos de construcción, minería y movimientos de tierra, con opciones flexibles de contratación."
+      },
+      {
+        "title": "Mantenimiento incluido",
+        "description": "Todos nuestros equipos cuentan con mantenimiento preventivo y correctivo, garantizando su óptimo funcionamiento durante el alquiler."
+      },
+      {
+        "title": "Asesoría técnica",
+        "description": "Nuestros expertos te brindarán asesoría para elegir el bulldozer adecuado y optimizar su uso en tu proyecto."
+      },
+      {
+        "title": "Transporte y logística",
+        "description": "Ofrecemos servicios de transporte y logística para llevar el bulldozer a tu sitio de trabajo de manera segura y puntual."
+      },
+      {
+        "title": "Soporte 24/7",
+        "description": "Brindamos soporte técnico las 24 horas del día para resolver cualquier inconveniente durante el periodo de alquiler."
+      }
+    ],
+    "benefits": [
+      "Mantenimiento garantizado: Todos nuestros equipos están en óptimas condiciones.",
+      "Flexibilidad: Opciones de alquiler a corto y largo plazo adaptadas a tus necesidades.",
+      "Soporte técnico: Asistencia especializada disponible las 24 horas."
+    ],
+    "testimonials": [
+      {
+        "client": "Juan Antonio Pérez",
+        "project": "Construcción de vías en Antioquia",
+        "feedback": "El bulldozer que alquilamos fue clave para el éxito de nuestro proyecto. El equipo estaba en perfectas condiciones y el soporte técnico fue excelente.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+      },
+      {
+        "client": "María Clara López Oltalvaro",
+        "project": "Ampliación de mina en el Tolima",
+        "feedback": "Gracias al bulldozer que alquilamos, logramos cumplir con los plazos del proyecto. El servicio de transporte y logística fue impecable.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+      },
+      {
+        "client": "Carlos  Andres Gómez Medina",
+        "project": "Movimiento de tierras en Ibague",
+        "feedback": "El bulldozer que nos proporcionaron fue fundamental para el avance del proyecto. La asesoría técnica que recibimos fue muy útil.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta alquilar un bulldozer?",
+        "answer": "El costo varía según el tiempo de alquiler y las características del proyecto. Contáctanos para recibir una cotización personalizada."
+      },
+      {
+        "question": "¿Qué tipo de proyectos son adecuados para un bulldozer?",
+        "answer": "Los bulldozers son ideales para construcción, minería, movimientos de tierra y proyectos de infraestructura."
+      },
+      {
+        "question": "¿Incluyen mantenimiento durante el alquiler?",
+        "answer": "Sí, todos nuestros equipos incluyen mantenimiento preventivo y correctivo durante el periodo de alquiler."
+      }
+    ],
+    "case_studies": [
+      {
+        "title": "Construcción de vías en terreno difícil",
+        "description": "Nuestro bulldozer fue clave para la construcción de una vía en un terreno montañoso, logrando movimientos de tierra eficientes y precisos.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245118/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer6_yx7cdd.webp"
+      },
+      {
+        "title": "Ampliación de mina a cielo abierto",
+        "description": "El bulldozer alquilado permitió la ampliación de una mina a cielo abierto, optimizando los tiempos de ejecución y reduciendo costos.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245119/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer8_j8x1cx.webp"
+      },
+      {
+        "title": "Movimiento de tierras en proyecto residencial",
+        "description": "El bulldozer fue utilizado para el movimiento de tierras en un proyecto residencial, logrando una preparación rápida y eficiente del terreno.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245115/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer2_u317hc.webp"
+      }
+    ],
+    "Proyectosrealizados": [
+      {
+        "title": "Construcción de carretera en zona rural",
+        "description": "El bulldozer fue fundamental para la construcción de una carretera en una zona rural, superando los desafíos del terreno.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245116/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer4_lmuft7.webp"
+      },
+      {
+        "title": "Preparación de terreno para planta industrial",
+        "description": "El bulldozer permitió la preparación eficiente del terreno para la construcción de una planta industrial.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245115/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer3_b6gytg.webp"
+      },
+      {
+        "title": "Movimiento de tierras en proyecto minero",
+        "description": "El bulldozer fue utilizado para el movimiento de tierras en un proyecto minero, optimizando los tiempos de ejecución.",
+        "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1742245118/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/buldozer7_nmiz09.webp"
+      }
+    ],
+    "statistics": {
+      "years_of_experience": 10,
+      "completed_projects": 150,
+      "satisfied_clients": 120,
+      "cost_reduction_average": "10%"
+    },
+    "blog": [
+
+      {
+        "title": "Consultoría de Obras",
+        "excerpt": "Implementar una consultoría de obras adecuada puede reducir los costos de un proyecto de construcción en un 15% mediante una mejor planificación y control de recursos..",
+        "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
+        "url": "https://www.estructurasverticales.com/blog/consultoria-obras"
+      },
+      {
+        "title": "Supervisión de Obras de Construcción",
+        "excerpt": "Un proyecto con supervisión eficiente puede reducir costos en un 20% y mejorar la calidad final en un 35%, evitando errores y sobrecostos innecesarios.",
+        "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_Obras_qkrufl.webp",
+        "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
+      },
+      {
+        "title": "Tendencias en la Interventoría de Obras para 2025",
+        "excerpt": "El año 2025 marcará un antes y un después en la interventoría de obras, un campo que está experimentando una transformación profunda.",
+        "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1740424316/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Tendencias_en_la_Interventor%C3%ADa_de_Obras_para_2025_ugfbbl.webp",
+        "url": "https://www.estructurasverticales.com/blog/tendencias-interventoria-obras"
+      }
+      
+    ],
+    "contact": {
+      "phone": "+57 3132581599",
+      "email": "estructurasverticalessas@gmail.com",
+      "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+      "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+    },
+    "cta": {
+      "primary": "Alquila un bulldozer hoy y optimiza tu proyecto.",
+      "secondary": "Contáctanos para más información"
+    },
+    "chat": {
+      "whatsapp": "https://wa.me/3132581599",
+      "live_chat": true
+    }
+},
 {
   "metadata": [
     {
