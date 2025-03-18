@@ -35,11 +35,7 @@ export default function Home() {
         </div>
         <section id="contacto" className={styles.contacto}>
           <ContactButtons />
-
-         
-
-            
-          < Footer />
+      < Footer />
         </section>
       </main>
 

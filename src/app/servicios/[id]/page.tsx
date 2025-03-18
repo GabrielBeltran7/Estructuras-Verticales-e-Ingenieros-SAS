@@ -79,7 +79,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
                     src={imageSrc}
                     alt={c.title}
                     width={300}
-                    height={200}
+                    height={500}
                     className={styles.caseImage}
                     unoptimized={c.image.includes("cloudinary")}
                   />
