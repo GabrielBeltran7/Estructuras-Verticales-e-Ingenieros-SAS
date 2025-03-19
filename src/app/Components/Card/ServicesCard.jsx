@@ -42,7 +42,7 @@ export default function ServicesCard({ services, backgroundImage = false }) {
               display: "flex",
               flexDirection: "column",
               boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
-              borderRadius: "20px",
+              borderRadius: "10px",
               transition: "transform 0.2s ease-in-out",
               "&:hover": { transform: "scale(1.03)", boxShadow: "0px 15px 25px rgba(0, 0, 0, 0.3)" },
               backgroundSize: "cover",
@@ -56,7 +56,7 @@ export default function ServicesCard({ services, backgroundImage = false }) {
                 height="220"
                 image={service.image}
                 alt={service.title}
-                sx={{ objectFit: "cover", borderRadius: "20px 20px 0 0" }}
+                sx={{ objectFit: "cover", borderRadius: "10px 10px 0 0" }}
               />
             )}
             <CardContent
@@ -79,18 +79,17 @@ export default function ServicesCard({ services, backgroundImage = false }) {
                 {truncateText(service.description, Math.floor(service.description.length * 0.8))}
               </Typography>
               <Button
-                variant="contained"
-                href={service.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  mt: "auto",
-                  background: "linear-gradient(45deg, #007BFF, #0056b3)",
-                  "&:hover": { background: "linear-gradient(45deg, #0056b3, #003a80)" },
-                }}
-              >
-                Ver más
-              </Button>
+  variant="contained"
+  href={service.link}
+  sx={{
+    mt: "auto",
+    background: "linear-gradient(45deg, #007BFF, #0056b3)",
+    "&:hover": { background: "linear-gradient(45deg, #0056b3, #003a80)" },
+  }}
+>
+  Ver más
+</Button>
+
             </CardContent>
           </Card>
         </SwiperSlide>
