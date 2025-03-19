@@ -19,20 +19,21 @@ export default function ServicesCard({ services, backgroundImage = false }) {
 
   return (
     <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      spaceBetween={30}
-      slidesPerView={1}
-      breakpoints={{
-        640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }}
-      autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
-      loop={true}
-      navigation
-      pagination={{ clickable: true }}
-      style={{ padding: "20px 0" }}
-    >
+    modules={[Navigation, Pagination, Autoplay]}
+    spaceBetween={15} // Reducir el espacio entre tarjetas
+    slidesPerView={1}
+    breakpoints={{
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 }, 
+    }}
+    autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+    loop={true}
+    navigation
+    pagination={{ clickable: true }}
+    style={{ padding: "20px 0", maxWidth: "100%" }} // Asegurar que ocupe todo el ancho disponible
+  >
+  
       {services.map((service, index) => (
         <SwiperSlide key={index} style={{ display: "flex", justifyContent: "center" }}>
           <Card
