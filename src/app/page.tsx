@@ -21,11 +21,13 @@ export default function Home() {
         </section>
         <ServicesList />
         <div>
-        <LazyYouTube />
+        
           <TextAndImageSection />
+          
         </div>
         <section id="faq" className={styles.faq}>
           <FaqSection />
+          <LazyYouTube />
         </section>
         <div className={styles.ctaContainer}>
           <h2 className={styles.ctaHeading}>¡Transforma tu proyecto con nosotros hoy mismo!</h2>

@@ -10,7 +10,7 @@ const EncabezadoServicios = () => {
       <h1 className={styles.titulo}>
         Consultoría e Interventoría en Obras | Diseño Estructural
       </h1>
-      <VideoComponent /> {/* ✅ Componente servidor, no hay problema */}
+      <VideoComponent /> 
       <div className={styles.textContainer}>
         <p>
           En Estructuras Verticales e Ingenieros SAS, nos especializamos en ofrecer soluciones integrales para la

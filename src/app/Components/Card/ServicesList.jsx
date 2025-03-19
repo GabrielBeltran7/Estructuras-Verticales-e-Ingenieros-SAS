@@ -7,6 +7,13 @@ const services = [
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp"
   },
   
+  {
+    title: "Alquiler de Maquinaria Pesada",
+    description: "Ofrecemos soluciones especializadas en el alquiler de maquinaria pesada, con un enfoque en bulldozers para construcción e ingeniería civil. Nuestro servicio garantiza equipos modernos, mantenimiento preventivo y asesoramiento técnico para maximizar la eficiencia en cada proyecto. Ideal para excavación, nivelación de terrenos y movimientos de tierra, brindamos soluciones confiables y rentables para la industria.",
+    image: "https://res.cloudinary.com/dby8lelja/image/upload/v1742400774/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/empresa_alquiler_de_maquinaria_pesada_ghqj9z.webp"
+},
+
+
     {
       title: "Interventoria de Obras",
       description: "En nuestra empresa ofrecemos servicios de Interventoría de Obras para garantizar la ejecución adecuada de proyectos de construcción. Nos encargamos de supervisar y controlar todas las fases del proceso constructivo, asegurando el cumplimiento de los plazos, presupuestos y calidad especificada. Con nuestra experiencia, brindamos confianza a nuestros clientes, minimizando riesgos y maximizando la eficiencia en cada obra.",
