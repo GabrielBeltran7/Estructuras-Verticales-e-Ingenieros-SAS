@@ -103,15 +103,14 @@ export default async function BlogPost({ params }) {
     <>
       <Navbar />
       <main className={styles.blogContainer}>
-        <h1 className={styles.title}>{data.title}</h1>
-
+   
         {/* ✅ Imagen principal del artículo */}
         {data.image && (
           <Image 
             src={data.image} 
             alt={data.title}
-            width={600} 
-            height={350} 
+            width={900} 
+            height={650} 
             priority={true}  
             loading="eager"  
             fetchPriority="high"  
