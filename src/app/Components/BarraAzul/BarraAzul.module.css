@@ -18,7 +18,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    background: yellow; /* Color del bulldozer */
+    background: rgba(255, 255, 0, 0.497); /* Color del bulldozer */
   }
   
   /* Bulldozer izquierdo */
@@ -87,7 +87,7 @@
   /* Adaptación para móviles */
   @media screen and (max-width: 768px) {
     .barraazul {
-      height: 0.7rem;
+      height: 0.8rem;
     }
     .barraazul::after,
     .barraazul::before {
@@ -97,7 +97,7 @@
   
   @media screen and (max-width: 480px) {
     .barraazul {
-      height: 0.4rem;
+      height: 0.6rem;
     }
     .barraazul::after,
     .barraazul::before {
@@ -106,4 +106,6 @@
   }
   
   
+  
+
   
