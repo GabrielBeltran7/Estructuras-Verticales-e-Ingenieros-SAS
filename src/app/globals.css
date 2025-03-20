@@ -1,6 +1,7 @@
 :root {
   --background: #ededed;
   --foreground: #171717;
+  --navbar-height: 70px; /* Ajusta según el tamaño real */
 }
 
 html,

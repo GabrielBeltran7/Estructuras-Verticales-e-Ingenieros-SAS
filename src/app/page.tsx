@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <Navbar />
       <main className={styles.container}>
-        <div className={styles.barraazul}></div>
         <EncabezadoServicios />
+        
         <section id="servicios" className={styles.services}>
           <h2>Nuestros Servicios</h2>
         </section>

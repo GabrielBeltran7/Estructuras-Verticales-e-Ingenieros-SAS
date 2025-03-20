@@ -12,6 +12,7 @@
   width: 100%; /* Que ocupe todo el ancho */
   z-index: 1000; /* Asegura que esté por encima del contenido */
   font-size: 1.2rem;
+  height: var(--navbar-height); /* Mantener altura fija */
 }
 
 .empresa {

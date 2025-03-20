@@ -1,0 +1,109 @@
+.barraazul {
+    background-color: #007BFF; /* Color azul */
+    height: 0.8rem; /* Altura por defecto */
+    width: 100%; /* Ocupar todo el ancho */
+    position: fixed; /* Fijar la barra en pantalla */
+    top: var(--navbar-height); /* Colocar debajo de la navbar */
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+  }
+  
+  /* Estilos generales de los bulldozers */
+  .barraazul::after,
+  .barraazul::before {
+    content: "";
+    display: block;
+    width: 50px; /* Tamaño del bulldozer */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: yellow; /* Color del bulldozer */
+  }
+  
+  /* Bulldozer izquierdo */
+  .barraazul::after {
+    left: -60px;
+    clip-path: polygon(
+      0% 30%, 20% 30%, 20% 0%, 70% 0%, 70% 30%, 90% 30%, 
+      100% 50%, 90% 70%, 70% 70%, 70% 100%, 20% 100%, 20% 70%, 0% 70%
+    ); /* Forma del bulldozer */
+    animation: bulldozerIzquierda 3s infinite linear;
+  }
+  
+  /* Bulldozer derecho (invertido) */
+  .barraazul::before {
+    right: -60px;
+    clip-path: polygon(
+      0% 30%, 20% 30%, 20% 0%, 70% 0%, 70% 30%, 90% 30%, 
+      100% 50%, 90% 70%, 70% 70%, 70% 100%, 20% 100%, 20% 70%, 0% 70%
+    ); /* Misma forma, pero en el otro lado */
+    animation: bulldozerDerecha 3s infinite linear;
+  }
+  
+  /* Movimiento del bulldozer izquierdo */
+  @keyframes bulldozerIzquierda {
+    0% {
+      left: -60px;
+    }
+    50% {
+      left: 50%;
+    }
+    51% {
+      animation: choque 0.3s ease-in-out;
+      opacity: 0;
+    }
+    100% {
+      left: 100%;
+      opacity: 0;
+    }
+  }
+  
+  /* Movimiento del bulldozer derecho */
+  @keyframes bulldozerDerecha {
+    0% {
+      right: -60px;
+    }
+    50% {
+      right: 50%;
+    }
+    51% {
+      animation: choque 0.3s ease-in-out;
+      opacity: 0;
+    }
+    100% {
+      right: 100%;
+      opacity: 0;
+    }
+  }
+  
+  /* Efecto de choque con temblor */
+  @keyframes choque {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2) rotate(2deg); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Adaptación para móviles */
+  @media screen and (max-width: 768px) {
+    .barraazul {
+      height: 0.7rem;
+    }
+    .barraazul::after,
+    .barraazul::before {
+      width: 35px; /* Bulldozers más pequeños */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .barraazul {
+      height: 0.4rem;
+    }
+    .barraazul::after,
+    .barraazul::before {
+      width: 25px; /* Bulldozers más pequeños */
+    }
+  }
+  
+  
+  
