@@ -1,4 +1,158 @@
 [
+  {
+  "metadata": [
+    {
+      "title": "Administración de Propiedad Horizontal",
+      "slug": "administracion-de-propiedad-horizontal",
+      "description": "Ofrecemos servicios profesionales de administración de propiedad horizontal para conjuntos residenciales, comerciales e industriales. Garantizamos transparencia, eficiencia y cumplimiento normativo.",
+      "keywords": "administración de propiedad horizontal, administrador de conjuntos, ley 675 de 2001, cobro de administración, conciliación en copropiedad, asamblea de copropietarios, Bogotá, Medellín, Cali, Barranquilla, Cartagena.",
+      "image": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1756158490/administracion_de_propiedad_horizontal_kh2ik5.webp"
+    }
+  ],
+  "id": "administracion-de-propiedad-horizontal",
+  "title": "Administración de Propiedad Horizontal",
+  "description": "Gestionamos su propiedad horizontal con transparencia y eficiencia. Servicios integrales de administración para conjuntos residenciales, comerciales e industriales.",
+  "parrafo1": "Nuestro servicio de administración de propiedad horizontal está diseñado para optimizar la gestión de su conjunto, garantizando el cumplimiento de la Ley 675 de 2001, la transparencia financiera y el mantenimiento óptimo de las áreas comunes.",
+  "parrafo2": "Contamos con un equipo de profesionales expertos en derecho inmobiliario, contaduría y gestión comunitaria, listos para enfrentar los desafíos más complejos de la convivencia y la administración.",
+  "parrafo3": "Ofrecemos planes de administración flexibles, adaptados a las necesidades específicas de su comunidad, ya sea para conjuntos pequeños, grandes o con características especiales.",
+  "parrafo4": "Nuestros administradores le brindarán asesoría permanente para garantizar la correcta toma de decisiones, la resolución de conflictos y la valorización de su propiedad.",
+  "imagenprincipal": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1756158490/administracion_de_propiedad_horizontal_kh2ik5.webp",
+  "services": [
+    {
+      "title": "Gestión Administrativa y Financiera",
+      "description": "Realizamos la cobranza oportuna de expensas, elaboración de presupuestos, estados financieros transparentes y manejo eficiente del fondo de reserva."
+    },
+    {
+      "title": "Cumplimiento Normativo y Legal",
+      "description": "Garantizamos el estricto cumplimiento de la Ley 675 de 2001, reglamentos de propiedad horizontal y todas las disposiciones legales vigentes."
+    },
+    {
+      "title": "Convivencia y Conciliación",
+      "description": "Mediamos en conflictos entre copropietarios, aplicamos el reglamento de propiedad horizontal y promovemos una armoniosa convivencia."
+    },
+    {
+      "title": "Mantenimiento de Áreas Comunes",
+      "description": "Gestionamos contratos de mantenimiento preventivo y correctivo para zonas verdes, piscinas, ascensores, fachadas y toda el área común."
+    },
+    {
+      "title": "Asesoría en Asambleas Generales",
+      "description": "Brindamos soporte completo para la convocatoria, desarrollo y elaboración de actas de asambleas de copropietarios."
+    }
+  ],
+  "benefits": [
+    "Transparencia Financiera: Estados de cuenta claros y detallados disponibles para cada copropietario.",
+    "Expertise Legal: Nuestros administradores conocen a profundidad el marco jurídico de la propiedad horizontal.",
+    "Optimización de Recursos: Gestionamos los fondos de la comunidad para maximizar su rendimiento y eficiencia."
+  ],
+  "testimonials": [
+    {
+      "client": "Carlos Andrés Méndez",
+      "project": "Conjunto Residencial 'Los Alamos', Bogotá",
+      "feedback": "Desde que contratamos sus servicios, la transparencia en los estados financieros es absoluta. Lograron organizar nuestras finanzas y el mantenimiento del conjunto es impecable.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "María Fernanda Gutiérrez",
+      "project": "Edificio 'Torre Central', Medellín",
+      "feedback": "Su gestión fue clave para resolver un conflicto de años entre los copropietarios. Su profesionalismo y conocimiento de la ley restauró la paz en nuestra comunidad.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    },
+    {
+      "client": "Julián Ramírez & Co.",
+      "project": "Centro Comercial 'Plaza de las Américas', Cali",
+      "feedback": "Administran nuestro centro comercial con una eficiencia notable. La optimización de los costos operativos nos ha permitido aumentar nuestras utilidades.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1740061684/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/imagenusuarios_ala04n.webp"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Qué incluye su tarifa de administración?",
+      "answer": "Nuestra tarifa incluye la gestión administrativa completa, financiera, legal, de convivencia, soporte para asambleas y reportes periódicos. Los costos de mantenimiento y servicios públicos de áreas comunes se manejan por separado con cargo al presupuesto de la copropiedad."
+    },
+    {
+      "question": "¿Cómo manejan el cobro de la administración a los morosos?",
+      "answer": "Contamos con un proceso gradual que inicia con recordatorios amables, sigue con cobros prejurídicos y, de ser necesario, procedemos con la ejecución jurídica correspondiente para recuperar la cartera morosa, todo dentro del marco de la ley."
+    },
+    {
+      "question": "¿Pueden ayudar a actualizar nuestro reglamento de propiedad horizontal?",
+      "answer": "Absolutamente. Uno de nuestros servicios clave es la asesoría para la modernización y adecuación del reglamento de propiedad horizontal a la ley vigente y a las necesidades actuales de la comunidad, y guiamos el proceso para su aprobación en asamblea."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "Recuperación Financiera de Conjunto en Crisis",
+      "description": "Intervenimos un conjunto residencial con una cartera morosa del 40%. Implementamos un plan de reestructuración financiera y cobro jurídico, logrando normalizar la situación en 8 meses.",
+      "image": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1743794776/bkkcmrgnol4lsyw0mvx3.jpg"
+    },
+    {
+      "title": "Modernización de Infraestructura Común",
+      "description": "Gestionamos y supervisamos la renovación completa de la fachada, zonas comunes y sistema eléctrico de un edificio antiguo, ejecutando el proyecto dentro del presupuesto y tiempo establecidos.",
+      "image": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1743794298/irlzobigglpsbd8yehlb.jpg"
+    },
+    {
+      "title": "Implementación de Sostenibilidad",
+      "description": "Lideramos un proyecto para implementar paneles solares y un sistema de recolección de aguas lluvias en un conjunto, reduciendo los costos de servicios comunes en un 25% anualmente.",
+      "image": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1743700329/ilnvfdtectvkees3tygt.jpg"
+    }
+  ],
+  "Proyectosrealizados": [
+    {
+      "title": "Administración de Conjunto Residencial 'Las Acacias'",
+      "description": "Gestionamos integralmente este conjunto de 120 unidades, logrando un índice de satisfacción del 95% entre los copropietarios gracias a nuestra comunicación clara y gestión eficaz.",
+      "image": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1743794776/iqrpxlcykj5uatvpozvp.jpg"
+    },
+    {
+      "title": "Administración de Edificio Comercial 'Centro Empresarial'",
+      "description": "Optimizamos los costos operativos y logramos una plusvalía significativa para las oficinas mediante una gestión profesional y el mantenimiento de primer nivel en las áreas comunes.",
+      "image": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1743781860/yrtnud11jzdjf8mtbzul.jpg"
+    },
+    {
+      "title": "Interventoría y Administración en Conjunto Mixto",
+      "description": "Implementamos un modelo de administración para un complejo con torres residenciales y locales comerciales, armonizando las necesidades de ambos tipos de copropietarios.",
+      "image": "https://res.cloudinary.com/dnigz3zfp/image/upload/v1743792619/vmnumnhlisliyxzw3hnb.jpg"
+    }
+  ],
+  "statistics": {
+    "years_of_experience": 12,
+    "completed_projects": 85,
+    "satisfied_clients": 95,
+    "cost_reduction_average": "15%"
+  },
+  "blog": [
+    {
+      "title": "Tendencias en la Interventoría de Obras para 2025",
+      "excerpt": "El año 2025 marcará un antes y un después en la interventoría de obras, un campo que está experimentando una transformación profunda.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1740424316/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Tendencias_en_la_Interventor%C3%ADa_de_Obras_para_2025_ugfbbl.webp",
+      "url": "https://www.estructurasverticales.com/blog/tendencias-interventoria-obras"
+    },
+    {
+      "title": "Supervisión de Obras de Construcción, su Importancia",
+      "excerpt": "Un proyecto con supervisión eficiente puede reducir costos en un 20% y mejorar la calidad final en un 35%, evitando errores y sobrecostos innecesarios.",
+      "image": "blog/https://res.cloudinary.com/dby8lelja/image/upload/v1739392552/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Supervisi%C3%B3n_de_Obras_qkrufl.webp",
+      "url": "https://www.estructurasverticales.com/blog/supervision-obras-construccion"
+    },
+    {
+      "title": "Recibo de Zonas Comunes en Propiedad Horizontal ph.",
+      "excerpt": "El recibo de zonas comunes en propiedad horizontal es un proceso fundamental para garantizar que las áreas compartidas de un conjunto residencial.",
+      "image": "https://res.cloudinary.com/dby8lelja/image/upload/v1739392553/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/Recibo_de_Zonas_Comunes_Ph_s5k00j.webp",
+      "url": "https://www.estructurasverticales.com/blog/recibo-zonas-comunes-ph"
+    }
+  ],
+  "contact": {
+    "phone": "+57 3132581599",
+    "email": "estructurasverticalessas@gmail.com",
+    "address": "KR 7 B BIS # 126 - 36, Bogotá, Colombia",
+    "map_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3916704412068!2d-74.03348222432375!3d4.701828341646359!2m3!1f0!2f0!3f0!m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aaa132a6663%3A0x4d1783c6d3ecf09b!2zQ3JhLiA3YiBCaXMgIzEyNi0zNiwgVXNhcXXDqW4sIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1739911278354!5m2!1ses!2sco"
+  },
+  "cta": {
+    "primary": "Contrate una administración profesional para su propiedad horizontal.",
+    "secondary": "Solicite una propuesta de servicios a la medida de sus necesidades."
+  },
+  "chat": {
+    "whatsapp": "https://wa.me/3132581599",
+    "live_chat": true
+  }
+},
 {
     "metadata": [
       {
@@ -156,6 +310,9 @@
       "live_chat": true
     }
 },
+
+
+
 {
   "metadata": [
     {
