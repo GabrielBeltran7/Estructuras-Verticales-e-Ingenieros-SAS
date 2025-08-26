@@ -2,6 +2,12 @@ import ServicesCard from "./ServicesCard.jsx"
 
 const services = [
   {
+  title: "Administración de Propiedad Horizontal",
+  description: "Brindamos servicios de Administración de Propiedad Horizontal enfocados en la correcta gestión y mantenimiento de edificios y conjuntos residenciales. Nuestro equipo especializado asegura el cumplimiento normativo, la transparencia en la administración de recursos y la eficiencia en los procesos. Implementamos planes estratégicos que optimizan la convivencia, la seguridad y el bienestar de los copropietarios, garantizando la valorización y sostenibilidad de cada inmueble.",
+  image: "https://res.cloudinary.com/dnigz3zfp/image/upload/v1756158490/administracion_de_propiedad_horizontal_kh2ik5.webp",
+  link: "https://www.estructurasverticales.com/servicios/administracion-de-propiedad-horizontal"
+},
+  {
     title: "Consultoría de Obras",
     description: "Ofrecemos servicios de Consultoría de Obras para optimizar la planificación y ejecución de proyectos de construcción. Nuestro equipo de expertos asesora en cada fase del proceso, garantizando eficiencia, cumplimiento normativo y control de costos. Implementamos estrategias innovadoras para maximizar la rentabilidad y minimizar riesgos, asegurando el éxito de cada obra.",
     image: "https://res.cloudinary.com/dby8lelja/image/upload/v1739811559/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/consultoria_de_obras_ueeydw.webp",
