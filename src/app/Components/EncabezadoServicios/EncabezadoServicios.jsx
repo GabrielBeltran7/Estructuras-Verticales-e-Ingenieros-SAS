@@ -39,14 +39,13 @@ const EncabezadoServicios = () => {
           toma de decisiones informadas, brindando a nuestros clientes la
           confianza de que sus proyectos cumplen no solo con los más altos
           estándares de calidad, sino también con las{' '}
-          <Link href="https://www.minvivienda.gov.co" legacyBehavior>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.link}
-            >
-              regulaciones oficiales{' '}
-            </a>
+          <Link
+            href="https://www.minvivienda.gov.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            regulaciones oficiales{' '}
           </Link>
           que rigen la industria de la construcción en Colombia.
         </p>

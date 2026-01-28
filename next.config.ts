@@ -1,7 +1,7 @@
-const withMDX = require("@next/mdx")();
+import type { NextConfig } from "next";
 
-const nextConfig = withMDX({
-  experimental: { mdxRs: true }, // Activa MDX en Next.js 15
+const nextConfig: NextConfig = {
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   images: {
     remotePatterns: [
       {
@@ -13,11 +13,11 @@ const nextConfig = withMDX({
         hostname: "img.youtube.com",
       },
     ],
-    formats: ["image/avif", "image/webp"], // Usa formatos más eficientes
-    minimumCacheTTL: 31536000, // Cachea imágenes en la CDN por 1 año
-    deviceSizes: [320, 420, 768, 1024, 1200], // Tamaños optimizados para dispositivos
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], // Mejora la entrega según tamaños de imagen
-    unoptimized: false, // Asegura que Next.js haga la optimización
+    formats: ["image/avif", "image/webp"] as any,
+    minimumCacheTTL: 31536000,
+    deviceSizes: [320, 420, 768, 1024, 1200],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    unoptimized: false,
   },
   headers: async () => [
     {
@@ -25,11 +25,11 @@ const nextConfig = withMDX({
       headers: [
         {
           key: "Cache-Control",
-          value: "public, max-age=31536000, immutable", // Mejora la cache de imágenes
+          value: "public, max-age=31536000, immutable",
         },
       ],
     },
   ],
-});
+};
 
-module.exports = nextConfig;
+export default nextConfig;

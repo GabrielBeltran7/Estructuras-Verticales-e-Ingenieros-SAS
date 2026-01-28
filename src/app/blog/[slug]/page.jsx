@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
-import { MDXRemote } from "next-mdx-remote/rsc";
+import { compileMDX } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./BlogPost.module.css";
@@ -99,30 +99,40 @@ export default async function BlogPost({ params }) {
 
   const { content, data } = post;
 
+  // ✅ Nueva forma de renderizar MDX en RSC para Next.js 15/16
+  const { content: mdxContent } = await compileMDX({
+    source: content,
+    components: {
+      a: CustomLink,
+      img: CustomImage
+    },
+    options: { parseFrontmatter: true }
+  });
+
   return (
     <>
       <Navbar />
       <main className={styles.blogContainer}>
-   
+
         {/* ✅ Imagen principal del artículo */}
         {data.image && (
-          <Image 
-            src={data.image} 
+          <Image
+            src={data.image}
             alt={data.title}
-            width={900} 
-            height={650} 
-            priority={true}  
-            loading="eager"  
-            fetchPriority="high"  
-            className={styles.contentimgen} 
-          />     
+            width={900}
+            height={650}
+            priority={true}
+            loading="eager"
+            fetchPriority="high"
+            className={styles.contentimgen}
+          />
         )}
 
         <p className={styles.date}>{data.date}</p>
 
-        {/* ✅ Renderizado del contenido MDX con CustomLink y CustomImage */}
+        {/* ✅ Renderizado del contenido MDX pre-compilado */}
         <article className={styles.content}>
-          <MDXRemote source={content} components={{ a: CustomLink, img: CustomImage }} />
+          {mdxContent}
         </article>
       </main>
       <ContactButtons />
