@@ -165,6 +165,7 @@
 
     ],
     "id": "alquiler-de-maquinaria-pesada",
+    "active": false,
     "title": "Alquiler de Maquinaria Pesada",
     "description": "Alquila bulldozers de alta calidad para construcción, minería y movimientos de tierra. Garantizamos eficiencia, rendimiento y soporte técnico.",
     "parrafo1": "Nuestros bulldozers están diseñados para ofrecer el máximo rendimiento en proyectos de construcción, minería y movimientos de tierra, garantizando eficiencia y productividad.",
@@ -832,6 +833,7 @@
     }
   ],
   "id": "montaje-estructural",
+  "active": false,
   "title": "Montaje Estructural",
   "description": "Ofrecemos servicios de montaje estructural precisos y eficientes, garantizando la seguridad y calidad en cada proyecto de construcción.",
   "parrafo1": "Somos especialistas en montaje estructural, comprometidos con la ejecución precisa y segura de proyectos de construcción, desde estructuras metálicas hasta edificaciones complejas.",

@@ -10,6 +10,7 @@ import BarraAzul from "../../Components/BarraAzul/BarraAzul"
 type Servicio = {
   id: string;
   title: string;
+  active?: boolean;
 };
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    setServicios(servicesData);
+    setServicios(servicesData.filter((s) => s.active !== false));
   }, []);
 
   const toggleMenu = () => {

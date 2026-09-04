@@ -17,7 +17,9 @@ module.exports = {
       // Servicios generados desde la única fuente de verdad: services.json
       // (evita rutas obsoletas o servicios faltantes en el sitemap).
       const servicios = require('./src/app/data/services.json');
-      const servicioPaths = servicios.map((servicio) => ({
+      const servicioPaths = servicios
+        .filter((servicio) => servicio.active !== false)
+        .map((servicio) => ({
         loc: `/servicios/${servicio.id}`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',

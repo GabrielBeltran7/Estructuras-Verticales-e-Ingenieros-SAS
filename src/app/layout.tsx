@@ -148,14 +148,6 @@ export default function RootLayout({
                     offers: { "@type": "Offer", price: "A convenir" },
                   },
                   {
-                    name: "Montaje Estructural",
-                    description:
-                      "Diseño y fabricación de montajes estructurales personalizados con materiales de alta calidad.",
-                    url: "https://www.estructurasverticales.com/servicios/montaje-estructural",
-                    serviceType: "Montaje Estructural",
-                    offers: { "@type": "Offer", price: "A convenir" },
-                  },
-                  {
                     name: "Recibo de Zonas Comunes PH",
                     description:
                       "Inspección y certificación de zonas comunes en propiedades horizontales para garantizar cumplimiento normativo.",

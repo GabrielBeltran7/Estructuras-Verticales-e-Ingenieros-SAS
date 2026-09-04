@@ -15,14 +15,6 @@ const services = [
   },
   
   {
-    title: "Alquiler de Maquinaria Pesada",
-    description: "Ofrecemos soluciones especializadas en el alquiler de maquinaria pesada, con un enfoque en bulldozers para construcción e ingeniería civil. Nuestro servicio garantiza equipos modernos, mantenimiento preventivo y asesoramiento técnico para maximizar la eficiencia en cada proyecto. Ideal para excavación, nivelación de terrenos y movimientos de tierra, brindamos soluciones confiables y rentables para la industria.",
-    image: "https://res.cloudinary.com/dby8lelja/image/upload/v1742400774/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Imagenes%20Blog/empresa_alquiler_de_maquinaria_pesada_ghqj9z.webp",
- link: "https://www.estructurasverticales.com/servicios/alquiler-de-maquinaria-pesada"
-  },
-
-
-    {
       title: "Interventoria de Obras",
       description: "En nuestra empresa ofrecemos servicios de Interventoría de Obras para garantizar la ejecución adecuada de proyectos de construcción. Nos encargamos de supervisar y controlar todas las fases del proceso constructivo, asegurando el cumplimiento de los plazos, presupuestos y calidad especificada. Con nuestra experiencia, brindamos confianza a nuestros clientes, minimizando riesgos y maximizando la eficiencia en cada obra.",
       image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490968/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Interventoria_de_Obras_xaegll.webp",
@@ -41,13 +33,6 @@ const services = [
       image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Elaboraci%C3%B3n_de_Pliegos_de_Condiciones_m0paon.webp",
      link: "https://www.estructurasverticales.com/servicios/elaboracion-de-pliegos-de-condiciones"
     },
-    {
-      title: "Montaje Estructural",
-      description: "En nuestra empresa ofrecemos servicios de Montajes Estructurales de alta calidad. Ejecutamos soluciones personalizadas para cada proyecto, asegurando precisión y resistencia. Utilizamos materiales de primera y tecnología avanzada en cada etapa del proceso. Nuestro equipo de expertos garantiza la instalación eficiente y segura de las estructuras. Brindamos confianza a nuestros clientes al entregar montajes duraderos y de alto rendimiento.",
-      image: "https://res.cloudinary.com/dby8lelja/image/upload/v1737490967/Estructuras%20Verticales%20e%20Ingenieros%20SAS/Dise%C3%B1o_y_Fabricaci%C3%B3n_de_Montajes_Estructurales_wvnte9.webp",
-      link: "https://www.estructurasverticales.com/servicios/montaje-estructural"
-    },
-    
     {
       title: "Diseño Estructura de Obras",
       description: "Nos especializamos en Diseños Estructurales personalizados para cada tipo de proyecto. Creamos soluciones innovadoras y eficientes que aseguran la estabilidad y seguridad de las construcciones. Utilizamos tecnología avanzada y un equipo de expertos para desarrollar diseños precisos. Nos comprometemos a cumplir con los estándares de calidad y normativas vigentes. Garantizamos un trabajo integral que respalde la durabilidad y rendimiento de cada estructura.",

@@ -45,6 +45,21 @@ const nextConfig: NextConfig = {
     // El HTML de las páginas ya no se cachea de forma "immutable":
     // así las actualizaciones de contenido se ven de inmediato.
   ],
+  // Servicios retirados (siguen guardados en services.json con active:false
+  // por si se reactivan o se llevan a otra web): se redirigen al home en
+  // vez de dar 404, para no perder el posicionamiento ni romper enlaces.
+  redirects: async () => [
+    {
+      source: "/servicios/montaje-estructural",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/servicios/alquiler-de-maquinaria-pesada",
+      destination: "/",
+      permanent: true,
+    },
+  ],
 };
 
 export default nextConfig;

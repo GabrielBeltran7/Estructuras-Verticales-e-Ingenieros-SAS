@@ -3,6 +3,7 @@ import servicesData from "@/app/data/services.json";
 
 type Servicio = {
   id: string;
+  active?: boolean;
   title: string;
   description: string;
   imagenprincipal: string;
@@ -23,16 +24,17 @@ type Servicio = {
   chat: { whatsapp: string; live_chat: boolean };
 };
 
-// ✅ Obtener todos los servicios
+// ✅ Obtener todos los servicios activos (los retirados con active:false no se listan)
 export async function getAllServicios(): Promise<Servicio[]> {
-  return servicesData;
+  return servicesData.filter((s) => s.active !== false);
 }
 
-// ✅ Obtener un servicio por ID
+// ✅ Obtener un servicio por ID (un servicio inactivo se trata como inexistente)
 export async function getServicioById(id: string): Promise<Servicio | null> {
-  return (
-    servicesData.find((s) => s.id.toLowerCase() === decodeURIComponent(id).toLowerCase()) || null
+  const servicio = servicesData.find(
+    (s) => s.id.toLowerCase() === decodeURIComponent(id).toLowerCase()
   );
+  return servicio && servicio.active !== false ? servicio : null;
 }
 
 // ✅ Generar metadatos SEO optimizados
