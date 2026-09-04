@@ -21,14 +21,29 @@ const nextConfig: NextConfig = {
   },
   headers: async () => [
     {
-      source: "/:path*",
+      // Assets con hash de Next: nunca cambian, se pueden cachear para siempre.
+      source: "/_next/static/:path*",
       headers: [
-        {
-          key: "Cache-Control",
-          value: "public, max-age=31536000, immutable",
-        },
+        { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
       ],
     },
+    {
+      // Imágenes optimizadas por next/image.
+      source: "/_next/image/:path*",
+      headers: [
+        { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+      ],
+    },
+    {
+      // Archivos estáticos en /public (imágenes, fuentes, pdf, íconos).
+      source:
+        "/:all*(svg|jpg|jpeg|png|webp|avif|gif|ico|pdf|woff|woff2|ttf|otf)",
+      headers: [
+        { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+      ],
+    },
+    // El HTML de las páginas ya no se cachea de forma "immutable":
+    // así las actualizaciones de contenido se ven de inmediato.
   ],
 };
 

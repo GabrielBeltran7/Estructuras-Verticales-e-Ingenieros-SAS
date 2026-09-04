@@ -20,15 +20,23 @@ async function getBlogPost(slug) {
 }
 
 // ✅ Componente personalizado para enlaces
-const CustomLink = (props) => {
-  const isExternal = props.href?.startsWith("http");
+// Un enlace absoluto al propio dominio (https://www.estructurasverticales.com/...)
+// se trata como interno: usa <Link> (sin recarga completa ni pestaña nueva).
+const OWN_DOMAIN = /^https?:\/\/(www\.)?estructurasverticales\.com/;
 
-  return isExternal ? (
+const CustomLink = (props) => {
+  const href = props.href || "";
+  const isInternal = href.startsWith("/") || href.startsWith("#") || OWN_DOMAIN.test(href);
+
+  if (isInternal) {
+    const relativeHref = href.replace(OWN_DOMAIN, "") || "/";
+    return <Link href={relativeHref}>{props.children}</Link>;
+  }
+
+  return (
     <a {...props} target="_blank" rel="noopener noreferrer">
       {props.children}
     </a>
-  ) : (
-    <Link href={props.href}>{props.children}</Link>
   );
 };
 
@@ -36,6 +44,14 @@ const CustomLink = (props) => {
 const CustomImage = (props) => {
   return <img {...props} className={styles.centeredImage} />;
 };
+
+// ✅ Genera las rutas de todos los posts en build time (SSG) en vez de
+// renderizarlas bajo demanda en cada visita.
+export async function generateStaticParams() {
+  const postsDirectory = path.join(process.cwd(), "src/app/blog/posts");
+  const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".mdx"));
+  return files.map((file) => ({ slug: file.replace(".mdx", "") }));
+}
 
 // ✅ generateMetadata optimizado con SEO completo
 export async function generateMetadata({ params }) {
@@ -109,8 +125,39 @@ export default async function BlogPost({ params }) {
     options: { parseFrontmatter: true }
   });
 
+  const BASE_URL = "https://www.estructurasverticales.com";
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: data.title,
+    description: data.description,
+    image: data.image ? [data.image] : undefined,
+    datePublished: data.date,
+    dateModified: data.date,
+    author: {
+      "@type": "Organization",
+      name: data.author || "Estructuras Verticales e Ingenieros SAS",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Estructuras Verticales e Ingenieros SAS",
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/favicon.ico`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/blog/${slug}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <Navbar />
       <main className={styles.blogContainer}>
 
@@ -129,6 +176,7 @@ export default async function BlogPost({ params }) {
         )}
 
         <p className={styles.date}>{data.date}</p>
+        {data.author && <p className={styles.author}>Por {data.author}</p>}
 
         {/* ✅ Renderizado del contenido MDX pre-compilado */}
         <article className={styles.content}>

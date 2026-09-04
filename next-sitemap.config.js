@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const matter = require('gray-matter');
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
@@ -13,16 +14,18 @@ module.exports = {
     try {
       const blogDir = path.join(process.cwd(), 'src/app/blog/posts'); // Ruta donde están los MDX
 
+      // Servicios generados desde la única fuente de verdad: services.json
+      // (evita rutas obsoletas o servicios faltantes en el sitemap).
+      const servicios = require('./src/app/data/services.json');
+      const servicioPaths = servicios.map((servicio) => ({
+        loc: `/servicios/${servicio.id}`,
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: 0.8,
+      }));
+
       const staticPaths = [
-        { loc: '/servicios/interventoria-de-obras', lastmod: new Date().toISOString() },
-        { loc: '/servicios/consultoria-de-obras', lastmod: new Date().toISOString() },
-        { loc: '/servicios/impermeabilizacion', lastmod: new Date().toISOString() },
-        { loc: '/servicios/diseno-estructural', lastmod: new Date().toISOString() },
-        { loc: '/servicios/montaje-estructural', lastmod: new Date().toISOString() },
-        { loc: '/servicios/supervision-de-obra', lastmod: new Date().toISOString() },
-        { loc: '/servicios/informes-tecnicos-de-obras', lastmod: new Date().toISOString() },
-        { loc: '/servicios/elaboracion-de-pliegos-de-condiciones', lastmod: new Date().toISOString() },
-        { loc: '/servicios/recibo-de-zonas-comunes-en-propiedad-horizontal-ph', lastmod: new Date().toISOString() },
+        ...servicioPaths,
         { loc: '/', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 1.0 }, // Página principal
         { loc: '/blog', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 0.9 }, // Página del blog
       ];
@@ -34,12 +37,24 @@ module.exports = {
 
       const files = fs.readdirSync(blogDir).filter(file => file.endsWith('.mdx'));
 
-      const blogPaths = files.map(file => ({
-        loc: `/blog/${file.replace('.mdx', '')}`, // ✅ Eliminamos "/posts/"
-        lastmod: new Date().toISOString(),
-        changefreq: 'daily',
-        priority: 0.8,
-      }));
+      // lastmod = fecha real del frontmatter del post, no la fecha del build.
+      // Así Google no recibe la señal falsa de que los 65+ posts cambiaron hoy.
+      const blogPaths = files.map(file => {
+        const filePath = path.join(blogDir, file);
+        const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
+        const parsedDate = data.date ? new Date(data.date) : null;
+        const lastmod =
+          parsedDate && !isNaN(parsedDate.getTime())
+            ? parsedDate.toISOString()
+            : new Date().toISOString();
+
+        return {
+          loc: `/blog/${file.replace('.mdx', '')}`, // ✅ Eliminamos "/posts/"
+          lastmod,
+          changefreq: 'monthly',
+          priority: 0.8,
+        };
+      });
 
       return [...staticPaths, ...blogPaths];
     } catch (error) {

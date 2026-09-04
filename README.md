@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Estructuras Verticales e Ingenieros SAS
 
-## Getting Started
+Sitio web corporativo de **Estructuras Verticales e Ingenieros SAS**: interventoría,
+consultoría, supervisión de obras, diseño estructural y servicios relacionados de
+propiedad horizontal en Colombia.
 
-First, run the development server:
+## Stack
+
+- [Next.js 15](https://nextjs.org) (App Router) + React 19
+- TypeScript
+- Estilos: CSS Modules + MUI (carrusel de servicios) + Tailwind CSS v4 (tablas en el blog)
+- Blog en MDX (`next-mdx-remote`)
+- SEO: metadata + JSON-LD + `next-sitemap`
+- Imágenes servidas desde Cloudinary
+- Analítica: Google Tag Manager, Google Analytics 4, Microsoft Clarity
+- Despliegue: Vercel
+
+## Desarrollo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script          | Descripción                                        |
+| --------------- | -------------------------------------------------- |
+| `npm run dev`   | Servidor de desarrollo                             |
+| `npm run build` | Build de producción (genera el sitemap en `postbuild`) |
+| `npm start`     | Sirve el build de producción                       |
+| `npm run lint`  | ESLint (`next lint`)                               |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estructura
 
-## Learn More
+```
+src/app/
+  page.tsx              # Home
+  layout.tsx            # Metadata global + scripts de analítica + JSON-LD
+  servicios/[id]/       # Página de detalle por servicio (datos en data/services.json)
+  blog/                 # Índice del blog + [slug] (posts en blog/posts/*.mdx)
+  Components/            # Componentes de UI
+  data/services.json    # Única fuente de verdad de los servicios
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contenido
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Servicios**: editar `src/app/data/services.json`. El menú, las páginas de detalle
+  (`/servicios/<id>`) y el sitemap se generan a partir de ese archivo.
+- **Blog**: agregar un `.mdx` en `src/app/blog/posts/` con frontmatter
+  (`title`, `date`, `description`, `keywords`, `slug`, `image`, ...).

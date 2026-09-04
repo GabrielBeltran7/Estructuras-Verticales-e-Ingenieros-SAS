@@ -28,7 +28,10 @@ export function middleware(request: NextRequest) {
   return NextResponse.redirect(redirectUrl, 301);
 }
 
-// Aplicar a todas las rutas
+// Aplicar a todas las rutas de páginas, excluyendo assets internos de Next,
+// archivos estáticos y metadatos (favicon, robots, sitemap, etc.).
 export const config = {
-  matcher: "/:path*",
+  matcher: [
+    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|sitemap-0.xml|.*\\.(?:xml|txt|png|jpg|jpeg|webp|avif|gif|svg|ico|pdf|woff2?|ttf|otf|html)$).*)",
+  ],
 };

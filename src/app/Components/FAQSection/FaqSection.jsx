@@ -1,6 +1,5 @@
 import React from "react";
-import { Accordion, AccordionSummary, AccordionDetails, Typography, Container } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import styles from "./FaqSection.module.css";
 
 // Datos de las preguntas frecuentes
 const faqs = [
@@ -32,41 +31,20 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <Container
-      sx={{
-        marginTop: 4,
-        marginBottom: 4,
-        width: "100%", // Ocupa el 100% del ancho disponible
-        paddingBottom: 10, 
-      }}
-    >
-      <Typography
-        variant="h4"
-        component="h2"
-        sx={{
-          fontWeight: "bold",
-          textAlign: "center",
-          marginBottom: 2,
-          fontSize: { xs: '2rem', sm: '2.7rem' }, // Ajusta el tamaño del texto en función del tamaño de pantalla
-        }}
-      >
-        Preguntas Frecuentes
-      </Typography>
+    <div className={styles.container}>
+      <h2 className={styles.heading}>Preguntas Frecuentes</h2>
+
       {faqs.map((faq, index) => (
-        <Accordion key={index} sx={{ marginBottom: 1 }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="h6" sx={{ fontSize: { xs: '1.2rem', sm: '1.25rem' } }}>
-              {faq.question}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography variant="body1" sx={{ fontSize: { xs: '1rem', sm: '1rem' } }}>
-              {faq.answer}
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
+        <details key={index} className={styles.item}>
+          <summary className={styles.summary}>
+            <span className={styles.question}>{faq.question}</span>
+            <span className={styles.icon} aria-hidden="true">
+              &#9662;
+            </span>
+          </summary>
+          <div className={styles.answer}>{faq.answer}</div>
+        </details>
       ))}
-    </Container>
+    </div>
   );
 }
-

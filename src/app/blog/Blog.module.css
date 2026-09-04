@@ -2,7 +2,8 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 65px;
+  /* Header fijo = navbar (--navbar-height) + barra azul (~0.8rem). Deja aire para que el título no quede tapado. */
+  margin-top: calc(var(--navbar-height) + 30px);
   text-align: center;
   margin-bottom: 7rem;
 }.readMore{
@@ -222,6 +223,8 @@
   .container {
     max-width: 100%;
     padding: 3rem; /* Reducir padding para evitar espacios vacíos */
+    /* En <=768px el padding-top de 3rem ya despeja el header fijo. */
+    margin-top: 65px;
   }
 
   .blogLayout {

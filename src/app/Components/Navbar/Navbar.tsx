@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import servicesData from "@/app/data/services.json";
 import BarraAzul from "../../Components/BarraAzul/BarraAzul"
@@ -16,7 +16,6 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
   const [servicios, setServicios] = useState<Servicio[]>([]);
-  const router = useRouter();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -36,19 +35,19 @@ const Navbar = () => {
     setSubMenuOpen(false);
   };
 
-  const handleNavigation = (href: string) => {
+  // Para enlaces a secciones del home: si ya estamos en "/", hacemos scroll suave;
+  // si no, dejamos que <Link> navegue a "/#seccion" y el navegador salta al ancla.
+  const handleHashNav = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    hash: string
+  ) => {
     closeMenu();
-    if (href.startsWith("#")) {
-      if (pathname !== "/") {
-        router.push(`/${href}`);
-      } else {
-        const targetElement = document.querySelector(href);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" });
-        }
+    if (pathname === "/") {
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        e.preventDefault();
+        targetElement.scrollIntoView({ behavior: "smooth" });
       }
-    } else {
-      router.push(href);
     }
   };
 
@@ -63,21 +62,25 @@ const Navbar = () => {
 
       <ul className={`${styles.navLinks} ${menuOpen ? styles.show : ""}`}>
         <li>
-          <button className={styles.navLink} onClick={() => handleNavigation("#inicio")}>
+          <Link href="/" className={styles.navLink} onClick={closeMenu}>
             Inicio
-          </button>
+          </Link>
         </li>
 
         {/* Sección de Servicios con Submenú */}
         <li className={`${styles.dropdown} ${subMenuOpen ? styles.open : ""}`}>
-          <button className={styles.navLink} onClick={toggleSubMenu}>
+          <button
+            className={styles.navLink}
+            onClick={toggleSubMenu}
+            aria-expanded={subMenuOpen}
+          >
             Servicios ▾
           </button>
           {subMenuOpen && (
             <ul className={styles.dropdownMenu}>
               {servicios.map((servicio) => (
                 <li key={servicio.id}>
-                  <Link href={`/servicios/${servicio.id}`} className={styles.dropdownLink}>
+                  <Link href={`/servicios/${servicio.id}`} className={styles.dropdownLink} onClick={closeMenu}>
                     {servicio.title}
                   </Link>
                 </li>
@@ -87,29 +90,38 @@ const Navbar = () => {
         </li>
 
         <li>
-          <button className={styles.navLink} onClick={() => handleNavigation("#faq")}>
-            Preguntas
-          </button>
-        </li>
-        <li>
-          <button className={styles.navLink} onClick={() => handleNavigation("#contacto")}>
-            Contacto
-          </button>
-        </li>
-        <li>
-          <button className={styles.navLink} onClick={() => handleNavigation("/blog")}>
-            Blog
-          </button>
-        </li>
-        <li>
-          <button
+          <Link
+            href="/#faq"
             className={styles.navLink}
-            onClick={() =>
-              window.open("https://sistema-estructuras-verticalese-ingenierossas.vercel.app/", "_blank", "noopener,noreferrer")
-            }
+            onClick={(e) => handleHashNav(e, "#faq")}
+          >
+            Preguntas
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/#contacto"
+            className={styles.navLink}
+            onClick={(e) => handleHashNav(e, "#contacto")}
+          >
+            Contacto
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog" className={styles.navLink} onClick={closeMenu}>
+            Blog
+          </Link>
+        </li>
+        <li>
+          <a
+            href="https://sistema-estructuras-verticalese-ingenierossas.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.navLink}
+            onClick={closeMenu}
           >
             Acceso Corporativo
-          </button>
+          </a>
         </li>
       </ul>
 
@@ -117,9 +129,9 @@ const Navbar = () => {
         <div className={menuOpen ? styles.open : ""}></div>
         <div className={menuOpen ? styles.open : ""}></div>
         <div className={menuOpen ? styles.open : ""}></div>
-        
+
       </div>
-      
+
     </nav>
     <BarraAzul/>
     </>

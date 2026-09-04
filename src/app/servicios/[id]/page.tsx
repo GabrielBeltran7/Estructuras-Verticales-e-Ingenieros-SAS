@@ -68,7 +68,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
           <h2 className={styles.subtitle}>Casos de Éxito</h2>
 
           <div className={styles.caseStudiesContainer}>
-            {servicio.case_studies.map((c, index) => {
+            {(servicio.case_studies ?? []).map((c, index) => {
               const imageSrc = c.image.includes("cloudinary")
                 ? c.image
                 : `/${c.image}`;
@@ -96,7 +96,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Nuestros Servicios</h2>
           <ul className={styles.list}>
-            {servicio.services.map((s, index) => (
+            {(servicio.services ?? []).map((s, index) => (
               <li key={index} className={styles.listItem}>
                 <h3>{s.title}</h3>
                 <p>{s.description}</p>
@@ -114,7 +114,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
           nivel! 💼✨
           <div className={styles.chatButtons}>
             <a
-              href={servicio.chat.whatsapp}
+              href={servicio.chat?.whatsapp}
               target="_blank"
               className={styles.whatsappButton}
             >
@@ -127,7 +127,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
         <section className={styles.sectionfaq}>
           <h2 className={styles.subtitle}>Preguntas Frecuentes</h2>
           <ul className={styles.list}>
-            {servicio.faqs.map((faq, index) => (
+            {(servicio.faqs ?? []).map((faq, index) => (
               <li key={index} className={styles.listItemfaq}>
                 <h3 className={styles.faqQuestion}>{faq.question}</h3>{" "}
                
@@ -162,7 +162,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Beneficios</h2>
           <ul className={styles.list}>
-            {servicio.benefits.map((benefit, index) => (
+            {(servicio.benefits ?? []).map((benefit, index) => (
               <li key={index} className={styles.listItem}>
                 {benefit}
               </li>
@@ -173,7 +173,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
         {/* Testimonios */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Lo que dicen nuestros clientes</h2>
-          {servicio.testimonials.map((t, index) => {
+          {(servicio.testimonials ?? []).map((t, index) => {
             const imageSrc = t.image.includes("cloudinary")
               ? t.image
               : `/${t.image}`;
@@ -205,7 +205,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
           📞 ¡Contáctanos hoy y construyamos juntos un proyecto inolvidable! ✅
           <div className={styles.chatButtons}>
             <a
-              href={servicio.chat.whatsapp}
+              href={servicio.chat?.whatsapp}
               target="_blank"
               className={styles.whatsappButton}
             >
@@ -218,7 +218,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
           <h2 className={styles.subtitle}>Temas Relacionados</h2>
 
           <div className={styles.blogContainer}>
-            {servicio.blog.map((post, index) => {
+            {(servicio.blog ?? []).map((post, index) => {
               const imageSrc = post.image.startsWith("blog/")
                 ? post.image.replace("blog/", "")
                 : post.image;
@@ -248,16 +248,16 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Contacto</h2>
           <p>
-            <strong>Teléfono:</strong> {servicio.contact.phone}
+            <strong>Teléfono:</strong> {servicio.contact?.phone}
           </p>
           <p>
-            <strong>Email:</strong> {servicio.contact.email}
+            <strong>Email:</strong> {servicio.contact?.email}
           </p>
           <p>
-            <strong>Dirección:</strong> {servicio.contact.address}
+            <strong>Dirección:</strong> {servicio.contact?.address}
           </p>
           <iframe
-            src={servicio.contact.map_location}
+            src={servicio.contact?.map_location}
             className={styles.map}
             loading="lazy"
             allowFullScreen
@@ -273,7 +273,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ id: s
           </h2>
           <div className={styles.chatButtons}>
             <a
-              href={servicio.chat.whatsapp}
+              href={servicio.chat?.whatsapp}
               target="_blank"
               className={styles.whatsappButton}
             >
