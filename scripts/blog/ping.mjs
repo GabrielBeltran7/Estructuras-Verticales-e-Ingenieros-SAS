@@ -74,13 +74,17 @@ if (saRaw) {
   try {
     const sa = JSON.parse(saRaw.trim().startsWith('{') ? saRaw : Buffer.from(saRaw, 'base64').toString());
     const token = await googleAccessToken(sa, 'https://www.googleapis.com/auth/webmasters');
-    const siteUrl = encodeURIComponent(SITE_URL + '/');
+    // La propiedad de Search Console con los datos es la de DOMINIO
+    // (sc-domain:estructurasverticales.com), no la de prefijo de URL.
+    // Override con GSC_PROPERTY si algún día cambia.
+    const property = process.env.GSC_PROPERTY || `sc-domain:${new URL(SITE_URL).host.replace(/^www\./, '')}`;
+    const siteUrl = encodeURIComponent(property);
     const feed = encodeURIComponent(`${SITE_URL}/sitemap.xml`);
     const r = await fetch(`https://www.googleapis.com/webmasters/v3/sites/${siteUrl}/sitemaps/${feed}`, {
       method: 'PUT',
       headers: { authorization: `Bearer ${token}` },
     });
-    console.log(`Google sitemap resubmit: ${r.status}`);
+    console.log(`Google sitemap resubmit (${property}): ${r.status}`);
     if (r.status >= 400) console.error(await r.text());
   } catch (e) {
     console.error(`Google Search Console step failed: ${e.message}`);
