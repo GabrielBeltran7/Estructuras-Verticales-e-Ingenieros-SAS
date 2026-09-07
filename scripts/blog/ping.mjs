@@ -86,6 +86,27 @@ if (saRaw) {
     });
     console.log(`Google sitemap resubmit (${property}): ${r.status}`);
     if (r.status >= 400) console.error(await r.text());
+
+    // ── Indexing API: pide indexación de cada URL nueva/cambiada ──
+    // Requiere "Indexing API" habilitada en el proyecto GCP y la service
+    // account como propietaria de la propiedad. `--since HEAD~1` ya limita
+    // esto a los posts tocados en el commit, así que no se re-pide lo viejo.
+    try {
+      const idxToken = await googleAccessToken(sa, 'https://www.googleapis.com/auth/indexing');
+      let ok = 0;
+      for (const url of urls) {
+        const ir = await fetch('https://indexing.googleapis.com/v3/urlNotifications:publish', {
+          method: 'POST',
+          headers: { authorization: `Bearer ${idxToken}`, 'content-type': 'application/json' },
+          body: JSON.stringify({ url, type: 'URL_UPDATED' }),
+        });
+        if (ir.ok) ok++;
+        else console.error(`Indexing API ${ir.status} for ${url}: ${(await ir.text()).slice(0, 200)}`);
+      }
+      console.log(`Indexing API: ${ok}/${urls.length} URL(s) notificadas`);
+    } catch (e) {
+      console.error(`Indexing API step failed: ${e.message}`);
+    }
   } catch (e) {
     console.error(`Google Search Console step failed: ${e.message}`);
   }
