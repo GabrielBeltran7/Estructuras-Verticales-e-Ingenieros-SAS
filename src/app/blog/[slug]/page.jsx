@@ -85,6 +85,8 @@ export async function generateMetadata({ params }) {
       url: `${BASE_URL}/blog/${slug}`,
       type: "article",
       publishedTime: data.date,
+      modifiedTime: data.dateModified || data.date,
+      authors: [data.author || "Estructuras Verticales e Ingenieros SAS"],
       images: [
         {
           url: data.image,
@@ -101,6 +103,55 @@ export async function generateMetadata({ params }) {
       images: [data.image],
     },
   };
+}
+
+// ── Helpers de SEO (aditivos, no cambian el render del contenido) ───────────
+
+function readingTime(md) {
+  const words = String(md).replace(/[#>*_`~\-|]/g, " ").split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+function stripMd(s) {
+  return String(s)
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`>#~]+/g, "")
+    .replace(/\s+/g, " ")
+    .replace(/^[^\p{L}¿"'(]+/u, "")
+    .trim();
+}
+
+// Extrae los pares pregunta/respuesta de la sección "## Preguntas Frecuentes".
+// Soporta "### ¿Pregunta?", "**¿Pregunta?**" y "- **[emoji] ¿Pregunta?**".
+// Si algo falla o no reconoce el formato, devuelve [] (sin romper nada).
+function parseFaq(md) {
+  try {
+    // Sin flag `m`: `$` = fin real del texto (con `m`, la `*?` pararía en el 1er salto de línea).
+    const m = String(md).match(
+      /(?:^|\n)#{2,3}[ \t]*Preguntas Frecuentes[^\n]*\n([\s\S]*?)(?=\n---[ \t]*\n|\n#{2}[ \t]|$)/i
+    );
+    if (!m) return [];
+    const block = m[1];
+    const collect = (re) => {
+      const hits = [];
+      let x;
+      while ((x = re.exec(block))) hits.push({ q: x[1], at: x.index, len: x[0].length });
+      const out = [];
+      for (let i = 0; i < hits.length; i++) {
+        const start = hits[i].at + hits[i].len;
+        const end = i + 1 < hits.length ? hits[i + 1].at : block.length;
+        const q = stripMd(hits[i].q);
+        const a = stripMd(block.slice(start, end));
+        if (q && a && a.length > 10) out.push({ q, a });
+      }
+      return out;
+    };
+    const byH = collect(/^#{3,4}[ \t]+(.+?)[ \t]*$/gm);
+    if (byH.length >= 2) return byH;
+    return collect(/^[ \t]*(?:[-*][ \t]+)?\*\*[ \t]*[^\p{L}\d\n]*?(¿[^*\n]+\?)[^*\n]*\*\*/gmu);
+  } catch {
+    return [];
+  }
 }
 
 // ✅ BlogPost optimizado con imágenes centradas en MDX
@@ -126,6 +177,15 @@ export default async function BlogPost({ params }) {
   });
 
   const BASE_URL = "https://www.estructurasverticales.com";
+  const dateModified = data.dateModified || data.date;
+  const readMins = readingTime(content);
+  const faq =
+    Array.isArray(data.faq) && data.faq.length
+      ? data.faq
+          .map((x) => ({ q: stripMd(x.q ?? x.question ?? ""), a: stripMd(x.a ?? x.answer ?? "") }))
+          .filter((x) => x.q && x.a)
+      : parseFaq(content);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -133,7 +193,7 @@ export default async function BlogPost({ params }) {
     description: data.description,
     image: data.image ? [data.image] : undefined,
     datePublished: data.date,
-    dateModified: data.date,
+    dateModified,
     author: {
       "@type": "Organization",
       name: data.author || "Estructuras Verticales e Ingenieros SAS",
@@ -152,11 +212,36 @@ export default async function BlogPost({ params }) {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: `${BASE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: data.title, item: `${BASE_URL}/blog/${slug}` },
+    ],
+  };
+
+  const faqJsonLd =
+    faq.length >= 2
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faq.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
+        }
+      : null;
+
+  const jsonLd = [articleJsonLd, breadcrumbJsonLd, ...(faqJsonLd ? [faqJsonLd] : [])];
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navbar />
       <main className={styles.blogContainer}>
@@ -175,7 +260,10 @@ export default async function BlogPost({ params }) {
           />
         )}
 
-        <p className={styles.date}>{data.date}</p>
+        <p className={styles.date}>
+          {data.date} · {readMins} min de lectura
+          {dateModified && dateModified !== data.date ? ` · Actualizado ${dateModified}` : ""}
+        </p>
         {data.author && <p className={styles.author}>Por {data.author}</p>}
 
         {/* ✅ Renderizado del contenido MDX pre-compilado */}
