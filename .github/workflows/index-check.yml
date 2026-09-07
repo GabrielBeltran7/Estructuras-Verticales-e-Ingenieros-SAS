@@ -1,0 +1,22 @@
+name: Index check
+
+# Cada 3 días: revisa en Google qué posts siguen sin indexar y los re-avisa a
+# IndexNow. También se puede lanzar a mano desde la pestaña Actions.
+on:
+  schedule:
+    - cron: '17 6 */3 * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://www.estructurasverticales.com' }}
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/blog/index-check.mjs
