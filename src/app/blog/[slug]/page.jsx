@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./BlogPost.module.css";
@@ -171,9 +172,17 @@ export default async function BlogPost({ params }) {
     source: content,
     components: {
       a: CustomLink,
-      img: CustomImage
+      img: CustomImage,
+      // La mayoría de los posts antiguos traen su propio "# Título" al inicio
+      // del cuerpo. Ahora que el h1 real de la página es `data.title` (ver
+      // más abajo), ese "#" del cuerpo se re-mapea a h2 para no duplicar el
+      // h1 con un texto distinto — conserva el texto, solo baja de nivel.
+      h1: (props) => <h2 {...props} />,
     },
-    options: { parseFrontmatter: true }
+    options: {
+      parseFrontmatter: true,
+      mdxOptions: { remarkPlugins: [remarkGfm] },
+    }
   });
 
   const BASE_URL = "https://www.estructurasverticales.com";
@@ -245,6 +254,9 @@ export default async function BlogPost({ params }) {
       />
       <Navbar />
       <main className={styles.blogContainer}>
+
+        {/* ✅ Título del artículo (h1 visible — antes solo se usaba en metadata/SEO) */}
+        <h1 className={styles.title}>{data.title}</h1>
 
         {/* ✅ Imagen principal del artículo */}
         {data.image && (
