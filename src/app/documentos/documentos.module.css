@@ -1,0 +1,122 @@
+.container {
+  /* El <body> del sitio centra verticalmente su contenido; como esta página
+     es corta, sin esto quedaría flotando en la mitad de la pantalla. */
+  align-self: flex-start;
+  margin-top: calc(var(--navbar-height) + 20px);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  margin-bottom: 80px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoria {
+  display: inline-block;
+  background: #eaf3ff;
+  color: #007bff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  color: #fff;
+  background: #007bff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background: #0056b3;
+}
+
+.btnSecondary {
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btnSecondary:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* margin-top propio (no se suma al padding) para no duplicar el espacio
+       de arriba, pero sigue despejando la navbar + barra azul fijas. */
+    margin-top: calc(var(--navbar-height) + 15px);
+    padding: 1.5rem;
+  }
+}

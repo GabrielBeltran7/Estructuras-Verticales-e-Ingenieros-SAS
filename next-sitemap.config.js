@@ -30,6 +30,7 @@ module.exports = {
         ...servicioPaths,
         { loc: '/', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 1.0 }, // Página principal
         { loc: '/blog', lastmod: new Date().toISOString(), changefreq: 'daily', priority: 0.9 }, // Página del blog
+        { loc: '/documentos', lastmod: new Date().toISOString(), changefreq: 'weekly', priority: 0.7 }, // Documentos descargables
       ];
 
       if (!fs.existsSync(blogDir)) {

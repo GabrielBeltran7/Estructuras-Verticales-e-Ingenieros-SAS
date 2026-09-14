@@ -114,6 +114,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link href="/documentos" className={styles.navLink} onClick={closeMenu}>
+            Documentos
+          </Link>
+        </li>
+        <li>
           <a
             href="https://sistema-estructuras-verticalese-ingenierossas.vercel.app/"
             target="_blank"
